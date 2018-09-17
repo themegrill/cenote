@@ -1,0 +1,76 @@
+/*=============================================
+=            Body Typography            =
+=============================================*/
+body {
+	font-family: $font-family-body;
+	font-size: $font-size-base;
+	color: $color-body;
+}
+
+p {
+	margin: 0 0 10px;
+	line-height: 1.8;
+}
+
+blockquote {
+	text-align: center;
+	background: $color-primary-accent;
+	padding: 20px 40px;
+	margin: 0;
+	position: relative;
+
+	&::before,
+	&::after {
+		position: absolute;
+		content: "\f114";
+		font-family: themegrill-icons;
+		display: block;
+		top: 10px;
+		left: 20px;
+	}
+
+	&::after {
+		content: "\f115";
+		top: auto;
+		left: auto;
+		right: 20px;
+		bottom: 10px;
+	}
+
+	cite {
+		position: relative;
+		display: inline-block;
+		padding: 0 20px;
+		font-size: $font-size-widget;
+		margin-top: 20px;
+
+		&::before {
+			content: "";
+			background-color: $color-body;
+			width: 10px;
+			height: 1px;
+			display: block;
+			position: absolute;
+			top: 10px;
+			left: 0;
+		}
+	}
+}
+
+code {
+	background-color: $color-gray-1;
+	padding: 0.125em 0.25em;
+}
+
+pre {
+	background-color: $color-gray-0;
+	padding: 20px;
+}
+
+.entry-content {
+	line-height: 1.8;
+
+	p {
+		line-height: inherit;
+	}
+}

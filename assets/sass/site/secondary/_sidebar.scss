@@ -1,0 +1,16 @@
+/* Sticky Sidebar */
+.widget-area--sticky {
+	will-change: min-height;
+
+	.inner-wrapper-sticky {
+		position: relative;
+		transform: translate(0, 0); /* fFor browser don't support translate3d */
+		transform: translate3d(0, 0, 0);
+		will-change: position, transform;
+	}
+
+	.widget {
+		margin: 0;
+		padding-bottom: 60px;
+	}
+}

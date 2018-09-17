@@ -1,0 +1,48 @@
+.admin-bar {
+	
+	.cenote-header-sticky {
+		
+		&.cenote-sticky-header--not-top {
+			transform: translateY(32px);
+		}
+	}
+	
+	.cenote-search-form {
+		top: 32px;
+	}
+}
+
+@media screen  and ( max-width: 782px ) {
+	
+	.admin-bar {
+
+		.cenote-header-sticky {
+	
+			&.cenote-sticky-header--not-top {
+				transform: translateY(46px);
+			}
+		}
+
+		.cenote-mobile-navigation,
+		.cenote-search-form {
+			top: 46px;
+		}
+	}
+}
+
+@media screen  and ( max-width: 600px ) {
+
+	.admin-bar {
+
+		.cenote-header-sticky {
+	
+			&.cenote-sticky-header--not-top {
+				transform: translateY(0);
+			}
+		}
+	
+		.cenote-search-form {
+			top: 0;
+		}
+	}
+}

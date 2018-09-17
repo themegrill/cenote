@@ -1,0 +1,24 @@
+@media screen and ( max-width: 1200px ) {
+	
+	#primary {
+		width: calc(100% - 360px);
+	}
+}
+
+@media screen and ( min-width: 992px ) {
+	
+	.post-template-post-template-cover {
+
+		.hentry:not(.has-post-thumbnail) {
+
+			.entry-header--cover {
+				min-height: 700px;
+			}
+		}
+
+		.entry-center-content {
+			width: calc(100% - 400px);
+			margin: 0 auto;
+		}
+	}
+}

@@ -1,0 +1,125 @@
+.tg-archive-style--big-block {
+	
+	.site-main {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	
+	article {
+		
+		&:first-child {
+			flex-basis: 100%;
+		}
+	}
+}
+
+
+.tg-archive-style--masonry {
+	
+	.site-main {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	
+	.cenote-content-masonry {
+		margin-left: -20px;
+		margin-right: -20px;
+		
+		&.cenote-content-masonry--animated {
+			
+			article {
+				animation: fadeInUp both 0.5s;
+				animation-delay: 500ms;
+			}
+		}
+	}
+}
+
+.tg-archive-style--big-block,
+.tg-archive-style--masonry {
+	
+	article {
+		
+		.post-thumbnail {
+			margin-bottom: 30px;
+		}
+	}
+	
+	.pagination {
+		margin: 30px 20px 0;
+	}
+}
+
+.archive {
+	
+	.page-header {
+		margin-top: 20px;
+		background-color: $color-gray-3;
+		padding: 40px 0;
+		position: relative;
+		
+		.page-title {
+			margin: 0;
+			font-size: $font-size-h2;
+		}
+		
+		.archive-description {
+			margin-top: 10px;
+			font-size: $font-size-widget;
+			color: $color-gray-0;
+			
+			p {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+	
+.entry-content .first-child .cenote-drop-cap {
+	font-size: $font-size-drop-cap;
+	color: inherit;
+	font-weight: 700;
+	float: left;
+	vertical-align: top;
+	line-height: 70px;
+	padding-right: 20px;
+	padding-left: 10px;
+	padding-top: 5px;
+	text-shadow: 3px 3px 0 rgba(56, 60, 80, 0.22);
+}
+
+
+/*----------  Infinite loader  ----------*/
+.infinite-scroll {
+
+	#infinite-handle {
+		border-top: 1px solid $color-gray-1;
+		// padding: 20px 0;
+
+		span {
+			background: none;
+			padding: 0;
+
+			button {
+				text-transform: capitalize;
+				color: $color-heading;
+				padding: 10px 0;
+				font-weight: 700;
+			}
+		}
+	}
+
+	.cenote-content-masonry {
+
+		#infinite-handle {
+			position: absolute;
+			bottom: 0;
+			left: 20px;
+			right: 20px;
+		}
+	}
+
+	.pagination {
+		display: none;
+	}
+}

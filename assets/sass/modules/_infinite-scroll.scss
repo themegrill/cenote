@@ -1,0 +1,14 @@
+/*=============================================
+=            Infinite Scroll            =
+=============================================*/
+
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+.infinite-scroll .posts-navigation,
+.infinite-scroll.neverending .site-footer {
+	display: none;
+}
+
+/*Display element when scroll ends. */
+.infinity-end.neverending .site-footer {
+	display: block;
+}

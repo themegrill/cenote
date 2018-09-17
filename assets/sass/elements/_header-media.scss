@@ -1,0 +1,82 @@
+.cenote-header-media {
+	background-size: cover;
+
+	img {
+		object-fit: cover;
+		display: block;
+	}
+
+	.tg-container {
+		padding: 5% 0;
+		min-height: 500px;
+		position: relative;
+		justify-content: center;
+		align-items: center;
+		background-size: cover;
+	}
+
+	.cenote-header-media-info {
+		background-color: $color-gray-0;
+		padding: 60px 40px;
+		z-index: 9;
+		width: 650px;
+	}
+
+	.cenote-header-media__title {
+		font-size: $font-size-h2;
+		margin-top: 0;
+		margin-bottom: 20px;
+	}
+
+	.cenote-header-media__text {
+		margin-bottom: 60px;
+		font-size: $font-size-h6;
+	}
+
+	.cenote-header-media__button {
+		position: relative;
+		display: inline-block;
+
+		&::after {
+			content: lrt-to-rtl("f103", "f102", true);
+			font-family: themegrill-icons;
+			font-size: 9px;
+			margin-left: 10px;
+			display: inline-block;
+		}
+	}
+
+	&.cenote-header-media--center,
+	&.cenote-header-media--fullscreen {
+
+		.cenote-header-media-wrap {
+			padding: 10%;
+		}
+
+		.cenote-header-media-info {
+			text-align: center;
+			background-color: rgba(248, 249, 250, 0.7);
+		}
+
+		.cenote-header-media__title {
+			margin-bottom: 40px;
+		}
+
+		.cenote-header-media__button {
+			position: relative;
+			font-size: $font-size-widget;
+
+			&::after {
+				transition: 0.3s transform cubic-bezier(0.19, 0.1, 0.22, 1);
+				color: $color-heading;
+			}
+
+			&:hover {
+
+				&::after {
+					transform: translateX(10px);
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,38 @@
+@media screen and ( min-width: 768px) and ( max-width: 992px ) {
+	
+	.cenote-hero {
+		
+		.cenote-hero-info {
+			width: 540px;
+			padding: 40px 20px;
+		}
+		
+		.cenote-hero__heading {
+			font-size: $font-size-small-h1;
+		}
+		
+		.cenote-hero__sub-heading,
+		.cenote-hero__content {
+			font-size: $font-size-base;
+		}
+
+		.cenote-hero__sub-heading {
+			margin-bottom: 10px;
+		}
+		
+		.cenote-hero__content {
+			margin-bottom: 20px;
+		}
+		
+		&.cenote-hero.cenote-hero--center {
+			
+			.cenote-hero-info {
+				margin: 12% auto;
+			}
+			
+			.cenote-hero__heading {
+				margin-bottom: 20px;
+			}
+		}
+	}
+}

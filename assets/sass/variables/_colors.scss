@@ -1,0 +1,68 @@
+// Gray Colors
+
+$color-white: 						#fff;
+$color-gray-0:						#f8f9fa;
+$color-gray-1:						#f1f3f5;
+$color-gray-2:						#e9ecef;
+$color-gray-3:						#dee2e6;
+$color-gray-4:						#ced4da;
+$color-gray-5:						#adb5bd;
+$color-gray-6:						#868e96;
+$color-gray-7:						#51585f;
+$color-gray-8:						#495057;
+$color-gray-9:						#343a40;
+$color-gray-10:						#212529;
+
+// Neutral Colors
+
+$color-heading:                     #16181a;
+$color-body:                        #363b40;
+$color-meta:                        #212529;
+$color-border:                      #e0e0e0;
+$color-site-info:                   #bdbdbd;
+$color-menu-dark:                   #0f1012;
+$color-light:                       #f7f7f7;
+
+
+// Main Colors
+
+$color-primary:                     #de7b85;
+$color-secondary:                   #ffac76;
+$color-accent:                      #fff0e6;
+$color-primary-accent:				#fff9f5;
+
+
+// Brand Colors
+
+$color-brand-success:               #8ce99a;
+$color-brand-info:                  #72c3fc;
+$color-brand-warning:               #ffe066;
+$color-brand-danger:                #ff8787;
+
+
+// Link Colors
+
+$color-link:                        $color-heading;
+$color-link-visited:                $color-gray-9;
+$color-link-hover:                  $color-primary;
+
+
+// Screen Reader Colors
+
+$color-sr-bg:                       $color-border;
+$color-sr-text:                     $color-heading;
+
+
+// Button Color
+
+$color-button-bg:                   $color-primary;
+$color-button-border:               #ccc;
+$color-button-border-hover:         #aaa;
+$color-button-border-focus:         #ddd;
+
+
+// Input colors
+
+$color-input-text:                  $color-heading;
+$color-input-text-focus:            $color-gray-7;
+$color-input-border:                $color-gray-3;

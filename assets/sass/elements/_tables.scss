@@ -1,0 +1,28 @@
+/*=============================================
+=            Table            =
+=============================================*/
+
+table {
+	margin: 0 0 1.5em;
+	width: 100%;
+
+	th,
+	td {
+		text-align: left;
+		border: 1px solid $color-gray-2;
+		padding: 1em;
+
+	}
+}
+
+.entry-content {
+
+	table {
+
+		a {
+			text-decoration: none;
+			
+			@include primary-link-color;
+		}
+	}
+}

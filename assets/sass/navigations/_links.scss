@@ -1,0 +1,32 @@
+/*=============================================
+=            Links            =
+=============================================*/
+
+a {
+	color: $color-link;
+	text-decoration: none;
+	transition: all 0.35s ease-in-out;
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $color-link-hover;
+	}
+
+	&:focus {
+		outline: thin dotted;
+	}
+	
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}
+
+.entry-content {
+
+	a {
+		color: $color-link-hover;
+		text-decoration: underline;
+	}
+}

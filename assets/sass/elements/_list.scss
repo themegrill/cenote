@@ -1,0 +1,31 @@
+/*=============================================
+=            Lists            =
+=============================================*/
+
+ul,
+ol {
+	margin: 0 0 1.6rem 1.6rem;
+	padding-left: 0;
+}
+
+ul {
+	list-style: square;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 1.6rem;
+}
+
+dt {
+	font-weight: 700;
+}
+
+dd {
+	margin: 0 1.6rem 1.6rem;
+}

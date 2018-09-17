@@ -1,0 +1,152 @@
+/*=============================================
+=            Comments            =
+=============================================*/
+
+.comment-content a {
+	word-wrap: break-word;
+}
+
+.bypostauthor {
+	display: block;
+}
+
+.comments-area {
+
+	.comment-list {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+
+		.comment-meta {
+			position: relative;
+			margin-bottom: 10px;
+			min-height: 60px;
+
+			.comment-author {
+
+				img.avatar {
+					position: absolute;
+					left: 0;
+					top: 0;
+				}
+
+				.says {
+					display: none;
+				}
+			}
+
+			.fn,
+			.comment-metadata,
+			.comment-awaiting-moderation {
+				margin-left: 80px;
+			}
+
+			.fn {
+				display: inline-block;
+				font-size: 16px;
+				font-weight: 500;
+				margin-bottom: 5px;
+				letter-spacing: 1px;
+			}
+
+			.comment-metadata {
+				margin-bottom: 3px;
+
+				a {
+					color: $color-gray-6;
+					letter-spacing: 1px;
+					font-size: $font-size-widget;
+					font-weight: 400;
+				}
+			}
+
+			.comment-awaiting-moderation {
+				color: $color-gray-6;
+				font-size: $font-size-small;
+				font-weight: 400;
+			}
+		}
+
+		.comment-body {
+			border-bottom: 1px solid $color-gray-1;
+			padding: 40px 0;
+
+			.reply {
+				text-align: right;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				font-weight: 500;
+				font-size: 12px;
+
+				a {
+
+					&::before {
+						content: "\f117";
+						font-family: themegrill-icons;
+						display: inline-block;
+						font-size: 8px;
+						margin-right: 10px;
+						vertical-align: top;
+						margin-top: 1px;
+					}
+				}
+			}
+
+			.comment-content {
+				margin-bottom: 20px;
+			}
+		}
+
+		.children {
+			list-style-type: none;
+		}
+	}
+
+	.comment-form {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+		.comment-notes {
+			margin-bottom: 30px;
+		}
+
+		label {
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			font-size: 12px;
+			font-weight: 500;
+			display: block;
+			margin-bottom: 8px;
+		}
+
+		p {
+			flex: 0 0 100%;
+
+			input[type="text"],
+			input[type="email"],
+			input[type="url"] {
+				width: 100%;
+			}
+		}
+
+		.comment-form-author,
+		.comment-form-email {
+			flex-basis: 47%;
+
+			input {
+				width: 100%;
+			}
+		}
+
+		.form-submit {
+			text-align: right;
+			margin-top: 30px;
+
+			button.submit {
+				padding: 20px 25px;
+				font-size: 14px;
+			}
+		}
+	}
+}

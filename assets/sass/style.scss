@@ -1,0 +1,93 @@
+/*
+Theme Name: Cenote
+Theme URI: https://themegrill.com/themes/cenote/
+Author: Themegrill
+Author URI: https://themegrill.com
+Description: Cenote is beautifully designed clean WordPress blog theme. Easy to setup and has a nice set of features that make your site stand out. It is suitable for personal, fashion, food, travel, business, professional, niche and any kind of blogging sites. Comes with various demos for various purposes, which you can easily import with the help of ThemeGrill Demo Importer plugin.
+Version: 1.2.2
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+Text Domain: cenote
+Tags: one-column, two-columns, three-columns, left-sidebar, right-sidebar, grid-layout, post-formats, editor-style, custom-background, custom-colors, custom-header, custom-logo, featured-images, footer-widgets, full-width-template, theme-options, threaded-comments, translation-ready, blog, news, rtl-language-support
+
+cenote is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
+*/
+
+/**
+*
+* TABLE OF CONTENT
+*
+* # Reset
+* # Typography
+* # Elements
+* # Froms
+* # Navigations
+* # Modules
+# Accessibility
+# Alignments
+# Clearings
+* # Header
+* # Widgets
+* # Content
+# Posts and Pages
+# Asides
+# Comments
+* # Footer
+* # Media
+# captions
+# galleries
+* # Media Queriess
+# Mobile
+# Tablets
+# Computers
+* # Print
+*
+*/
+
+
+@import "variables/colors";
+@import "variables/structure";
+@import "variables/typography";
+@import "mixins/miscellenious";
+@import "reset/normalize";
+@import "typography/copy";
+@import "typography/headings";
+@import "global/global";
+@import "global/common";
+@import "layout/grid";
+@import "layout/body";
+@import "elements/slider";
+@import "elements/list";
+@import "elements/animation";
+@import "elements/tables";
+@import "elements/title";
+@import "elements/search-form";
+@import "elements/archive";
+@import "elements/header-media";
+@import "elements/post-format";
+@import "elements/admin-bar";
+@import "navigations/links";
+@import "navigations/menus";
+@import "modules/accessibility";
+@import "modules/alignments";
+@import "modules/clearings";
+@import "forms/buttons";
+@import "forms/fields";
+@import "layout/header";
+@import "layout/404";
+@import "layout/structure";
+@import "site/secondary/sidebar";
+@import "site/secondary/widgets";
+@import "site/primary/posts-and-pages";
+@import "site/primary/asides";
+@import "site/primary/comments";
+@import "media/captions";
+@import "media/galleries";
+@import "layout/footer";
+@import "responsive/large";
+@import "responsive/medium";
+@import "responsive/small";
