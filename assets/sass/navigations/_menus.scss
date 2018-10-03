@@ -415,7 +415,7 @@
 		&.page_item_has_children,
 		&.menu-item-has-children {
 
-			&::after {
+			> span::after {
 				position: absolute;
 				content: "\f107";
 				font-family: fontawesome;
@@ -432,6 +432,10 @@
 					max-height: 500px;
 					visibility: visible;
 					opacity: 1;
+				}
+
+				> span::after {
+					content: "\f106";
 				}
 			}
 

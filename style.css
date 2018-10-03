@@ -1906,7 +1906,7 @@ a:hover, a:active {
 	position: relative;
 }
 
-.cenote-mobile-navigation li.page_item_has_children::after, .cenote-mobile-navigation li.menu-item-has-children::after {
+.cenote-mobile-navigation li.page_item_has_children > span::after, .cenote-mobile-navigation li.menu-item-has-children > span::after {
 	position: absolute;
 	content: "\f107";
 	font-family: fontawesome;
@@ -1921,6 +1921,10 @@ a:hover, a:active {
 	max-height: 500px;
 	visibility: visible;
 	opacity: 1;
+}
+
+.cenote-mobile-navigation li.page_item_has_children.focus > span::after, .cenote-mobile-navigation li.menu-item-has-children.focus > span::after {
+	content: "\f106";
 }
 
 .cenote-mobile-navigation li.page_item_has_children ul, .cenote-mobile-navigation li.menu-item-has-children ul {
