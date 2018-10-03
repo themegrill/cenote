@@ -1,10 +1,10 @@
 # Cenote #
-**Author:** ThemeGrill
-**Requires at least:** WordPress 4.7
-**Tested up to:** WordPress 4.9
-**Version:** 1.2.2
-**License:** GPLv3 or later
-**License URI:** https://www.gnu.org/licenses/gpl-3.0.en.html
+**Author:** ThemeGrill  
+**Requires at least:** WordPress 4.7  
+**Tested up to:** WordPress 4.9  
+**Version:** 1.2.2  
+**License:** GPLv3 or later  
+**License URI:** https://www.gnu.org/licenses/gpl-3.0.en.html  
 **Tags:** one-column, Right-sidebar, grid-layout, custom-background, custom-colors, custom-menu, custom-logo, featured-images, footer-widgets, full-width-template, theme-options, threaded-comments, translation-ready, blog, rtl-language-support
 
 ## Description ##
