@@ -305,8 +305,6 @@ document.addEventListener( 'DOMContentLoaded', function() {
 				subToggleN.className = 'sub-toggle';
 
 				parent.appendChild( subToggleN );
-				console.log(subToggleN);
-				console.log('subToggleN');
 			} );
 
 			var subToggle = document.getElementsByClassName( 'sub-toggle' );
