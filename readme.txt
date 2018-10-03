@@ -86,6 +86,9 @@ Source: https://pixabay.com/en/girl-red-hair-makeup-wooden-wall-1828536/
 Unless otherwise specified, all the theme files, scripts and images including the screenshot image are licensed under [GNU GPL] (http://www.gnu.org/licenses/gpl-3.0.txt), version 3 or later.
 
 == Changelog ==
+= TBD =
+* Fix - Sub menu toggle button issue
+
 = Version 1.2.2 2018-09-06 =
 * Update - Upsell link
 
