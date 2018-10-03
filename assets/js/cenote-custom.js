@@ -5,7 +5,7 @@ document.addEventListener( 'DOMContentLoaded', function() {
 	 */
 	( function setupMasonry() {
 		var grid = document.querySelector(
-			'.tg-archive-style--masonry .cenote-content-masonry'
+				'.tg-archive-style--masonry .cenote-content-masonry'
 			),
 			masonry;
 
@@ -261,7 +261,7 @@ document.addEventListener( 'DOMContentLoaded', function() {
 	 * Toggles `focus` class to allow submenu access on tablets.
 	 */
 	( function() {
-		var touchStartFn,
+		var touchStartFn, subToggleN, j, submenuParent, subToggle,
 			i,
 			parentLink = document.querySelectorAll(
 				'.main-navigation .menu-item-has-children > a, .main-navigation .page_item_has_children > a, .cenote-mobile-navigation .menu-item-has-children > a, .cenote-mobile-navigation .page_item_has_children > a'
@@ -292,10 +292,8 @@ document.addEventListener( 'DOMContentLoaded', function() {
 			/**
 			 * Toggles `focus` class on sub-toggle icon trigger.
 			 */
-				// Get menu item with submenu.
-			var subToggleN,
-				j,
-				submenuParent = document.querySelectorAll( '.main-navigation .menu-item-has-children, .main-navigation .page_item_has_children, .cenote-mobile-navigation .menu-item-has-children, .cenote-mobile-navigation .page_item_has_children' );
+			// Get menu item with submenu.
+			submenuParent = document.querySelectorAll( '.main-navigation .menu-item-has-children, .main-navigation .page_item_has_children, .cenote-mobile-navigation .menu-item-has-children, .cenote-mobile-navigation .page_item_has_children' );
 
 
 			submenuParent.forEach( function( parent ) {
@@ -307,9 +305,9 @@ document.addEventListener( 'DOMContentLoaded', function() {
 				parent.appendChild( subToggleN );
 			} );
 
-			var subToggle = document.getElementsByClassName( 'sub-toggle' );
+			subToggle = document.getElementsByClassName( 'sub-toggle' );
 
-			for( j = 0; j < subToggle.length; ++j ) {
+			for ( j = 0; j < subToggle.length; ++j ) {
 				subToggle[j].addEventListener( 'touchstart', touchStartFn, false );
 			}
 
@@ -342,7 +340,7 @@ document.addEventListener( 'DOMContentLoaded', function() {
 	 */
 	( function setupSwiper() {
 		var gallerySlider = document.querySelectorAll(
-			'.post-format-media--gallery .swiper-container'
+				'.post-format-media--gallery .swiper-container'
 			),
 			swiperGallery;
 
