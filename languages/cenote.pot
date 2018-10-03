@@ -109,6 +109,10 @@ msgstr ""
 msgid "Next Article"
 msgstr ""
 
+#: inc/customizer.php:39
+msgid "View PRO version"
+msgstr ""
+
 #: inc/demo-config.php:25
 msgid "Cenote"
 msgstr ""
