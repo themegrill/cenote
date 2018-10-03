@@ -5,7 +5,7 @@ document.addEventListener( 'DOMContentLoaded', function() {
 	 */
 	( function setupMasonry() {
 		var grid = document.querySelector(
-				'.tg-archive-style--masonry .cenote-content-masonry'
+			'.tg-archive-style--masonry .cenote-content-masonry'
 			),
 			masonry;
 
@@ -288,6 +288,33 @@ document.addEventListener( 'DOMContentLoaded', function() {
 			for ( i = 0; i < parentLink.length; ++i ) {
 				parentLink[i].addEventListener( 'touchstart', touchStartFn, false );
 			}
+
+			/**
+			 * Toggles `focus` class on sub-toggle icon trigger.
+			 */
+				// Get menu item with submenu.
+			var subToggleN,
+				j,
+				submenuParent = document.querySelectorAll( '.main-navigation .menu-item-has-children, .main-navigation .page_item_has_children, .cenote-mobile-navigation .menu-item-has-children, .cenote-mobile-navigation .page_item_has_children' );
+
+
+			submenuParent.forEach( function( parent ) {
+
+				// Create sub-toggle element.
+				subToggleN = document.createElement( 'span' );
+				subToggleN.className = 'sub-toggle';
+
+				parent.appendChild( subToggleN );
+				console.log(subToggleN);
+				console.log('subToggleN');
+			} );
+
+			var subToggle = document.getElementsByClassName( 'sub-toggle' );
+
+			for( j = 0; j < subToggle.length; ++j ) {
+				subToggle[j].addEventListener( 'touchstart', touchStartFn, false );
+			}
+
 		}
 	} () );
 
@@ -317,7 +344,7 @@ document.addEventListener( 'DOMContentLoaded', function() {
 	 */
 	( function setupSwiper() {
 		var gallerySlider = document.querySelectorAll(
-				'.post-format-media--gallery .swiper-container'
+			'.post-format-media--gallery .swiper-container'
 			),
 			swiperGallery;
 
