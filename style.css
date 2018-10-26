@@ -847,6 +847,11 @@ table td {
 	font-size: inherit;
 }
 
+.search-form .search-field:-ms-input-placeholder {
+	color: inherit;
+	font-size: inherit;
+}
+
 .search-form .search-field::-ms-input-placeholder {
 	color: inherit;
 	font-size: inherit;
@@ -908,6 +913,10 @@ table td {
 }
 
 .cenote-search-form input[type="search"]::-webkit-input-placeholder {
+	color: inherit;
+}
+
+.cenote-search-form input[type="search"]:-ms-input-placeholder {
 	color: inherit;
 }
 
@@ -3694,7 +3703,9 @@ img {
 	.layout--right-sidebar #primary,
 	.layout--right-sidebar #secondary,
 	.layout--left-sidebar #primary,
-	.layout--left-sidebar #secondary {
+	.layout--left-sidebar #secondary,
+	.search-results #primary,
+	.search-results #secondary {
 		width: 100%;
 		padding: 0;
 	}
