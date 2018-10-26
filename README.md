@@ -1,10 +1,10 @@
 # Cenote #
-**Author:** ThemeGrill  
-**Requires at least:** WordPress 4.7  
-**Tested up to:** WordPress 4.9  
-**Version:** 1.2.2  
-**License:** GPLv3 or later  
-**License URI:** https://www.gnu.org/licenses/gpl-3.0.en.html  
+**Author:** ThemeGrill
+**Requires at least:** WordPress 4.7
+**Tested up to:** WordPress 4.9
+**Version:** 1.2.2
+**License:** GPLv3 or later
+**License URI:** https://www.gnu.org/licenses/gpl-3.0.en.html
 **Tags:** one-column, Right-sidebar, grid-layout, custom-background, custom-colors, custom-menu, custom-logo, featured-images, footer-widgets, full-width-template, theme-options, threaded-comments, translation-ready, blog, rtl-language-support
 
 ## Description ##
@@ -86,6 +86,9 @@ Source: https://pixabay.com/en/girl-red-hair-makeup-wooden-wall-1828536/
 Unless otherwise specified, all the theme files, scripts and images including the screenshot image are licensed under [GNU GPL] (http://www.gnu.org/licenses/gpl-3.0.txt), version 3 or later.
 
 ## Changelog ##
+### Version 1.2.4 2018-10-26 ###
+* Fix - layout breaking on search result
+
 ### Version 1.2.3 2018-10-03 ###
 * Fix - Submenu toggle button issue
 
