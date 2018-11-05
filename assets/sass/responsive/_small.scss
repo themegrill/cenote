@@ -127,10 +127,13 @@
 	}
 
 	/*----------  Layout  ----------*/
+	#primary,
+	#secondary {
+		width: 100%;
+	}
 
 	.layout--right-sidebar,
-	.layout--left-sidebar,
-	.search-results {
+	.layout--left-sidebar {
 
 		#primary,
 		#secondary {
