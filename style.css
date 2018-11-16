@@ -3853,6 +3853,9 @@ img {
 	.post-format-media--gallery .swiper-button-prev {
 		display: none;
 	}
+	.post-template-cover .entry-center-content {
+		width: 100%;
+	}
 	.comment-navigation .nav-next a,
 	.comment-navigation .nav-previous a,
 	.posts-navigation .nav-next a,
