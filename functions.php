@@ -293,6 +293,11 @@ if ( class_exists( 'TG_Demo_Importer' ) ) {
 }
 
 /**
+ * Calling in the admin area for the new theme notice.
+ */
+require get_template_directory() . '/inc/class-cenote-new-theme-notice.php';
+
+/**
  * Load TGMPA Configs.
  */
 require_once get_template_directory() . '/inc/tgm-plugin-activation/class-tgm-plugin-activation.php';
