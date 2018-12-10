@@ -130,7 +130,7 @@
 				img {
 					margin: 0;
 				}
-				
+
 				.custom-logo-link {
 					margin-bottom: 0;
 				}
@@ -195,6 +195,10 @@
 	&.cenote-header-sticky--single {
 		max-height: 49px;
 		overflow: hidden;
+
+		&.visible {
+			overflow: visible;
+		}
 
 		.sticky-header-slide {
 			transition: all 0.4s;

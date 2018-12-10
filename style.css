@@ -2446,6 +2446,10 @@ select {
 	overflow: hidden;
 }
 
+.cenote-header-sticky.cenote-header-sticky--single.visible {
+	overflow: visible;
+}
+
 .cenote-header-sticky.cenote-header-sticky--single .sticky-header-slide {
 	-webkit-transition: all 0.4s;
 	transition: all 0.4s;
