@@ -109,6 +109,19 @@ msgstr ""
 msgid "Next Article"
 msgstr ""
 
+#. translators: %1$s Zakra theme link %2$s Zakra theme demo link
+#: inc/class-cenote-new-theme-notice.php:66
+msgid "Zakra - our new most flexible free WordPress theme. %1$s Zakra is fully compatible with Gutenberg, Elementor and other major page builders. Comes with %2$s to quickly setup your new website."
+msgstr ""
+
+#: inc/class-cenote-new-theme-notice.php:70
+msgid "Check it out!"
+msgstr ""
+
+#: inc/class-cenote-new-theme-notice.php:75
+msgid "10+ free starter sites"
+msgstr ""
+
 #: inc/customizer.php:39
 msgid "View PRO version"
 msgstr ""
