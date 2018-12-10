@@ -847,11 +847,6 @@ table td {
 	font-size: inherit;
 }
 
-.search-form .search-field:-ms-input-placeholder {
-	color: inherit;
-	font-size: inherit;
-}
-
 .search-form .search-field::-ms-input-placeholder {
 	color: inherit;
 	font-size: inherit;
@@ -913,10 +908,6 @@ table td {
 }
 
 .cenote-search-form input[type="search"]::-webkit-input-placeholder {
-	color: inherit;
-}
-
-.cenote-search-form input[type="search"]:-ms-input-placeholder {
 	color: inherit;
 }
 
@@ -3213,6 +3204,10 @@ img {
 .page-template-default .hentry .entry-thumbnail:hover img,
 .single .hentry .entry-thumbnail:hover img {
 	opacity: 1;
+}
+
+ul.wp-block-gallery {
+	margin: 0;
 }
 
 /*=============================================
