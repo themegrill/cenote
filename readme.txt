@@ -86,6 +86,10 @@ Source: https://pixabay.com/en/girl-red-hair-makeup-wooden-wall-1828536/
 Unless otherwise specified, all the theme files, scripts and images including the screenshot image are licensed under [GNU GPL] (http://www.gnu.org/licenses/gpl-3.0.txt), version 3 or later.
 
 == Changelog ==
+= Version TBD =
+* Fix - Gallery margin for Gutenberg.
+* Fix - Submenu display issue on single post page when sticky menu is selected.
+
 = Version 1.2.4 2018-10-26 =
 * Fix - layout breaking on search result
 
