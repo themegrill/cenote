@@ -87,6 +87,7 @@ Unless otherwise specified, all the theme files, scripts and images including th
 
 == Changelog ==
 = Version TBD =
+* Recommend - Zakra Gutenberg ready theme.
 * Fix - Gallery margin for Gutenberg.
 * Fix - Submenu display issue on single post page when sticky menu is selected.
 
