@@ -131,7 +131,7 @@ function cenote_content_width() {
 		$layout = get_post_meta( $post->ID, 'cenote_post_layout', true );
 	}
 
-	if ( empty( $layout ) || is_archive() || is_home() ) {
+	if ( empty( $layout ) ) {
 		$layout = 'layout--default';
 	}
 
