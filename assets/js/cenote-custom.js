@@ -387,11 +387,11 @@ document.addEventListener( 'DOMContentLoaded', function() {
 		var visible = document.querySelector( '.cenote-sticky-main' );
 
 		if ( visible ) {
-			visible.addEventListener( 'mouseover', function () {
+			visible.addEventListener( 'mouseover', function() {
 				document.getElementById( 'cenote-sticky-header' ).classList.add( 'visible' );
 			} );
 
-			visible.addEventListener( 'mouseout', function () {
+			visible.addEventListener( 'mouseout', function() {
 				document.getElementById( 'cenote-sticky-header' ).classList.remove( 'visible' );
 			} );
 		}
