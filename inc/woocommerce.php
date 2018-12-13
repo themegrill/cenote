@@ -46,31 +46,6 @@ function cenote_woocommerce_thumbnail_columns() {
 }
 add_filter( 'woocommerce_product_thumbnails_columns', 'cenote_woocommerce_thumbnail_columns' );
 
-if ( ! function_exists( 'cenote_woocommerce_product_columns_wrapper' ) ) {
-	/**
-	 * Product columns wrapper.
-	 *
-	 * @return  void
-	 */
-	function cenote_woocommerce_product_columns_wrapper() {
-		$columns = cenote_woocommerce_loop_columns();
-		echo '<div class="columns-' . absint( $columns ) . '">';
-	}
-}
-add_action( 'woocommerce_before_shop_loop', 'cenote_woocommerce_product_columns_wrapper', 40 );
-
-if ( ! function_exists( 'cenote_woocommerce_product_columns_wrapper_close' ) ) {
-	/**
-	 * Product columns wrapper close.
-	 *
-	 * @return  void
-	 */
-	function cenote_woocommerce_product_columns_wrapper_close() {
-		echo '</div>';
-	}
-}
-add_action( 'woocommerce_after_shop_loop', 'cenote_woocommerce_product_columns_wrapper_close', 40 );
-
 /**
  * Remove default WooCommerce wrapper.
  */
