@@ -47,16 +47,6 @@ function cenote_woocommerce_thumbnail_columns() {
 add_filter( 'woocommerce_product_thumbnails_columns', 'cenote_woocommerce_thumbnail_columns' );
 
 /**
- * Default loop columns on product archives.
- *
- * @return integer products per row.
- */
-function cenote_woocommerce_loop_columns() {
-	return 3;
-}
-add_filter( 'loop_shop_columns', 'cenote_woocommerce_loop_columns' );
-
-/**
  * Related Products Args.
  *
  * @param array $args related products args.
