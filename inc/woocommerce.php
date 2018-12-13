@@ -37,16 +37,6 @@ function cenote_woocommerce_active_body_class( $classes ) {
 add_filter( 'body_class', 'cenote_woocommerce_active_body_class' );
 
 /**
- * Product gallery thumnbail columns.
- *
- * @return integer number of columns.
- */
-function cenote_woocommerce_thumbnail_columns() {
-	return 4;
-}
-add_filter( 'woocommerce_product_thumbnails_columns', 'cenote_woocommerce_thumbnail_columns' );
-
-/**
  * Remove default WooCommerce wrapper.
  */
 remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10 );
