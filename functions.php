@@ -295,7 +295,9 @@ if ( class_exists( 'TG_Demo_Importer' ) ) {
 /**
  * Calling in the admin area for the new theme notice.
  */
-require get_template_directory() . '/inc/class-cenote-new-theme-notice.php';
+if ( is_admin() ) {
+	require get_template_directory() . '/inc/class-cenote-new-theme-notice.php';
+}
 
 /**
  * Load TGMPA Configs.

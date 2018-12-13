@@ -4,7 +4,7 @@
  *
  * @author  ThemeGrill
  * @package Cenote
- * @since   1.3.4
+ * @since   1.2.5
  */
 
 // Exit if directly accessed.
