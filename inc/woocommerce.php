@@ -46,24 +46,6 @@ function cenote_woocommerce_thumbnail_columns() {
 }
 add_filter( 'woocommerce_product_thumbnails_columns', 'cenote_woocommerce_thumbnail_columns' );
 
-/**
- * Related Products Args.
- *
- * @param array $args related products args.
- * @return array $args related products args.
- */
-function cenote_woocommerce_related_products_args( $args ) {
-	$defaults = array(
-		'posts_per_page' => 3,
-		'columns'        => 3,
-	);
-
-	$args = wp_parse_args( $defaults, $args );
-
-	return $args;
-}
-add_filter( 'woocommerce_output_related_products_args', 'cenote_woocommerce_related_products_args' );
-
 if ( ! function_exists( 'cenote_woocommerce_product_columns_wrapper' ) ) {
 	/**
 	 * Product columns wrapper.
