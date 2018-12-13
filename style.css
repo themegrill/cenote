@@ -847,6 +847,11 @@ table td {
 	font-size: inherit;
 }
 
+.search-form .search-field:-ms-input-placeholder {
+	color: inherit;
+	font-size: inherit;
+}
+
 .search-form .search-field::-ms-input-placeholder {
 	color: inherit;
 	font-size: inherit;
@@ -911,6 +916,10 @@ table td {
 	color: inherit;
 }
 
+.cenote-search-form input[type="search"]:-ms-input-placeholder {
+	color: inherit;
+}
+
 .cenote-search-form input[type="search"]::-ms-input-placeholder {
 	color: inherit;
 }
@@ -954,6 +963,10 @@ table td {
 .cenote-search-form .search-form-close::after {
 	-webkit-transform: translate3d(0, 17px, 0) rotate(-45deg);
 	transform: translate3d(0, 17px, 0) rotate(-45deg);
+}
+
+.woocommerce.tg-archive-style--big-block .site-main {
+	display: inherit;
 }
 
 .tg-archive-style--big-block .site-main {

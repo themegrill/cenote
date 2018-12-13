@@ -1,3 +1,13 @@
+.woocommerce {
+	
+	&.tg-archive-style--big-block {
+		
+		.site-main {
+			display: inherit;
+		}
+	}
+}
+
 .tg-archive-style--big-block {
 	
 	.site-main {
