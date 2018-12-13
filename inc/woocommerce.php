@@ -37,16 +37,6 @@ function cenote_woocommerce_active_body_class( $classes ) {
 add_filter( 'body_class', 'cenote_woocommerce_active_body_class' );
 
 /**
- * Products per page.
- *
- * @return integer number of products.
- */
-function cenote_woocommerce_products_per_page() {
-	return 12;
-}
-add_filter( 'loop_shop_per_page', 'cenote_woocommerce_products_per_page' );
-
-/**
  * Product gallery thumnbail columns.
  *
  * @return integer number of columns.
