@@ -109,18 +109,49 @@ function cenote_image_sizes() {
 
 }
 add_action( 'after_setup_theme', 'cenote_image_sizes' );
+
+/**
+ * Set the content width based on the theme's design and stylesheet.
+ */
+if ( ! isset( $content_width ) ) {
+	$content_width = 770;
+}
+
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
- * Priority 0 to make it available to lower priority callbacks.
+ * Set the content width as selected on the theme options.
  *
  * @global int $content_width
  */
 function cenote_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'cenote_content_width', 640 );
+	global $post, $content_width;
+
+	if ( $post ) {
+		$layout = get_post_meta( $post->ID, 'cenote_post_layout', true );
+	}
+
+	if ( empty( $layout ) || is_archive() || is_home() ) {
+		$layout = 'layout--default';
+	}
+
+	$single_post_page_layout = get_theme_mod( 'cenote_layout_single', 'layout--right-sidebar' );
+	$single_page_layout      = get_theme_mod( 'cenote_layout_page', 'layout--right-sidebar' );
+
+	if ( 'layout--default' === $layout ) {
+		if ( ( ( 'layout--no-sidebar' === $single_post_page_layout ) && is_single() ) || ( ( 'layout--no-sidebar' === $single_page_layout ) && is_page() ) ) {
+			$content_width = 1160;
+		} else {
+			$content_width = 770;
+		}
+	} elseif ( 'layout--no-sidebar' === $layout ) {
+		$content_width = 1160;
+	} else {
+		$content_width = 770;
+	}
 }
 
-add_action( 'after_setup_theme', 'cenote_content_width', 0 );
+add_action( 'template_redirect', 'cenote_content_width' );
 
 /**
  * Register widget area.
