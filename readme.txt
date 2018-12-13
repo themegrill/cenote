@@ -88,6 +88,7 @@ Unless otherwise specified, all the theme files, scripts and images including th
 == Changelog ==
 = Version TBD =
 * Add - WooCommerce plugin support.
+* Tweak - Content width is adjusted according to the layout chosen.
 
 = Version 1.2.5 2018-12-10 =
 * Recommend - Zakra Gutenberg ready theme.
