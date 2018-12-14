@@ -87,6 +87,7 @@ Unless otherwise specified, all the theme files, scripts and images including th
 
 == Changelog ==
 = Version TBD =
+* Add - Gutenberg compatibility.
 * Add - WooCommerce plugin support.
 * Tweak - Content width is adjusted according to the layout chosen.
 
