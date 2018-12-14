@@ -89,6 +89,9 @@ if ( ! function_exists( 'cenote_setup' ) ) :
 		) );
 
 		add_editor_style();
+
+		// Gutenberg layout support.
+		add_theme_support( 'align-wide' );
 	}
 endif;
 add_action( 'after_setup_theme', 'cenote_setup' );
