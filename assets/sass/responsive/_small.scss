@@ -263,6 +263,22 @@
 	.cenote-mobile-navigation {
 		display: block;
 	}
+
+	.layout--no-sidebar {
+
+		.alignwide {
+			margin-left: -20px;
+			margin-right: -20px;
+		}
+
+		&.layout-site--boxed {
+
+			.alignwide {
+				margin-left: -20px;
+				margin-right: -20px;
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 600px) {
@@ -319,7 +335,7 @@
 	.tg-header-top {
 		display: none;
 	}
-	
+
 	.tg-post-ribbon {
 
 		ul {
@@ -453,6 +469,22 @@
 		right: 0;
 		font-size: 0;
 	}
+
+	.layout--no-sidebar {
+
+		.alignwide {
+			margin-left: 0;
+			margin-right: 0;
+		}
+
+		&.layout-site--boxed {
+
+			.alignwide {
+				margin-left: 0;
+				margin-right: 0;
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 480px) {
@@ -510,7 +542,7 @@
 		.tg-container {
 			min-height: 200px;
 		}
-		
+
 		.cenote-header-media__title {
 			font-size: $font-size-small-h3;
 		}
