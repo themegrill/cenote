@@ -86,7 +86,7 @@ Source: https://pixabay.com/en/girl-red-hair-makeup-wooden-wall-1828536/
 Unless otherwise specified, all the theme files, scripts and images including the screenshot image are licensed under [GNU GPL] (http://www.gnu.org/licenses/gpl-3.0.txt), version 3 or later.
 
 == Changelog ==
-= Version TBD =
+= Version 1.2.6 2018-12-17 =
 * Add - Gutenberg compatibility.
 * Add - WooCommerce plugin support.
 * Tweak - Content width is adjusted according to the layout chosen.

@@ -52,43 +52,43 @@ msgstr ""
 msgid "Header Top"
 msgstr ""
 
-#: functions.php:132
+#: functions.php:166
 msgid "Sidebar"
 msgstr ""
 
-#: functions.php:134
+#: functions.php:168
 msgid "Add widgets here."
 msgstr ""
 
-#: functions.php:142
+#: functions.php:176
 msgid "Footer 1"
 msgstr ""
 
-#: functions.php:144
+#: functions.php:178
 msgid "Add widgets here to show on footer 1."
 msgstr ""
 
-#: functions.php:152
+#: functions.php:186
 msgid "Footer 2"
 msgstr ""
 
-#: functions.php:154
+#: functions.php:188
 msgid "Add widgets here to show on footer 2."
 msgstr ""
 
-#: functions.php:162
+#: functions.php:196
 msgid "Footer 3"
 msgstr ""
 
-#: functions.php:164
+#: functions.php:198
 msgid "Add widgets here to show on footer 3."
 msgstr ""
 
-#: functions.php:172
+#: functions.php:206
 msgid "Footer 4"
 msgstr ""
 
-#: functions.php:174
+#: functions.php:208
 msgid "Add widgets here to show on footer 4."
 msgstr ""
 
@@ -182,17 +182,6 @@ msgstr ""
 #: inc/template-tags.php:97, template-parts/content-page.php:47
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr ""
-
-#: inc/woocommerce.php:227
-msgid "View your shopping cart"
-msgstr ""
-
-#. translators: number of items in the mini cart.
-#: inc/woocommerce.php:229
-msgid "%d item"
-msgid_plural "%d items"
-msgstr[0] ""
-msgstr[1] ""
 
 #: template-parts/content-audio.php:35, template-parts/content-gallery.php:53, template-parts/content-link.php:28, template-parts/content-quote.php:29, template-parts/content-search.php:34, template-parts/content-video.php:35, template-parts/content.php:68
 msgid "Read More"

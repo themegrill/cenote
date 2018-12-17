@@ -5,7 +5,7 @@
 **Version:** 1.2.5
 **License:** GPLv3 or later
 **License URI:** https://www.gnu.org/licenses/gpl-3.0.en.html
-**Tags:** one-column, Right-sidebar, grid-layout, custom-background, custom-colors, custom-menu, custom-logo, featured-images, footer-widgets, full-width-template, theme-options, threaded-comments, translation-ready, blog, rtl-language-support
+**Tags:** one-column, Right-sidebar, grid-layout, custom-background, custom-colors, custom-menu, custom-logo, featured-images, footer-widgets, full-width-template, theme-options, threaded-comments, translation-ready, blog, rtl-language-support, e-commerce
 
 ## Description ##
 Cenote is beautifully designed clean WordPress blog theme. Easy to setup and has a nice set of features that make your site stand out. It is suitable for personal, fashion, food, travel, business, professional, niche and any kind of blogging sites. Comes with various demos for various purposes, which you can easily import with the help of ThemeGrill Demo Importer plugin.
@@ -86,6 +86,11 @@ Source: https://pixabay.com/en/girl-red-hair-makeup-wooden-wall-1828536/
 Unless otherwise specified, all the theme files, scripts and images including the screenshot image are licensed under [GNU GPL] (http://www.gnu.org/licenses/gpl-3.0.txt), version 3 or later.
 
 ## Changelog ##
+### Version 1.2.6 2018-12-17 ###
+* Add - Gutenberg compatibility.
+* Add - WooCommerce plugin support.
+* Tweak - Content width is adjusted according to the layout chosen.
+
 ### Version 1.2.5 2018-12-10 ###
 * Recommend - Zakra Gutenberg ready theme.
 * Fix - Gallery margin for Gutenberg.
