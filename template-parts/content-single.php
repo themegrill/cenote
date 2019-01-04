@@ -2,12 +2,19 @@
 /**
  * Template part for displaying single post
  *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ * @link    https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package cenote
  */
 
-$content_orders = get_theme_mod( 'cenote_single_order_layout', array( 'thumbnail', 'categories', 'title', 'meta', 'content', 'footer' ) );
+$content_orders = get_theme_mod( 'cenote_single_order_layout', array(
+	'thumbnail',
+	'categories',
+	'title',
+	'meta',
+	'content',
+	'footer',
+) );
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -20,35 +27,43 @@ $content_orders = get_theme_mod( 'cenote_single_order_layout', array( 'thumbnail
 			<div class="tg-top-cat">
 				<?php cenote_post_categories(); ?>
 			</div>
-			<?php
+		<?php
 		elseif ( 'title' === $content_order ) :
 			?>
 			<header class="entry-header">
 				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 			</header><!-- .entry-header -->
-			<?php
+		<?php
 
 		elseif ( 'meta' === $content_order && 'post' === get_post_type() ) :
 			?>
 			<div class="entry-meta">
 				<?php
-					cenote_posted_by();
-					cenote_posted_on();
+				cenote_posted_by();
+				cenote_posted_on();
 				?>
 			</div><!-- .entry-meta -->
-			<?php
+		<?php
 		elseif ( 'content' === $content_order ) :
 			?>
 			<div class="entry-content">
-				<?php the_content(); ?>
+				<?php
+				the_content();
+				wp_link_pages(
+					array(
+						'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'cenote' ),
+						'after'  => '</div>',
+					)
+				);
+				?>
 			</div><!-- .entry-content -->
-			<?php
-				elseif ( 'footer' === $content_order ) :
-					?>
-					<footer class="entry-footer">
+		<?php
+		elseif ( 'footer' === $content_order ) :
+			?>
+			<footer class="entry-footer">
 				<?php cenote_entry_footer(); ?>
 			</footer><!-- .entry-footer -->
-			<?php
+		<?php
 		endif;
 	endforeach;
 
