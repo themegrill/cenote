@@ -56,7 +56,16 @@ if ( 'layout--no-sidebar' === $layout_style ) {
 	</div><!-- .entry-meta -->
 
 	<div class="entry-content">
-		<?php the_content(); ?>
+		<?php
+		the_content();
+
+		wp_link_pages(
+			array(
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'cenote' ),
+				'after'  => '</div>',
+			)
+		);
+		?>
 	</div>
 	<!-- /.entry-content -->
 

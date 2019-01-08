@@ -13,7 +13,16 @@ $gallery_images = get_post_gallery_images();
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="entry-content">
-		<?php the_content(); ?>
+		<?php
+		the_content();
+
+		wp_link_pages(
+			array(
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'cenote' ),
+				'after'  => '</div>',
+			)
+		);
+		?>
 	</div>
 	<!-- /.entry-content -->
 
