@@ -1,4 +1,4 @@
-# Copyright (C) 2018 Cenote
+# Copyright (C) 2019 Cenote
 # This file is distributed under the same license as the Cenote package.
 msgid ""
 msgstr ""
@@ -101,11 +101,11 @@ msgstr ""
 msgid "Search Results for: %s"
 msgstr ""
 
-#: single.php:22, template-parts/content-single-cover.php:53
+#: single.php:22, template-parts/content-single-cover.php:62
 msgid "Previous Article"
 msgstr ""
 
-#: single.php:23, template-parts/content-single-cover.php:54
+#: single.php:23, template-parts/content-single-cover.php:63
 msgid "Next Article"
 msgstr ""
 
@@ -204,7 +204,7 @@ msgstr ""
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
 msgstr ""
 
-#: template-parts/content-page.php:32
+#: template-parts/content-page.php:32, template-parts/content-single-audio.php:48, template-parts/content-single-cover.php:48, template-parts/content-single-gallery.php:64, template-parts/content-single-link.php:43, template-parts/content-single-quote.php:21, template-parts/content-single-video.php:48, template-parts/content-single.php:54
 msgid "Pages:"
 msgstr ""
 
