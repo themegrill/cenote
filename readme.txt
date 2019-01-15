@@ -86,6 +86,9 @@ Source: https://pixabay.com/en/girl-red-hair-makeup-wooden-wall-1828536/
 Unless otherwise specified, all the theme files, scripts and images including the screenshot image are licensed under [GNU GPL] (http://www.gnu.org/licenses/gpl-3.0.txt), version 3 or later.
 
 == Changelog ==
+= Version TBD =
+* Update - Kirki to 3.0.35.3
+
 = Version 1.2.7 2019-01-08 =
 * Fix - Page break link in single post page.
 
