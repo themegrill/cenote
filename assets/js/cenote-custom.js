@@ -184,6 +184,9 @@ document.addEventListener( 'DOMContentLoaded', function() {
 					}
 				} );
 				hammerMobileMenu.on( 'swiperight', function() {
+					if ( event.target.closest( '.tg-post-slider, .post-format-media--gallery' ) ) {
+						return;
+					}
 					openMobileMenu();
 				} );
 
