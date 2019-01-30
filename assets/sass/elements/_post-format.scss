@@ -11,10 +11,11 @@
 		display: inline-block;
 
 		&::after {
+			font-family: "Font Awesome 5 Free";
 			padding-left: 10px;
 			content: "\f0c1";
-			font-family: fontawesome;
 			transform: rotate(90deg);
+			font-weight: 900;
 		}
 	}
 }

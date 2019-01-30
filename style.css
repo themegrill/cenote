@@ -847,11 +847,6 @@ table td {
 	font-size: inherit;
 }
 
-.search-form .search-field:-ms-input-placeholder {
-	color: inherit;
-	font-size: inherit;
-}
-
 .search-form .search-field::-ms-input-placeholder {
 	color: inherit;
 	font-size: inherit;
@@ -913,10 +908,6 @@ table td {
 }
 
 .cenote-search-form input[type="search"]::-webkit-input-placeholder {
-	color: inherit;
-}
-
-.cenote-search-form input[type="search"]:-ms-input-placeholder {
 	color: inherit;
 }
 
@@ -1171,11 +1162,12 @@ table td {
 }
 
 .post-format-media--link .post-format-title::after {
+	font-family: "Font Awesome 5 Free";
 	padding-left: 10px;
 	content: "\f0c1";
-	font-family: fontawesome;
 	-webkit-transform: rotate(90deg);
 	transform: rotate(90deg);
+	font-weight: 900;
 }
 
 .format-quote blockquote {
@@ -1530,10 +1522,11 @@ a:hover, a:active {
 }
 
 .tg-site-menu--default li.page_item_has_children > a::after, .tg-site-menu--default li.menu-item-has-children > a::after {
+	font-family: "Font Awesome 5 Free";
 	content: "\f107";
-	font-family: fontawesome;
 	display: inline-block;
 	padding-left: 5px;
+	font-weight: 900;
 }
 
 .tg-site-menu--default li.focus > a {
@@ -1920,14 +1913,15 @@ a:hover, a:active {
 }
 
 .cenote-mobile-navigation li.page_item_has_children > span::after, .cenote-mobile-navigation li.menu-item-has-children > span::after {
+	font-family: "Font Awesome 5 Free";
 	position: absolute;
 	content: "\f107";
-	font-family: fontawesome;
 	display: block;
 	right: 0;
 	top: 10px;
 	font-size: 20px;
 	background-color: transparent;
+	font-weight: 900;
 }
 
 .cenote-mobile-navigation li.page_item_has_children.focus > ul, .cenote-mobile-navigation li.menu-item-has-children.focus > ul {
