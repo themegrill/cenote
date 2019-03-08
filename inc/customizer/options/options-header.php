@@ -63,6 +63,11 @@ Kirki::add_field(
 				'operator' => 'in',
 				'value'    => 'contact-info',
 			),
+			array(
+				'setting'  => 'cenote_enable_header_top',
+				'operator' => '==',
+				'value'    => 1,
+			),
 		),
 	)
 );
@@ -87,6 +92,11 @@ Kirki::add_field(
 				'setting'  => 'cenote_order_header_top_items',
 				'operator' => 'in',
 				'value'    => 'contact-info',
+			),
+			array(
+				'setting'  => 'cenote_enable_header_top',
+				'operator' => '==',
+				'value'    => 1,
 			),
 		),
 	)
