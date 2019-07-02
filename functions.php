@@ -333,6 +333,7 @@ if ( class_exists( 'TG_Demo_Importer' ) ) {
  */
 if ( is_admin() ) {
 	require get_template_directory() . '/inc/class-cenote-new-theme-notice.php';
+	require get_template_directory() . '/inc/admin/class-cenote-theme-review-notice.php';
 }
 
 /**

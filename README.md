@@ -102,7 +102,7 @@ Unless otherwise specified, all the theme files, scripts and images including th
 * Tweak - Content width is adjusted according to the layout chosen.
 
 ### Version 1.2.5 2018-12-10 ###
-* Recommend - Zakra Gutenberg ready theme.
+* Recommend - Cenote Gutenberg ready theme.
 * Fix - Gallery margin for Gutenberg.
 * Fix - Submenu display issue on single post page when sticky menu is selected.
 
@@ -176,3 +176,4 @@ Unless otherwise specified, all the theme files, scripts and images including th
 * Added - Support for jetpack’s infinite scroll
 * Removed - Border of submenu when active
 * Changed - Drop cap now separated on another markup
+

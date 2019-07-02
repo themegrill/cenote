@@ -86,6 +86,9 @@ Source: https://pixabay.com/en/girl-red-hair-makeup-wooden-wall-1828536/
 Unless otherwise specified, all the theme files, scripts and images including the screenshot image are licensed under [GNU GPL] (http://www.gnu.org/licenses/gpl-3.0.txt), version 3 or later.
 
 == Changelog ==
+= TBD =
+* Added - Theme review notice.
+
 = Version 1.2.9 2019-01-30 =
 * Fix - Swipe over sliders opening navigation on touch devices.
 * Fix - Icons not being displayed.
@@ -102,7 +105,7 @@ Unless otherwise specified, all the theme files, scripts and images including th
 * Tweak - Content width is adjusted according to the layout chosen.
 
 = Version 1.2.5 2018-12-10 =
-* Recommend - Zakra Gutenberg ready theme.
+* Recommend - Cenote Gutenberg ready theme.
 * Fix - Gallery margin for Gutenberg.
 * Fix - Submenu display issue on single post page when sticky menu is selected.
 
