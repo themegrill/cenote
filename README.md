@@ -1,11 +1,19 @@
 # Cenote #
-**Author:** ThemeGrill
-**Requires at least:** WordPress 4.7
-**Tested up to:** WordPress 4.9
-**Version:** 1.2.8
-**License:** GPLv3 or later
-**License URI:** https://www.gnu.org/licenses/gpl-3.0.en.html
-**Tags:** one-column, Right-sidebar, grid-layout, custom-background, custom-colors, custom-menu, custom-logo, featured-images, footer-widgets, full-width-template, theme-options, threaded-comments, translation-ready, blog, rtl-language-support, e-commerce
+Author: ThemeGrill**:** 
+
+Requires at least: WordPress 4.7**:** 
+
+Tested up to: WordPress 5.2.2**:** 
+
+Version: 1.3.0**:** 
+
+License: GPLv3 or later**:** 
+
+License URI: https://www.gnu.org/licenses/gpl-3.0.en.html**:** 
+
+Tags: one-column, Right-sidebar, grid-layout, custom-background, custom-colors, custom-menu, custom-logo, featured-images, footer-widgets, full-width-template, theme-options, threaded-comments, translation-ready, blog, rtl-language-support, e-commerce**:** 
+
+**:** 
 
 ## Description ##
 Cenote is beautifully designed clean WordPress blog theme. Easy to setup and has a nice set of features that make your site stand out. It is suitable for personal, fashion, food, travel, business, professional, niche and any kind of blogging sites. Comes with various demos for various purposes, which you can easily import with the help of ThemeGrill Demo Importer plugin.
@@ -86,6 +94,11 @@ Source: https://pixabay.com/en/girl-red-hair-makeup-wooden-wall-1828536/
 Unless otherwise specified, all the theme files, scripts and images including the screenshot image are licensed under [GNU GPL] (http://www.gnu.org/licenses/gpl-3.0.txt), version 3 or later.
 
 ## Changelog ##
+### Version 1.3.0 2019-07-12 ###
+* Added - Theme review notice.
+* Tweak - Added `wp_body_open` function to support WordPress 5.2 `wp_body_open` hook.
+* Remove - Removed dashboard message to align with the theme review guidelines
+
 ### Version 1.2.9 2019-01-30 ###
 * Fix - Swipe over sliders opening navigation on touch devices.
 * Fix - Icons not being displayed.
@@ -176,4 +189,3 @@ Unless otherwise specified, all the theme files, scripts and images including th
 * Added - Support for jetpack’s infinite scroll
 * Removed - Border of submenu when active
 * Changed - Drop cap now separated on another markup
-
