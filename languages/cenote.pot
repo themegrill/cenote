@@ -92,125 +92,12 @@ msgstr ""
 msgid "Add widgets here to show on footer 4."
 msgstr ""
 
-#: header.php:25
+#: header.php:32
 msgid "Skip to content"
-msgstr ""
-
-#. translators: %s: search query.
-#: search.php:23
-msgid "Search Results for: %s"
-msgstr ""
-
-#: single.php:22, template-parts/content-single-cover.php:62
-msgid "Previous Article"
-msgstr ""
-
-#: single.php:23, template-parts/content-single-cover.php:63
-msgid "Next Article"
-msgstr ""
-
-#. translators: %1$s Zakra theme link %2$s Zakra theme demo link
-#: inc/class-cenote-new-theme-notice.php:66
-msgid "Zakra - our new most flexible free WordPress theme. %1$s Zakra is fully compatible with Gutenberg, Elementor and other major page builders. Comes with %2$s to quickly setup your new website."
-msgstr ""
-
-#: inc/class-cenote-new-theme-notice.php:70
-msgid "Check it out!"
-msgstr ""
-
-#: inc/class-cenote-new-theme-notice.php:75
-msgid "10+ free starter sites"
 msgstr ""
 
 #: inc/customizer.php:39
 msgid "View PRO version"
-msgstr ""
-
-#: inc/demo-config.php:25
-msgid "Cenote"
-msgstr ""
-
-#: inc/demo-config.php:29
-msgid "Cenote Fashion"
-msgstr ""
-
-#: inc/demo-config.php:33
-msgid "Cenote Tech"
-msgstr ""
-
-#: inc/meta-boxes.php:12
-msgid "Choose Layout"
-msgstr ""
-
-#: inc/meta-boxes.php:34
-msgid "Full Width"
-msgstr ""
-
-#: inc/meta-boxes.php:35
-msgid "Left Sidebar"
-msgstr ""
-
-#: inc/meta-boxes.php:36
-msgid "Right Sidebar"
-msgstr ""
-
-#: inc/meta-boxes.php:37
-msgid "Default"
-msgstr ""
-
-#: inc/template-functions.php:91
-msgid "Back To Top"
-msgstr ""
-
-#. translators: 1: list of categories.
-#: inc/template-tags.php:64
-msgid "Category: %1$s"
-msgstr ""
-
-#. translators: 1: list of tags.
-#: inc/template-tags.php:70
-msgid "Tagged: %1$s"
-msgstr ""
-
-#. translators: %s: post title
-#: inc/template-tags.php:80
-msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
-msgstr ""
-
-#. translators: %s: Name of current post. Only visible to screen readers
-#. translators: %s: Name of current post. Only visible to screen readers
-#: inc/template-tags.php:97, template-parts/content-page.php:47
-msgid "Edit <span class=\"screen-reader-text\">%s</span>"
-msgstr ""
-
-#: template-parts/content-audio.php:35, template-parts/content-gallery.php:53, template-parts/content-link.php:28, template-parts/content-quote.php:29, template-parts/content-search.php:34, template-parts/content-video.php:35, template-parts/content.php:68
-msgid "Read More"
-msgstr ""
-
-#: template-parts/content-none.php:14
-msgid "Nothing Found"
-msgstr ""
-
-#. translators: 1: link to WP admin new post page.
-#: template-parts/content-none.php:26
-msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr ""
-
-#: template-parts/content-none.php:40
-msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
-msgstr ""
-
-#: template-parts/content-none.php:47
-msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
-msgstr ""
-
-#: template-parts/content-page.php:32, template-parts/content-single-audio.php:48, template-parts/content-single-cover.php:48, template-parts/content-single-gallery.php:64, template-parts/content-single-link.php:43, template-parts/content-single-quote.php:21, template-parts/content-single-video.php:48, template-parts/content-single.php:54
-msgid "Pages:"
-msgstr ""
-
-#. translators: %s: Name of current post. Only visible to screen readers
-#: template-parts/content.php:52
-msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr ""
 
 #: inc/customizer/kirki-customizer.php:32
@@ -267,39 +154,6 @@ msgstr ""
 
 #: inc/customizer/kirki-customizer.php:147, inc/customizer/options/options-archive.php:79, inc/customizer/options/options-page.php:26, inc/customizer/options/options-single.php:30
 msgid "Footer"
-msgstr ""
-
-#: template-parts/author/author-box.php:40
-msgid "Website"
-msgstr ""
-
-#: template-parts/author/author-box.php:47
-msgid "Posts created"
-msgstr ""
-
-#. translators: 1: Current Year, 2: Blog Name 3: Theme Developer 4: WordPress.
-#: template-parts/footer/footer-info.php:12
-msgid "Copyright %1$s %2$s All Right Reserved. Theme By %3$s. Proudly powered by %4$s"
-msgstr ""
-
-#: template-parts/footer/search-form.php:14
-msgid "Begin typing your search term above and press enter to search. Press ESC to cancel."
-msgstr ""
-
-#: template-parts/pagination/pagination.php:17
-msgid "Posts Navigation"
-msgstr ""
-
-#: template-parts/pagination/pagination.php:28
-msgid "Next"
-msgstr ""
-
-#: template-parts/pagination/pagination.php:29
-msgid "Previous"
-msgstr ""
-
-#: template-parts/related/related-post.php:35
-msgid "Related Posts"
 msgstr ""
 
 #: inc/customizer/options/options-archive.php:13
@@ -406,19 +260,19 @@ msgstr ""
 msgid "Phone Number"
 msgstr ""
 
-#: inc/customizer/options/options-header.php:75
+#: inc/customizer/options/options-header.php:80
 msgid "Email Address"
 msgstr ""
 
-#: inc/customizer/options/options-header.php:100
+#: inc/customizer/options/options-header.php:110
 msgid "Enable Sticky Header"
 msgstr ""
 
-#: inc/customizer/options/options-header.php:111
+#: inc/customizer/options/options-header.php:121
 msgid "Header Layout"
 msgstr ""
 
-#: inc/customizer/options/options-header.php:127
+#: inc/customizer/options/options-header.php:137
 msgid "Enable Search Icon"
 msgstr ""
 
@@ -584,4 +438,137 @@ msgstr ""
 
 #: inc/customizer/options/options-typography.php:44
 msgid "Heading"
+msgstr ""
+
+#: inc/demo-config.php:25
+msgid "Cenote"
+msgstr ""
+
+#: inc/demo-config.php:29
+msgid "Cenote Fashion"
+msgstr ""
+
+#: inc/demo-config.php:33
+msgid "Cenote Tech"
+msgstr ""
+
+#: inc/meta-boxes.php:12
+msgid "Choose Layout"
+msgstr ""
+
+#: inc/meta-boxes.php:34
+msgid "Full Width"
+msgstr ""
+
+#: inc/meta-boxes.php:35
+msgid "Left Sidebar"
+msgstr ""
+
+#: inc/meta-boxes.php:36
+msgid "Right Sidebar"
+msgstr ""
+
+#: inc/meta-boxes.php:37
+msgid "Default"
+msgstr ""
+
+#: inc/template-functions.php:91
+msgid "Back To Top"
+msgstr ""
+
+#. translators: 1: list of categories.
+#: inc/template-tags.php:64
+msgid "Category: %1$s"
+msgstr ""
+
+#. translators: 1: list of tags.
+#: inc/template-tags.php:70
+msgid "Tagged: %1$s"
+msgstr ""
+
+#. translators: %s: post title
+#: inc/template-tags.php:80
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#. translators: %s: Name of current post. Only visible to screen readers
+#: inc/template-tags.php:97, template-parts/content-page.php:47
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#. translators: %s: search query.
+#: search.php:23
+msgid "Search Results for: %s"
+msgstr ""
+
+#: single.php:22, template-parts/content-single-cover.php:62
+msgid "Previous Article"
+msgstr ""
+
+#: single.php:23, template-parts/content-single-cover.php:63
+msgid "Next Article"
+msgstr ""
+
+#: template-parts/author/author-box.php:40
+msgid "Website"
+msgstr ""
+
+#: template-parts/author/author-box.php:47
+msgid "Posts created"
+msgstr ""
+
+#: template-parts/content-audio.php:35, template-parts/content-gallery.php:53, template-parts/content-link.php:28, template-parts/content-quote.php:29, template-parts/content-search.php:34, template-parts/content-video.php:35, template-parts/content.php:68
+msgid "Read More"
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#. translators: 1: link to WP admin new post page.
+#: template-parts/content-none.php:26
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:40
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:47
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#: template-parts/content-page.php:32, template-parts/content-single-audio.php:48, template-parts/content-single-cover.php:48, template-parts/content-single-gallery.php:64, template-parts/content-single-link.php:43, template-parts/content-single-quote.php:21, template-parts/content-single-video.php:48, template-parts/content-single.php:54
+msgid "Pages:"
+msgstr ""
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: template-parts/content.php:52
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#. translators: 1: Current Year, 2: Blog Name 3: Theme Developer 4: WordPress.
+#: template-parts/footer/footer-info.php:12
+msgid "Copyright %1$s %2$s All Right Reserved. Theme By %3$s. Proudly powered by %4$s"
+msgstr ""
+
+#: template-parts/footer/search-form.php:14
+msgid "Begin typing your search term above and press enter to search. Press ESC to cancel."
+msgstr ""
+
+#: template-parts/pagination/pagination.php:17
+msgid "Posts Navigation"
+msgstr ""
+
+#: template-parts/pagination/pagination.php:28
+msgid "Next"
+msgstr ""
+
+#: template-parts/pagination/pagination.php:29
+msgid "Previous"
+msgstr ""
+
+#: template-parts/related/related-post.php:35
+msgid "Related Posts"
 msgstr ""

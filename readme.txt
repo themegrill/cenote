@@ -1,7 +1,7 @@
 === Cenote ===
 Author: ThemeGrill
 Requires at least: WordPress 4.7
-Tested up to: WordPress 4.9
+Tested up to: WordPress 5.2.2
 Version: 1.2.8
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
@@ -88,6 +88,8 @@ Unless otherwise specified, all the theme files, scripts and images including th
 == Changelog ==
 = TBD =
 * Added - Theme review notice.
+* Tweak - Added `wp_body_open` function to support WordPress 5.2 `wp_body_open` hook.
+* Remove - Removed dashboard message to align with the theme review guidelines
 
 = Version 1.2.9 2019-01-30 =
 * Fix - Swipe over sliders opening navigation on touch devices.
