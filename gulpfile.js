@@ -176,7 +176,8 @@ function compileSass() {
 			sass( {
 				indentType: 'tab',
 				indentWidth: 1,
-				outputStyle: 'expanded'
+				outputStyle: 'expanded',
+				linefeed: 'crlf'
 			} )
 		)
 		.pipe( browserSync.stream() )
