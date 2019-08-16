@@ -177,7 +177,7 @@ function compileSass() {
 				indentType: 'tab',
 				indentWidth: 1,
 				outputStyle: 'expanded',
-//				linefeed: 'crlf'
+				linefeed: 'crlf'
 			} )
 		)
 		.pipe( browserSync.stream() )
