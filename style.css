@@ -847,11 +847,6 @@ table td {
 	font-size: inherit;
 }
 
-.search-form .search-field:-ms-input-placeholder {
-	color: inherit;
-	font-size: inherit;
-}
-
 .search-form .search-field::-ms-input-placeholder {
 	color: inherit;
 	font-size: inherit;
@@ -913,10 +908,6 @@ table td {
 }
 
 .cenote-search-form input[type="search"]::-webkit-input-placeholder {
-	color: inherit;
-}
-
-.cenote-search-form input[type="search"]:-ms-input-placeholder {
 	color: inherit;
 }
 
@@ -2088,17 +2079,18 @@ a:hover, a:active {
 }
 
 .screen-reader-text:focus {
-	background-color: #e0e0e0;
+	background-color: #f1f1f1;
 	border-radius: 3px;
 	-webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
 	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
 	clip: auto !important;
 	-webkit-clip-path: none;
 	clip-path: none;
-	color: #16181a;
+	color: #21759b;
 	display: block;
+	font-size: 0.875rem;
 	font-size: 14px;
-	font-weight: 700;
+	font-weight: bold;
 	height: auto;
 	left: 5px;
 	line-height: normal;
