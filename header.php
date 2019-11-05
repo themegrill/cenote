@@ -13,11 +13,19 @@
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-	<link rel="profile" href="http://gmpg.org/xfn/11">
 
-	<?php wp_head(); ?>
+	<?php
+		/**
+		 * Hook - cenote_action_head
+		 *
+		 * Functions hooked into cenote_action_head action
+		 *
+		 * @hooked cenote_head - 10
+		 */
+		do_action( 'cenote_action_head' );
+		?>
+
+		<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
@@ -28,26 +36,64 @@ if ( function_exists( 'wp_body_open' ) ) {
 }
 ?>
 
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'cenote' ); ?></a>
+<?php
+/**
+ * Hook - cenote_action_before_header
+ *
+ * Functions hooked into cenote_action_before_header action
+ *
+ * @hooked cenote_page_start - 10
+ * @hooked cenote_header_start - 15
+ */
+do_action( 'cenote_action_before_header' );
+?>
 
-	<header id="masthead" class="site-header tg-site-header <?php cenote_header_class(); ?>">
-		<?php if ( true === get_theme_mod( 'cenote_enable_header_top', true ) ) : ?>
-			<div class="tg-header-top">
-				<div class="tg-container tg-flex-container tg-flex-space-between tg-flex-item-centered">
-					<?php get_template_part( 'template-parts/header/header', 'top' ); ?>
-				</div>
-			</div><!-- .tg-header-top -->
-		<?php endif; ?>
+<?php
+/**
+ * Hook - cenote_action_header_top
+ *
+ * Functions hooked into cenote_action_header_top action
+ *
+ * @hooked cenote_header_top - 10
+ */
+do_action( 'cenote_action_header_top' );
+?>
 
-		<div class="tg-header-bottom">
-			<?php get_template_part( 'template-parts/header/header', 'bottom' ); ?>
-		</div>
+<?php
+/**
+ * Hook - cenote_action_header_bottom
+ *
+ * Functions hooked into cenote_action_header_bottom action
+ *
+ * @hooked cenote_header_bottom - 10
+ */
+do_action( 'cenote_action_header_bottom' );
+?>
 
-	</header><!-- #masthead -->
+<?php
+/**
+ * Hook - cenote_action_header_end
+ *
+ * Functions hooked into cenote_action_header_end action
+ *
+ * @hooked cenote_header_end - 10
+ */
+do_action( 'cenote_action_header_end' );
+?>
 
-	<?php do_action( 'cenote_after_header' ); ?>
+<?php do_action( 'cenote_after_header' ); ?>
 
-	<div id="content" class="site-content">
+<?php
+/**
+ * Hook - cenote_action_before_content
+ *
+ * Functions hooked into cenote_action_before_content action
+ *
+ * @hooked cenote_content_start - 10
+ */
+do_action( 'cenote_action_before_content' );
+?>
 
-		<div class="tg-container tg-flex-container tg-flex-space-between">
+
+
+
