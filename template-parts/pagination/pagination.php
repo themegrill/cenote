@@ -6,7 +6,7 @@
  */
 
 global $wp_query;
-$big = 999999999;
+$big = PHP_INT_MAX ;
 
 // if only have one page don't show pagination.
 if ( $wp_query->max_num_pages <= 1 ) {
