@@ -5,11 +5,11 @@
  * @package cenote
  */
 
-if( !function_exists( 'cenote_read_more' )):
+if ( ! function_exists( 'cenote_read_more' ) ) :
 	/**
 	* Post Read More.
 	*/
-	function cenote_read_more(){
+	function cenote_read_more() {
 	?>
 		<footer class="entry-footer">
 			<a href="<?php the_permalink(); ?>" class="tg-readmore-link"><?php esc_html_e( 'Read More', 'cenote' ); ?></a>
@@ -18,11 +18,11 @@ if( !function_exists( 'cenote_read_more' )):
 	}
 endif;
 
-if( !function_exists( 'cenote_pagination' )):
+if ( ! function_exists( 'cenote_pagination' ) ) :
 	/**
 	* Pagination.
 	*/
-	function cenote_pagination(){
+	function cenote_pagination() {
 
 		get_template_part( 'template-parts/pagination/pagination' );
 

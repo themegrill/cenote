@@ -5,11 +5,11 @@
  * @package cenote
  */
 
-if( !function_exists( 'cenote_content_end' )):
+if ( ! function_exists( 'cenote_content_end' ) ) :
 	/**
 	* Content end.
 	*/
-	function cenote_content_end(){
+	function cenote_content_end() {
 	?>
 			</div><!-- .tg-container -->
 		</div><!-- #content -->
@@ -17,22 +17,22 @@ if( !function_exists( 'cenote_content_end' )):
 	}
 endif;
 
-if( !function_exists( 'cenote_footer_start' )):
+if ( ! function_exists( 'cenote_footer_start' ) ) :
 	/**
 	* Footer start.
 	*/
-	function cenote_footer_start(){
+	function cenote_footer_start() {
 	?>
 		<footer id="colophon" class="site-footer tg-site-footer <?php cenote_footer_class(); ?>">
 	<?php
 	}
 endif;
 
-if( !function_exists( 'cenote_footer_top' )):
+if ( ! function_exists( 'cenote_footer_top' ) ) :
 	/**
 	* Footer Top.
 	*/
-	function cenote_footer_top(){
+	function cenote_footer_top() {
 	?>
 		<div class="tg-footer-top">
 			<div class="tg-container">
@@ -43,11 +43,11 @@ if( !function_exists( 'cenote_footer_top' )):
 	}
 endif;
 
-if( !function_exists( 'cenote_footer_bottom' )):
+if ( ! function_exists( 'cenote_footer_bottom' ) ) :
 	/**
 	* Footer bottom.
 	*/
-	function cenote_footer_bottom(){
+	function cenote_footer_bottom() {
 	?>
 		<div class="tg-footer-bottom">
 			<div class="tg-container">
@@ -64,11 +64,11 @@ if( !function_exists( 'cenote_footer_bottom' )):
 	}
 endif;
 
-if( !function_exists( 'cenote_footer_end' )):
+if ( ! function_exists( 'cenote_footer_end' ) ) :
 	/**
 	* Footer end.
 	*/
-	function cenote_footer_end(){
+	function cenote_footer_end() {
 	?>
 		</footer><!-- #colophon -->
 
@@ -76,11 +76,11 @@ if( !function_exists( 'cenote_footer_end' )):
 	}
 endif;
 
-if( !function_exists( 'cenote_page_end' )):
+if ( ! function_exists( 'cenote_page_end' ) ) :
 	/**
 	* Page end.
 	*/
-	function cenote_page_end(){
+	function cenote_page_end() {
 	?>
 		</div><!-- #page -->
 

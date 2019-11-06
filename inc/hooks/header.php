@@ -5,11 +5,11 @@
  * @package cenote
  */
 
-if( !function_exists( 'cenote_head' )):
+if ( ! function_exists( 'cenote_head' ) ) :
 	/**
 	* HTML head.
 	*/
-	function cenote_head(){
+	function cenote_head() {
 	?>
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -18,11 +18,11 @@ if( !function_exists( 'cenote_head' )):
 	}
 endif;
 
-if( !function_exists( 'cenote_page_start' )):
+if ( ! function_exists( 'cenote_page_start' ) ) :
 	/**
 	* Page starts.
 	*/
-	function cenote_page_start(){
+	function cenote_page_start() {
 	?>
 		<div id="page" class="site">
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'cenote' ); ?></a>
@@ -30,22 +30,22 @@ if( !function_exists( 'cenote_page_start' )):
 	}
 endif;
 
-if( !function_exists( 'cenote_header_start' )):
+if ( ! function_exists( 'cenote_header_start' ) ) :
 	/**
 	* Header starts.
 	*/
-	function cenote_header_start(){
+	function cenote_header_start() {
 	?>
 		<header id="masthead" class="site-header tg-site-header <?php cenote_header_class(); ?>">
 	<?php
 	}
 endif;
 
-if( !function_exists( 'cenote_header_top' )):
+if ( ! function_exists( 'cenote_header_top' ) ) :
 	/**
 	* Header Top.
 	*/
-	function cenote_header_top(){
+	function cenote_header_top() {
 
 		 if ( true === get_theme_mod( 'cenote_enable_header_top', true ) ) : ?>
 			<div class="tg-header-top">
@@ -58,11 +58,11 @@ if( !function_exists( 'cenote_header_top' )):
 	}
 endif;
 
-if( !function_exists( 'cenote_header_bottom' )):
+if ( ! function_exists( 'cenote_header_bottom' ) ) :
 	/**
 	* Header bottom.
 	*/
-	function cenote_header_bottom(){
+	function cenote_header_bottom() {
 	?>
 		<div class="tg-header-bottom">
 			<?php get_template_part( 'template-parts/header/header', 'bottom' ); ?>
@@ -71,22 +71,22 @@ if( !function_exists( 'cenote_header_bottom' )):
 	}
 endif;
 
-if( !function_exists( 'cenote_header_end' )):
+if ( ! function_exists( 'cenote_header_end' ) ) :
 	/**
 	* Header ends.
 	*/
-	function cenote_header_end(){
+	function cenote_header_end() {
 	?>
 		</header><!-- #masthead -->
 	<?php
 	}
 endif;
 
-if( !function_exists( 'cenote_content_start' )):
+if( ! function_exists( 'cenote_content_start' ) ) :
 	/**
 	* Content starts.
 	*/
-	function cenote_content_start(){
+	function cenote_content_start() {
 	?>
 		<div id="content" class="site-content">
 

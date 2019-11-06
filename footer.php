@@ -86,10 +86,7 @@
 do_action( 'cenote_after' );
 ?>
 
-<?php
-// do_action( 'cenote_after_footer' );
-wp_footer();
-?>
+<?php wp_footer(); ?>
 
 </body>
 </html>
