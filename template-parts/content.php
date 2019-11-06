@@ -63,11 +63,16 @@ $excerpt_count  = get_theme_mod( 'cenote_archive_excerpt_count', '40' );
 			</div><!-- .entry-content -->
 		<?php
 		elseif ( 'footer' === $content_order ) :
-			?>
-			<footer class="entry-footer">
-				<a href="<?php the_permalink(); ?>" class="tg-readmore-link"><?php esc_html_e( 'Read More', 'cenote' ); ?></a>
-			</footer><!-- .entry-footer -->
-		<?php
+
+			/**
+			 * Hook - cenote_action_read_more
+			 *
+			 * Functions hooked into cenote_action_read_more action
+			 *
+			 * @hooked cenote_read_more
+			 */
+			do_action( 'cenote_action_read_more' );
+
 		endif;
 	endforeach;
 	?>

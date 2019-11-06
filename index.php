@@ -49,7 +49,14 @@ get_header();
 				endif;
 
 				// show pagination.
-				get_template_part( 'template-parts/pagination/pagination' );
+				/**
+				 * Hook - cenote_action_pagination
+				 *
+				 * Functions hooked into cenote_action_pagination action
+				 *
+				 * @hooked cenote_pagination
+				 */
+				do_action( 'cenote_action_pagination' );
 
 			else :
 

@@ -51,6 +51,20 @@ add_action( 'cenote_action_header_end', 'cenote_header_end', 10 );
  */
 add_action( 'cenote_action_before_content', 'cenote_content_start', 10 );
 
+/**
+ * Read More.
+ *
+ * @see cenote_read_more()
+ */
+add_action( 'cenote_action_read_more', 'cenote_read_more', 10 );
+
+/**
+ * Pagination.
+ *
+ * @see cenote_pagination()
+ */
+add_action( 'cenote_action_pagination', 'cenote_pagination', 10 );
+
 
 /* ------------------------------ FOOTER ------------------------------ */
 
