@@ -50,3 +50,49 @@ add_action( 'cenote_action_header_end', 'cenote_header_end', 10 );
  * @see cenote_content_start()
  */
 add_action( 'cenote_action_before_content', 'cenote_content_start', 10 );
+
+
+/* ------------------------------ FOOTER ------------------------------ */
+
+/**
+ * After content.
+ *
+ * @see cenote_content_end()
+ */
+add_action( 'cenote_action_after_content', 'cenote_content_end', 10 );
+
+/**
+ * Before footer.
+ *
+ * @see cenote_footer_start()
+ */
+add_action( 'cenote_action_before_footer', 'cenote_footer_start', 10 );
+
+/**
+ * Footer Top.
+ *
+ * @see cenote_footer_top()
+ */
+add_action( 'cenote_action_footer_top', 'cenote_footer_top', 10 );
+
+/**
+ * Footer Bottom.
+ *
+ * @see cenote_footer_bottom()
+ */
+add_action( 'cenote_action_footer_bottom', 'cenote_footer_bottom', 10 );
+
+/**
+ * Footer End.
+ *
+ * @see cenote_footer_end()
+  * @see cenote_page_end()
+ */
+add_action( 'cenote_action_after_footer', 'cenote_footer_end', 10 );
+add_action( 'cenote_action_after_footer', 'cenote_page_end', 15 );
+
+
+
+
+
+

@@ -280,6 +280,8 @@ require get_template_directory() . '/inc/customizer.php';
  */
 require get_template_directory() . '/inc/hooks/hooks.php';
 require get_template_directory() . '/inc/hooks/header.php';
+require get_template_directory() . '/inc/hooks/content.php';
+require get_template_directory() . '/inc/hooks/footer.php';
 
 /**
  * Meta boxes.
