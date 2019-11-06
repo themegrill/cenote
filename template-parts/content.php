@@ -65,13 +65,13 @@ $excerpt_count  = get_theme_mod( 'cenote_archive_excerpt_count', '40' );
 		elseif ( 'footer' === $content_order ) :
 
 			/**
-			 * Hook - cenote_action_read_more
+			 * Hook - cenote_read_more
 			 *
-			 * Functions hooked into cenote_action_read_more action
+			 * Functions hooked into cenote_read_more action
 			 *
 			 * @hooked cenote_read_more
 			 */
-			do_action( 'cenote_action_read_more' );
+			do_action( 'cenote_read_more' );
 
 		endif;
 	endforeach;

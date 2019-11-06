@@ -13,13 +13,13 @@
 
 	<?php
 	/**
-	 * Hook - cenote_action_after_content
+	 * Hook - cenote_after_content
 	 *
-	 * Functions hooked into cenote_action_after_content action
+	 * Functions hooked into cenote_after_content action
 	 *
 	 * @hooked cenote_content_end
 	 */
-	do_action( 'cenote_action_after_content' );
+	do_action( 'cenote_after_content' );
 	?>
 
 	<?php
@@ -31,51 +31,63 @@
 
 	<?php
 	/**
-	 * Hook - cenote_action_before_footer
+	 * Hook - cenote_before_footer
 	 *
-	 * Functions hooked into cenote_action_before_footer action
+	 * Functions hooked into cenote_before_footer action
 	 *
 	 * @hooked cenote_footer_start
 	 */
-	do_action( 'cenote_action_before_footer' );
+	do_action( 'cenote_before_footer' );
 	?>
 
 		<?php
 		/**
-		 * Hook - cenote_action_footer_top
+		 * Hook - cenote_footer_top
 		 *
-		 * Functions hooked into cenote_action_footer_top action
+		 * Functions hooked into cenote_footer_top action
 		 *
 		 * @hooked cenote_footer_top
 		 */
-		do_action( 'cenote_action_footer_top' );
+		do_action( 'cenote_footer_top' );
 		?>
 
 		<?php
 		/**
-		 * Hook - cenote_action_footer_bottom
+		 * Hook - cenote_footer_bottom
 		 *
-		 * Functions hooked into cenote_action_footer_bottom action
+		 * Functions hooked into cenote_footer_bottom action
 		 *
 		 * @hooked cenote_footer_bottom
 		 */
-		do_action( 'cenote_action_footer_bottom' );
+		do_action( 'cenote_footer_bottom' );
 		?>
 
 	<?php
 	/**
-	 * Hook - cenote_action_after_footer
+	 * Hook - cenote_after_footer
 	 *
-	 * Functions hooked into cenote_action_after_footer action
+	 * Functions hooked into cenote_after_footer action
 	 *
 	 * @hooked cenote_footer_end
-	 * @hooked cenote_page_end
+	 * @hooked cenote_add_footer_extras
 	 */
-	do_action( 'cenote_action_after_footer' );
+	do_action( 'cenote_after_footer' );
 	?>
 
 <?php
-do_action( 'cenote_after_footer' );
+/**
+ * Hook - cenote_after
+ *
+ * Functions hooked into cenote_after action
+ *
+ * @hooked cenote_page_end
+
+ */
+do_action( 'cenote_after' );
+?>
+
+<?php
+// do_action( 'cenote_after_footer' );
 wp_footer();
 ?>
 

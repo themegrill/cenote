@@ -50,13 +50,13 @@ get_header();
 
 				// show pagination.
 				/**
-				 * Hook - cenote_action_pagination
+				 * Hook - cenote_pagination
 				 *
-				 * Functions hooked into cenote_action_pagination action
+				 * Functions hooked into cenote_pagination action
 				 *
 				 * @hooked cenote_pagination
 				 */
-				do_action( 'cenote_action_pagination' );
+				do_action( 'cenote_pagination' );
 
 			else :
 
