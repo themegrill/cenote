@@ -46,17 +46,20 @@ if ( function_exists( 'wp_body_open' ) ) {
  * @hooked cenote_header_start - 15
  */
 do_action( 'cenote_before_header' );
-?>
 
-<?php
-/**
- * Hook - cenote_header_top
- *
- * Functions hooked into cenote_header_top action
- *
- * @hooked cenote_header_top - 10
- */
-do_action( 'cenote_header_top' );
+
+if ( true === get_theme_mod( 'cenote_enable_header_top', true ) ) :
+
+	/**
+	 * Hook - cenote_header_top
+	 *
+	 * Functions hooked into cenote_header_top action
+	 *
+	 * @hooked cenote_header_top - 10
+	 */
+	do_action( 'cenote_header_top' );
+
+endif;
 ?>
 
 <?php

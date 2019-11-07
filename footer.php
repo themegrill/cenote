@@ -81,6 +81,7 @@
  * Functions hooked into cenote_after action
  *
  * @hooked cenote_page_end
+ * @hooked cenote_add_footer_extras
 
  */
 do_action( 'cenote_after' );

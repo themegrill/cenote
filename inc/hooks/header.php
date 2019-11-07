@@ -46,14 +46,12 @@ if ( ! function_exists( 'cenote_header_top' ) ) :
 	* Header Top.
 	*/
 	function cenote_header_top() {
-
-		 if ( true === get_theme_mod( 'cenote_enable_header_top', true ) ) : ?>
+	?>
 			<div class="tg-header-top">
 				<div class="tg-container tg-flex-container tg-flex-space-between tg-flex-item-centered">
 					<?php get_template_part( 'template-parts/header/header', 'top' ); ?>
 				</div>
 			</div><!-- .tg-header-top -->
-		<?php endif; ?>
 	<?php
 	}
 endif;
