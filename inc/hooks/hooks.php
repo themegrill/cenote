@@ -97,6 +97,13 @@ add_action( 'cenote_footer_top', 'cenote_footer_top', 10 );
 add_action( 'cenote_footer_bottom', 'cenote_footer_bottom', 10 );
 
 /**
+ * Footer Bottom One.
+ *
+ * @see cenote_footer_bottom()
+ */
+add_action( 'cenote_footer_bottom_one', 'cenote_footer_bottom_one', 10 );
+
+/**
  * Footer End.
  *
  * @see cenote_footer_end()

@@ -53,14 +53,47 @@ if ( ! function_exists( 'cenote_footer_bottom' ) ) :
 			<div class="tg-container">
 				<div class="tg-footer-bottom-container tg-flex-container">
 					<div class="tg-footer-bottom-left">
-						<?php get_template_part( 'template-parts/footer/footer', 'info' ); ?>
+
+						<?php
+						/**
+						 * Hook - cenote_footer_bottom_one
+						 *
+						 * Functions hooked into cenote_footer_bottom_one action
+						 *
+						 * @hooked cenote_footer_bottom_one
+						 */
+						do_action( 'cenote_footer_bottom_one' );
+						?>
+
 					</div><!-- .tg-footer-bottom-left -->
+
 					<div class="tg-footer-bottom-right">
+
+						<?php
+						/**
+						 * Hook - cenote_footer_bottom_two
+						 *
+						 * Functions hooked into cenote_footer_bottom_two action
+						 *
+						 * @hooked cenote_footer_bottom_two
+						 */
+						do_action( 'cenote_footer_bottom_two' );
+						?>
 					</div><!-- .tg-footer-bottom-right-->
 				</div><!-- .tg-footer-bootom-container-->
 			</div>
 		</div><!-- .tg-footer-bottom -->
 	<?php
+	}
+endif;
+
+if ( ! function_exists( 'cenote_footer_bottom_one' ) ) :
+	/**
+	* Footer end.
+	*/
+	function cenote_footer_bottom_one() {
+
+		get_template_part( 'template-parts/footer/footer', 'info' );
 	}
 endif;
 
