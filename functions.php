@@ -271,6 +271,13 @@ require get_template_directory() . '/inc/template-tags.php';
 require get_template_directory() . '/inc/template-functions.php';
 
 /**
+ * Admin.
+ */
+if ( is_admin() ) {
+	require get_template_directory() . '/inc/admin/tdi-notice.php';
+}
+
+/**
  * Customizer additions.
  */
 require get_template_directory() . '/inc/customizer.php';
