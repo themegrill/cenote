@@ -95,7 +95,7 @@ function cenote_add_footer_extras() {
 	<?php
 	}
 }
-add_action( 'cenote_after_footer', 'cenote_add_footer_extras' );
+add_action( 'cenote_after', 'cenote_add_footer_extras', 15 );
 
 /**
  * Adds elements after header
