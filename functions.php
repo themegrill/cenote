@@ -256,7 +256,7 @@ function cenote_scripts() {
 add_action( 'wp_enqueue_scripts', 'cenote_scripts' );
 
 $cenote_theme = wp_get_theme();
-define( 'CENOTE_THEME_VERSION', $zakra_theme->get( 'Version' ) );
+define( 'CENOTE_THEME_VERSION', $cenote_theme->get( 'Version' ) );
 
 /**
  * Implement the Custom Header feature.
