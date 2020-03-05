@@ -27,7 +27,7 @@ class Cenote_Admin {
 	 */
 	public function tg_ajax_enqueue_scripts() {
 
-		wp_enqueue_script( 'cenote-plugin-install-helper', get_template_directory_uri() . '/assets/js/plugin-handle.js', array( 'jquery' ), CENOTE_VERSION, true );
+		wp_enqueue_script( 'cenote-plugin-install-helper', get_template_directory_uri() . '/assets/js/plugin-handle.js', array( 'jquery' ), CENOTE_THEME_VERSION, true );
 
 		$translation_array = array(
 			'uri'      => esc_url( admin_url( '/themes.php?page=demo-importer&browse=all&cenote-hide-notice=welcome' ) ),
@@ -114,7 +114,7 @@ class Cenote_Admin {
 	 */
 	public function admin_notice() {
 
-		wp_enqueue_style( 'cenote-message', get_template_directory_uri() . '/inc/admin/css/message.css', array(), ZAKRA_THEME_VERSION );
+		wp_enqueue_style( 'cenote-message', get_template_directory_uri() . '/inc/admin/css/message.css', array(), CENOTE_THEME_VERSION );
 
 		// Let's bail on theme activation.
 		$notice_nag = get_option( 'cenote_admin_notice_welcome' );
