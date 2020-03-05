@@ -1,0 +1,70 @@
+.cenote-message {
+	overflow: hidden;
+	position: relative;
+}
+.cenote-message-wrapper {
+	padding: 20px 0;
+}
+.cenote-message-wrapper .cenote-screenshot {
+	width: 20%;
+	max-width: 200px;
+	display: inline-block;
+	vertical-align: top;
+	border: 1px solid #ddd;
+}
+.cenote-message-wrapper .cenote-getting-started-notice {
+	width: 70%;
+	max-width: 600px;
+	display: inline-block;
+	vertical-align: top;
+	padding: 0 20px;
+}
+.cenote-message-wrapper a.btn-get-started:before{
+	margin: -2px 5px 0 -2px;
+	vertical-align: middle;
+}
+.cenote-message-wrapper a.btn-get-started {
+	margin-top: 10px;
+}
+.cenote-message a.button-primary,
+.cenote-message a.button-secondary {
+	text-decoration: none !important;
+}
+.cenote-message a.cenote-message-close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 10px 15px 10px 21px;
+	font-size: 13px;
+	line-height: 1.23076923;
+	text-decoration: none;
+}
+.cenote-message a.cenote-message-close:before {
+	position: absolute;
+	top: 8px;
+	left: 0;
+	-webkit-transition: all .1s ease-in-out;
+	transition: all .1s ease-in-out;
+}
+
+.cenote-getting-started-notice h2 {
+	margin: 0 0 10px;
+	font-weight: 400;
+	line-height: 1.3;
+}
+
+.cenote-message-wrapper .cenote-getting-started-notice p {
+	margin: 1em 0;
+	padding: 0;
+	color: #72777c;
+}
+
+@media (max-width: 600px) {
+	.cenote-message-wrapper .cenote-screenshot {
+		display: none;
+	}
+	.cenote-message-wrapper .cenote-getting-started-notice {
+		padding: 0;
+		width: 100%;
+	}
+}
