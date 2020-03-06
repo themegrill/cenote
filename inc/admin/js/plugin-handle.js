@@ -1,7 +1,7 @@
 /**
  * Remove activate button and replace with activation in progress button.
  *
- * @package ColorMag
+ * @package Cenote
  */
 
 /**
@@ -46,7 +46,7 @@ jQuery( document ).ready( function ( $ ) {
 			success : function ( response ) {
 				extra_uri = '';
 				if ( jQuery( '.cenote-message-close' ).length ) {
-					dismiss_nonce = jQuery( '.cenote-message-close' ).attr( 'href' ).split( '_cenote_notice_nonce=' )[1];
+					dismiss_nonce = jQuery( '.cenote-message-close' ).attr( 'href' ).split( '_cenote_notice_nonce=' )[ 1 ];
 					extra_uri     = '&_cenote_notice_nonce=' + dismiss_nonce;
 				}
 

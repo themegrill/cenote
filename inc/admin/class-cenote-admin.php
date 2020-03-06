@@ -27,7 +27,7 @@ class Cenote_Admin {
 	 */
 	public function tg_ajax_enqueue_scripts() {
 
-		wp_enqueue_script( 'cenote-plugin-install-helper', get_template_directory_uri() . '/assets/js/plugin-handle.js', array( 'jquery' ), CENOTE_THEME_VERSION, true );
+		wp_enqueue_script( 'cenote-plugin-install-helper', get_template_directory_uri() . '/inc/admin/js/plugin-handle.js', array( 'jquery' ), CENOTE_THEME_VERSION, true );
 
 		$translation_array = array(
 			'uri'      => esc_url( admin_url( '/themes.php?page=demo-importer&browse=all&cenote-hide-notice=welcome' ) ),
