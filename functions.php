@@ -255,6 +255,9 @@ function cenote_scripts() {
 
 add_action( 'wp_enqueue_scripts', 'cenote_scripts' );
 
+$cenote_theme = wp_get_theme();
+define( 'CENOTE_THEME_VERSION', $cenote_theme->get( 'Version' ) );
+
 /**
  * Implement the Custom Header feature.
  */
@@ -340,6 +343,7 @@ if ( class_exists( 'TG_Demo_Importer' ) ) {
  */
 if ( is_admin() ) {
 	require get_template_directory() . '/inc/admin/class-cenote-theme-review-notice.php';
+	require get_template_directory() . '/inc/admin/class-cenote-admin.php';
 }
 
 /**
