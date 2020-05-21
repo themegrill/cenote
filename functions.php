@@ -336,6 +336,13 @@ $cenote_theme = wp_get_theme( 'cenote' );
 define( 'CENOTE_THEME_VERSION', $cenote_theme->get( 'Version' ) );
 
 /**
+ * Calling in the admin area for the new theme notice.
+ */
+if ( is_admin() ) {
+    require get_template_directory() . '/inc/admin/class-cenote-admin.php';
+}
+
+/**
  * Load TGMPA Configs.
  */
 require_once get_template_directory() . '/inc/tgm-plugin-activation/class-tgm-plugin-activation.php';
