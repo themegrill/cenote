@@ -271,13 +271,6 @@ require get_template_directory() . '/inc/template-tags.php';
 require get_template_directory() . '/inc/template-functions.php';
 
 /**
- * Admin.
- */
-if ( is_admin() ) {
-	require get_template_directory() . '/inc/admin/tdi-notice.php';
-}
-
-/**
  * Customizer additions.
  */
 require get_template_directory() . '/inc/customizer.php';
@@ -336,11 +329,11 @@ if ( class_exists( 'TG_Demo_Importer' ) ) {
 }
 
 /**
- * Calling in the admin area for the new theme notice.
+ * Assign the Cenote version to a variable.
  */
-if ( is_admin() ) {
-	require get_template_directory() . '/inc/admin/class-cenote-theme-review-notice.php';
-}
+$cenote_theme = wp_get_theme( 'cenote' );
+
+define( 'CENOTE_THEME_VERSION', $cenote_theme->get( 'Version' ) );
 
 /**
  * Load TGMPA Configs.
