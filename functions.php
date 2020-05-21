@@ -340,6 +340,8 @@ define( 'CENOTE_THEME_VERSION', $cenote_theme->get( 'Version' ) );
  */
 if ( is_admin() ) {
     require get_template_directory() . '/inc/admin/class-cenote-admin.php';
+    require get_template_directory() . '/inc/admin/class-cenote-notice.php';
+	require get_template_directory() . '/inc/admin/class-cenote-theme-review-notice.php';
 }
 
 /**
