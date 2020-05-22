@@ -3,9 +3,11 @@ Author: ThemeGrill**:**
 
 Requires at least: WordPress 4.7**:** 
 
-Tested up to: WordPress 5.2.2**:** 
+Tested up to: WordPress 5.4.1**:** 
 
-Version: 1.3.0**:** 
+Required PHP: 5.6**:**
+
+Version: 1.3.1**:** 
 
 License: GPLv3 or later**:** 
 
@@ -96,6 +98,7 @@ Unless otherwise specified, all the theme files, scripts and images including th
 ## Changelog ##
 ### Version TBD ###
 * Tweak - Update `screen-reader-text` CSS.
+* Add - Required header fields: `Tested up to` and `Requires PHP` in style.css.
 
 ### Version 1.3.0 2019-07-12 ###
 * Added - Theme review notice.
