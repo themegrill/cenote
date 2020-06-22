@@ -88,6 +88,7 @@ Unless otherwise specified, all the theme files, scripts and images including th
 
 == Changelog ==
 = TBD =
+* Enhancement - Gutenberg compatibility.
 * Add - Required header fields: `Tested up to` and `Requires PHP` in style.css.
 
 = Version 1.3.1 - 2020-02-21 =
