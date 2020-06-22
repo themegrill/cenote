@@ -1,0 +1,29 @@
+/* Basic Block Editor CSS */
+.editor-styles-wrapper {
+	font-family: "Roboto", helvetica, arial, sans-serif;
+	font-size: 16px;
+	color: #363b40;
+	word-wrap: break-word;
+}
+
+.editor-styles-wrapper > * {
+	font-family: "Roboto", helvetica, arial, sans-serif;
+	color: #363b40;
+}
+
+.wp-block {
+	max-width: 1160px;
+}
+
+.editor-styles-wrapper .wp-block[data-align="wide"] {
+	max-width: 1268px;
+}
+
+.editor-styles-wrapper .wp-block.editor-post-title__block .editor-post-title__input {
+	margin: 0 0 10px;
+	font-size: 2.5rem;
+	font-weight: 700;
+	font-family: Catamaran, Helvetica, Arial, sans-serif;
+	color: #16181a;
+	line-height: 1.4;
+}
