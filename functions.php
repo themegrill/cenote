@@ -90,8 +90,16 @@ if ( ! function_exists( 'cenote_setup' ) ) :
 
 		add_editor_style();
 
-		// Gutenberg layout support.
+		// Gutenberg wide layout support.
 		add_theme_support( 'align-wide' );
+
+		// Gutenberg block layout support.
+		add_theme_support( 'wp-block-styles' );
+
+		// Gutenberg editor support.
+		add_theme_support( 'responsive-embeds' );
+
+
 	}
 endif;
 add_action( 'after_setup_theme', 'cenote_setup' );
@@ -111,6 +119,7 @@ function cenote_image_sizes() {
 	add_image_size( 'cenote-post-auto', 600, 9999, false );
 
 }
+
 add_action( 'after_setup_theme', 'cenote_image_sizes' );
 
 /**
