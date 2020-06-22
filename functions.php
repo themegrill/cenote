@@ -265,6 +265,17 @@ function cenote_scripts() {
 add_action( 'wp_enqueue_scripts', 'cenote_scripts' );
 
 /**
+ * Enqueue Google fonts and editor styles.
+ */
+function cenote_block_editor_styles() {
+	wp_enqueue_style( 'cenote-editor-googlefonts', '//fonts.googleapis.com/css2?family=Roboto' );
+	wp_enqueue_style( 'cenote-block-editor-styles', get_template_directory_uri() . '/style-editor-block.css' );
+}
+
+add_action( 'enqueue_block_editor_assets', 'cenote_block_editor_styles', 1, 1 );
+
+
+/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';
