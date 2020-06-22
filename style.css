@@ -276,7 +276,9 @@ p {
 	line-height: 1.8;
 }
 
-blockquote {
+blockquote,
+.wp-block-quote,
+.wp-block-quote.is-style-large {
 	text-align: center;
 	background: #fff9f5;
 	padding: 20px 40px;
@@ -284,7 +286,11 @@ blockquote {
 	position: relative;
 }
 
-blockquote::before, blockquote::after {
+blockquote::before, blockquote::after,
+.wp-block-quote::before,
+.wp-block-quote::after,
+.wp-block-quote.is-style-large::before,
+.wp-block-quote.is-style-large::after {
 	position: absolute;
 	content: "\f114";
 	font-family: themegrill-icons;
@@ -293,7 +299,9 @@ blockquote::before, blockquote::after {
 	left: 20px;
 }
 
-blockquote::after {
+blockquote::after,
+.wp-block-quote::after,
+.wp-block-quote.is-style-large::after {
 	content: "\f115";
 	top: auto;
 	left: auto;
@@ -301,7 +309,9 @@ blockquote::after {
 	bottom: 10px;
 }
 
-blockquote cite {
+blockquote cite,
+.wp-block-quote cite,
+.wp-block-quote.is-style-large cite {
 	position: relative;
 	display: inline-block;
 	padding: 0 20px;
@@ -309,7 +319,9 @@ blockquote cite {
 	margin-top: 20px;
 }
 
-blockquote cite::before {
+blockquote cite::before,
+.wp-block-quote cite::before,
+.wp-block-quote.is-style-large cite::before {
 	content: "";
 	background-color: #363b40;
 	width: 10px;
@@ -318,6 +330,14 @@ blockquote cite::before {
 	position: absolute;
 	top: 10px;
 	left: 0;
+}
+
+.wp-block-quote.has-text-align-right, .wp-block-quote.has-text-align-left, .wp-block-quote.has-text-align-center {
+	padding: 2em;
+}
+
+.wp-block-quote.has-text-align-right {
+	padding: 2em;
 }
 
 code {
@@ -393,7 +413,8 @@ body {
 	/* Fallback for when there is no custom background color defined. */
 }
 
-hr {
+hr,
+.wp-block-separator {
 	background-color: #e0e0e0;
 	border: 0;
 	height: 1px;
@@ -753,7 +774,9 @@ table {
 }
 
 table th,
-table td {
+table td,
+table .wp-block-table th,
+table .wp-block-table td {
 	text-align: left;
 	border: 1px solid #e9ecef;
 	padding: 1em;
@@ -2974,19 +2997,23 @@ img {
 	opacity: 1;
 }
 
-.layout--no-sidebar .alignfull {
+.layout--no-sidebar {
+	overflow: hidden;
+}
+
+.layout--no-sidebar #primary .entry-content > .alignfull {
 	margin-left: calc(50% - 50vw);
 	margin-right: calc(50% - 50vw);
 	max-width: unset;
 }
 
-.layout--no-sidebar .alignfull img {
-	max-width: unset;
+.layout--no-sidebar #primary .entry-content > .alignfull.wp-block-cover, .layout--no-sidebar #primary .entry-content > .alignfull.wp-block-cover-image {
+	width: unset;
 }
 
-.layout--no-sidebar .alignwide {
-	margin-left: -50px;
-	margin-right: -50px;
+.layout--no-sidebar #primary .entry-content > .alignwide {
+	margin-left: -100px;
+	margin-right: -100px;
 	max-width: unset;
 }
 
@@ -2994,9 +3021,19 @@ img {
 	overflow: hidden;
 }
 
-.layout--no-sidebar.layout-site--boxed .alignwide {
+.layout--no-sidebar.layout-site--boxed #primary .entry-content > .alignfull {
 	margin-left: -30px;
 	margin-right: -30px;
+}
+
+.layout--no-sidebar.layout-site--boxed #primary .entry-content > .alignfull.wp-block-cover, .layout--no-sidebar.layout-site--boxed #primary .entry-content > .alignfull.wp-block-cover-image {
+	width: unset;
+}
+
+.layout--no-sidebar.layout-site--boxed #primary .entry-content > .alignwide {
+	margin-left: -30px;
+	margin-right: -30px;
+	max-width: unset;
 }
 
 ul.wp-block-gallery {
@@ -3228,6 +3265,25 @@ ul.wp-block-gallery {
 
 .gallery-caption {
 	display: block;
+}
+
+.wp-block-gallery ul.blocks-gallery-grid,
+ul.wp-block-gallery {
+	padding: 0;
+}
+
+.wp-block-gallery ul.blocks-gallery-grid img,
+ul.wp-block-gallery img {
+	margin-bottom: 0;
+}
+
+/* Gutenberg Blocks Layout.
+--------------------------------------------------------------*/
+.wp-block-gallery.alignleft, .wp-block-gallery.alignright, .wp-block-gallery.aligncenter,
+.wp-block-social-links.alignleft,
+.wp-block-social-links.alignright,
+.wp-block-social-links.aligncenter {
+	display: flex;
 }
 
 /*=============================================

@@ -470,21 +470,29 @@ img {
 
 // Gutenberg support
 .layout--no-sidebar {
+	overflow: hidden;
 
-	.alignfull {
-		margin-left: calc(50% - 50vw);
-		margin-right: calc(50% - 50vw);
-		max-width: unset;
+	#primary {
 
-		img {
-			max-width: unset;
+		.entry-content {
+
+			> .alignfull {
+				margin-left: calc(50% - 50vw);
+				margin-right: calc(50% - 50vw);
+				max-width: unset;
+
+				&.wp-block-cover,
+				&.wp-block-cover-image {
+					width: unset;
+				}
+			}
+
+			> .alignwide {
+				margin-left: -100px;
+				margin-right: -100px;
+				max-width: unset;
+			}
 		}
-	}
-
-	.alignwide {
-		margin-left: -50px;
-		margin-right: -50px;
-		max-width: unset;
 	}
 
 	&.layout-site--boxed {
@@ -493,9 +501,26 @@ img {
 			overflow: hidden;
 		}
 
-		.alignwide {
-			margin-left: -30px;
-			margin-right: -30px;
+		#primary {
+
+			.entry-content {
+
+				> .alignfull {
+					margin-left: -30px;
+					margin-right: -30px;
+
+					&.wp-block-cover,
+					&.wp-block-cover-image {
+						width: unset;
+					}
+				}
+
+				> .alignwide {
+					margin-left: -30px;
+					margin-right: -30px;
+					max-width: unset;
+				}
+			}
 		}
 	}
 }
@@ -506,3 +531,4 @@ ul {
 		margin: 0;
 	}
 }
+
