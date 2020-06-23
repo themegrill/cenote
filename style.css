@@ -2048,6 +2048,16 @@ input[type="submit"]:hover::after {
 	transition: all 0.35s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
+.wp-block-button.is-style-fill .wp-block-button__link {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link {
+	color: #000000;
+	text-decoration: none;
+}
+
 textarea {
 	width: 100%;
 }
