@@ -1,12 +1,29 @@
 @media screen and ( max-width: 1200px ) {
-	
+
 	#primary {
 		width: calc(100% - 360px);
 	}
 }
 
+@media screen and ( min-width: 1200px) and ( max-width: 1400px ) {
+	.layout--no-sidebar {
+
+		#primary {
+
+			.entry-content {
+
+				> .alignwide {
+					margin-left: -50px;
+					margin-right: -50px;
+					max-width: unset;
+				}
+			}
+		}
+	}
+}
+
 @media screen and ( min-width: 992px ) {
-	
+
 	.post-template-post-template-cover {
 
 		.hentry:not(.has-post-thumbnail) {
