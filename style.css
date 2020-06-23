@@ -2977,10 +2977,6 @@ img {
 	opacity: 1;
 }
 
-.layout--no-sidebar {
-	overflow: hidden;
-}
-
 .layout--no-sidebar #primary .entry-content > .alignfull {
 	margin-left: calc(50% - 50vw);
 	margin-right: calc(50% - 50vw);
@@ -3245,25 +3241,6 @@ ul.wp-block-gallery {
 
 .gallery-caption {
 	display: block;
-}
-
-.wp-block-gallery ul.blocks-gallery-grid,
-ul.wp-block-gallery {
-	padding: 0;
-}
-
-.wp-block-gallery ul.blocks-gallery-grid img,
-ul.wp-block-gallery img {
-	margin-bottom: 0;
-}
-
-/* Gutenberg Blocks Layout.
---------------------------------------------------------------*/
-.wp-block-gallery.alignleft, .wp-block-gallery.alignright, .wp-block-gallery.aligncenter,
-.wp-block-social-links.alignleft,
-.wp-block-social-links.alignright,
-.wp-block-social-links.aligncenter {
-	display: flex;
 }
 
 /*=============================================
