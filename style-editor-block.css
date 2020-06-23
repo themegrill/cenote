@@ -382,10 +382,29 @@
 }
 
 /* Links */
-.editor-styles-wrapper a:active,
-.editor-styles-wrapper a:hover {
-	outline: 0;
+.editor-styles-wrapper a {
+	color: #16181a;
+	text-decoration: none;
+	transition: all 0.35s ease-in-out;
+}
+
+.editor-styles-wrapper a:hover,
+.editor-styles-wrapper a:focus,
+.editor-styles-wrapper a:active {
 	color: #de7b85;
+}
+
+.editor-styles-wrapper a:focus {
+	outline: thin dotted;
+}
+
+.editor-styles-wrapper a:hover, .editor-styles-wrapper a:active {
+	outline: 0;
+}
+
+.editor-styles-wrapper .entry-content a {
+	color: #de7b85;
+	text-decoration: underline;
 }
 
 /*=============================================
