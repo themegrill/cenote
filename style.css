@@ -3607,9 +3607,6 @@ ul.wp-block-gallery img {
 	.cenote-mobile-navigation {
 		display: block;
 	}
-	.layout--no-sidebar {
-		overflow: hidden;
-	}
 	.layout--no-sidebar #primary .entry-content > .alignfull {
 		margin-left: -30px;
 		margin-right: -30px;
@@ -3637,9 +3634,6 @@ ul.wp-block-gallery img {
 	}
 	.tg-site-header.tg-site-header--left .tg-header-bottom .header-bottom-bottom .tg-social-menu-navigation {
 		margin-right: auto;
-	}
-	.layout--no-sidebar {
-		overflow: hidden;
 	}
 	.layout--no-sidebar #primary .entry-content > .alignwide {
 		margin-left: 0;
