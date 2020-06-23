@@ -287,6 +287,15 @@
 	padding: 15px;
 	transition: all 0.35s ease-in-out;
 }
+.editor-styles-wrapper .wp-block-code, .editor-styles-wrapper textarea {
+	font-family: Menlo,Consolas,monaco,monospace;
+	font-size: 14px;
+	color: #23282d;
+	padding: .8em 1em;
+	background-color: #f8f9fa;
+	border: 1px solid #e2e4e7;
+	border-radius: 4px;
+}
 
 .editor-styles-wrapper input[type="text"]:focus,
 .editor-styles-wrapper input[type="email"]:focus,
