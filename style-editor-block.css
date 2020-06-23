@@ -384,6 +384,7 @@
 /* Links */
 .editor-styles-wrapper a {
 	text-decoration: underline;
+	color: #DE7B85;
 	transition: all 0.35s ease-in-out;
 }
 
