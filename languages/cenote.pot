@@ -52,43 +52,43 @@ msgstr ""
 msgid "Header Top"
 msgstr ""
 
-#: functions.php:166
+#: functions.php:175
 msgid "Sidebar"
 msgstr ""
 
-#: functions.php:168
+#: functions.php:177
 msgid "Add widgets here."
 msgstr ""
 
-#: functions.php:176
+#: functions.php:185
 msgid "Footer 1"
 msgstr ""
 
-#: functions.php:178
+#: functions.php:187
 msgid "Add widgets here to show on footer 1."
 msgstr ""
 
-#: functions.php:186
+#: functions.php:195
 msgid "Footer 2"
 msgstr ""
 
-#: functions.php:188
+#: functions.php:197
 msgid "Add widgets here to show on footer 2."
 msgstr ""
 
-#: functions.php:196
+#: functions.php:205
 msgid "Footer 3"
 msgstr ""
 
-#: functions.php:198
+#: functions.php:207
 msgid "Add widgets here to show on footer 3."
 msgstr ""
 
-#: functions.php:206
+#: functions.php:215
 msgid "Footer 4"
 msgstr ""
 
-#: functions.php:208
+#: functions.php:217
 msgid "Add widgets here to show on footer 4."
 msgstr ""
 

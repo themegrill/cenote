@@ -4,7 +4,7 @@ Theme URI: https://themegrill.com/themes/cenote/
 Author: Themegrill
 Author URI: https://themegrill.com
 Description: Cenote is beautifully designed clean WordPress blog theme. Easy to setup and has a nice set of features that make your site stand out. It is suitable for personal, fashion, food, travel, business, professional, niche and any kind of blogging sites. Comes with various demos for various purposes, which you can easily import with the help of ThemeGrill Demo Importer plugin.
-Version: 1.3.1
+Version: 1.3.2
 Tested up to: 5.4.1
 Requires PHP: 5.6
 License: GNU General Public License v2 or later
@@ -397,7 +397,8 @@ body {
 	/* Fallback for when there is no custom background color defined. */
 }
 
-hr {
+hr,
+.wp-block-separator {
 	background-color: #e0e0e0;
 	border: 0;
 	height: 1px;
@@ -802,7 +803,9 @@ table {
 }
 
 table th,
-table td {
+table td,
+table .wp-block-table th,
+table .wp-block-table td {
 	text-align: right;
 	border: 1px solid #e9ecef;
 	padding: 1em;
@@ -1234,6 +1237,10 @@ table td {
 
 .format-audio iframe {
 	height: 200px;
+}
+
+.widget_calendar caption {
+	text-align: right;
 }
 
 .post-format-media--gallery {
@@ -2070,6 +2077,10 @@ a:hover, a:active {
 	color: #de7b85;
 }
 
+.wp-social-link svg {
+	color: #ffffff;
+}
+
 /*=============================================
 =            Accesibility            =
 =============================================*/
@@ -2224,6 +2235,16 @@ input[type="submit"]:hover::after {
 	margin-right: 10px;
 	-webkit-transition: all 0.35s cubic-bezier(0.075, 0.82, 0.165, 1);
 	transition: all 0.35s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.wp-block-button.is-style-fill .wp-block-button__link {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link {
+	color: #000000;
+	text-decoration: none;
 }
 
 textarea {
@@ -3054,7 +3075,7 @@ img {
 }
 
 .post-template-cover .entry-thumbnail--template::before, .post-template-cover .entry-thumbnail--template::after {
-	background: -webkit-gradient(linear, right top, right bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.2)));
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.2)));
 	background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
 	display: block;
 	width: 100%;
@@ -3230,19 +3251,23 @@ img {
 	opacity: 1;
 }
 
-.layout--no-sidebar .alignfull {
+.layout--no-sidebar #page {
+	overflow: hidden;
+}
+
+.layout--no-sidebar #primary .entry-content > .alignfull {
 	margin-right: calc(50% - 50vw);
 	margin-left: calc(50% - 50vw);
 	max-width: unset;
 }
 
-.layout--no-sidebar .alignfull img {
-	max-width: unset;
+.layout--no-sidebar #primary .entry-content > .alignfull.wp-block-cover, .layout--no-sidebar #primary .entry-content > .alignfull.wp-block-cover-image {
+	width: unset;
 }
 
-.layout--no-sidebar .alignwide {
-	margin-right: -50px;
-	margin-left: -50px;
+.layout--no-sidebar #primary .entry-content > .alignwide {
+	margin-right: -100px;
+	margin-left: -100px;
 	max-width: unset;
 }
 
@@ -3250,9 +3275,19 @@ img {
 	overflow: hidden;
 }
 
-.layout--no-sidebar.layout-site--boxed .alignwide {
+.layout--no-sidebar.layout-site--boxed #primary .entry-content > .alignfull {
+	margin-right: -55px;
+	margin-left: -55px;
+}
+
+.layout--no-sidebar.layout-site--boxed #primary .entry-content > .alignfull.wp-block-cover, .layout--no-sidebar.layout-site--boxed #primary .entry-content > .alignfull.wp-block-cover-image {
+	width: unset;
+}
+
+.layout--no-sidebar.layout-site--boxed #primary .entry-content > .alignwide {
 	margin-right: -30px;
 	margin-left: -30px;
+	max-width: unset;
 }
 
 ul.wp-block-gallery {
@@ -3494,6 +3529,26 @@ ul.wp-block-gallery {
 	display: block;
 }
 
+ul.wp-block-gallery {
+	padding: 0;
+}
+
+.wp-block-gallery ul.blocks-gallery-grid img,
+ul.wp-block-gallery img {
+	margin-bottom: 0;
+}
+
+/* Gutenberg Blocks Layout.
+--------------------------------------------------------------*/
+.wp-block-gallery.alignleft, .wp-block-gallery.alignright, .wp-block-gallery.aligncenter,
+.wp-block-social-links.alignleft,
+.wp-block-social-links.alignright,
+.wp-block-social-links.aligncenter {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
 /*=============================================
 =            footer            =
 =============================================*/
@@ -3597,7 +3652,7 @@ ul.wp-block-gallery {
 	bottom: 100px;
 	left: -20px;
 	-webkit-transform: rotate(270deg);
-	transform: rotate(-270deg);
+	transform: rotate(270deg);
 }
 
 .cenote-back-to-top span {
@@ -3626,6 +3681,14 @@ ul.wp-block-gallery {
 @media screen and (max-width: 1200px) {
 	#primary {
 		width: calc(100% - 360px);
+	}
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+	.layout--no-sidebar #primary .entry-content > .alignwide {
+		margin-right: -50px;
+		margin-left: -50px;
+		max-width: unset;
 	}
 }
 
@@ -3824,13 +3887,24 @@ ul.wp-block-gallery {
 	.cenote-mobile-navigation {
 		display: block;
 	}
-	.layout--no-sidebar .alignwide {
-		margin-right: -20px;
-		margin-left: -20px;
+	.layout--no-sidebar #primary .entry-content > .alignfull {
+		margin-right: -30px;
+		margin-left: -30px;
 	}
-	.layout--no-sidebar.layout-site--boxed .alignwide {
-		margin-right: -20px;
-		margin-left: -20px;
+	.layout--no-sidebar #primary .entry-content > .alignwide {
+		margin-right: -15px;
+		margin-left: -15px;
+	}
+	.layout--no-sidebar.layout-site--boxed .site-content {
+		overflow: hidden;
+	}
+	.layout--no-sidebar.layout-site--boxed #primary .entry-content > .alignfull {
+		margin-right: -15px;
+		margin-left: -15px;
+	}
+	.layout--no-sidebar.layout-site--boxed #primary .entry-content > .alignwide {
+		margin-right: -15px;
+		margin-left: -15px;
 	}
 }
 
@@ -3840,6 +3914,17 @@ ul.wp-block-gallery {
 	}
 	.tg-site-header.tg-site-header--left .tg-header-bottom .header-bottom-bottom .tg-social-menu-navigation {
 		margin-left: auto;
+	}
+	.layout--no-sidebar #primary .entry-content > .alignwide {
+		margin-right: 0;
+		margin-left: 0;
+	}
+	.layout--no-sidebar.layout-site--boxed .site-content {
+		overflow: hidden;
+	}
+	.layout--no-sidebar.layout-site--boxed #primary .entry-content > .alignwide {
+		margin-right: 0;
+		margin-left: 0;
 	}
 	.cenote-search-form {
 		padding: 30px;

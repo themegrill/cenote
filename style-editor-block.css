@@ -285,6 +285,7 @@
 	color: #16181a;
 	border: 1px solid #dee2e6;
 	padding: 15px;
+	-webkit-transition: all 0.35s ease-in-out;
 	transition: all 0.35s ease-in-out;
 }
 .editor-styles-wrapper .wp-block-code, .editor-styles-wrapper .block-editor-plain-text {
@@ -335,6 +336,7 @@
 	font-family: "Roboto", helvetica, arial, sans-serif;
 	letter-spacing: 1px;
 	outline: none;
+	-webkit-transition: all 0.35s ease-in-out;
 	transition: all 0.35s ease-in-out;
 }
 
@@ -349,10 +351,13 @@
 	font-size: 13px;
 	line-height: 1.53846153;
 	padding: 2px 3px;
+	-webkit-box-shadow: none;
 	box-shadow: none;
 	background-color: transparent;
 	color: #595959;
 	margin-bottom: 0;
+	-webkit-appearance: inherit !important;
+	-moz-appearance: inherit !important;
 	appearance: inherit !important;
 	cursor: inherit;
 }
@@ -394,6 +399,7 @@
 .editor-styles-wrapper a {
 	text-decoration: underline;
 	color: #DE7B85;
+	-webkit-transition: all 0.35s ease-in-out;
 	transition: all 0.35s ease-in-out;
 }
 
