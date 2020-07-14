@@ -349,13 +349,6 @@ if ( true === get_theme_mod( 'cenote_breadcrumb', true ) ) {
 }
 
 /**
- * Load Demo Importer Configs.
- */
-if ( class_exists( 'TG_Demo_Importer' ) ) {
-	require get_template_directory() . '/inc/demo-config.php';
-}
-
-/**
  * Calling in the admin area for the new theme notice.
  */
 if ( is_admin() ) {
