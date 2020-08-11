@@ -50,28 +50,39 @@ if ( ! function_exists( 'cenote_setup' ) ) :
 		add_theme_support( 'post-formats', array( 'gallery', 'link', 'image', 'quote', 'video', 'audio' ) );
 
 		// This theme uses wp_nav_menu() in one location.
-		register_nav_menus( array(
-			'tg-menu-primary'    => esc_html__( 'Primary', 'cenote' ),
-			'tg-menu-header-top' => esc_html__( 'Header Top', 'cenote' ),
-		) );
+		register_nav_menus(
+			array(
+				'tg-menu-primary'    => esc_html__( 'Primary', 'cenote' ),
+				'tg-menu-header-top' => esc_html__( 'Header Top', 'cenote' ),
+			)
+		);
 
 		/*
 		 * Switch default core markup for search form, comment form, and comments
 		 * to output valid HTML5.
 		 */
-		add_theme_support( 'html5', array(
-			'search-form',
-			'comment-form',
-			'comment-list',
-			'gallery',
-			'caption',
-		) );
+		add_theme_support(
+			'html5',
+			array(
+				'search-form',
+				'comment-form',
+				'comment-list',
+				'gallery',
+				'caption',
+			)
+		);
 
 		// Set up the WordPress core custom background feature.
-		add_theme_support( 'custom-background', apply_filters( 'cenote_custom_background_args', array(
-			'default-color' => 'ffffff',
-			'default-image' => '',
-		) ) );
+		add_theme_support(
+			'custom-background',
+			apply_filters(
+				'cenote_custom_background_args',
+				array(
+					'default-color' => 'ffffff',
+					'default-image' => '',
+				)
+			)
+		);
 
 		// Add theme support for selective refresh for widgets.
 		add_theme_support( 'customize-selective-refresh-widgets' );
@@ -81,12 +92,15 @@ if ( ! function_exists( 'cenote_setup' ) ) :
 		 *
 		 * @link https://codex.wordpress.org/Theme_Logo
 		 */
-		add_theme_support( 'custom-logo', array(
-			'height'      => 250,
-			'width'       => 250,
-			'flex-width'  => true,
-			'flex-height' => true,
-		) );
+		add_theme_support(
+			'custom-logo',
+			array(
+				'height'      => 250,
+				'width'       => 250,
+				'flex-width'  => true,
+				'flex-height' => true,
+			)
+		);
 
 		add_editor_style();
 
@@ -162,55 +176,65 @@ add_action( 'template_redirect', 'cenote_content_width' );
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
 function cenote_widgets_init() {
-	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'cenote' ),
-		'id'            => 'sidebar-1',
-		'description'   => esc_html__( 'Add widgets here.', 'cenote' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Sidebar', 'cenote' ),
+			'id'            => 'sidebar-1',
+			'description'   => esc_html__( 'Add widgets here.', 'cenote' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
 
-	register_sidebar( array(
-		'name'          => esc_html__( 'Footer 1', 'cenote' ),
-		'id'            => 'footer-sidebar-1',
-		'description'   => esc_html__( 'Add widgets here to show on footer 1.', 'cenote' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Footer 1', 'cenote' ),
+			'id'            => 'footer-sidebar-1',
+			'description'   => esc_html__( 'Add widgets here to show on footer 1.', 'cenote' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
 
-	register_sidebar( array(
-		'name'          => esc_html__( 'Footer 2', 'cenote' ),
-		'id'            => 'footer-sidebar-2',
-		'description'   => esc_html__( 'Add widgets here to show on footer 2.', 'cenote' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Footer 2', 'cenote' ),
+			'id'            => 'footer-sidebar-2',
+			'description'   => esc_html__( 'Add widgets here to show on footer 2.', 'cenote' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
 
-	register_sidebar( array(
-		'name'          => esc_html__( 'Footer 3', 'cenote' ),
-		'id'            => 'footer-sidebar-3',
-		'description'   => esc_html__( 'Add widgets here to show on footer 3.', 'cenote' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Footer 3', 'cenote' ),
+			'id'            => 'footer-sidebar-3',
+			'description'   => esc_html__( 'Add widgets here to show on footer 3.', 'cenote' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
 
-	register_sidebar( array(
-		'name'          => esc_html__( 'Footer 4', 'cenote' ),
-		'id'            => 'footer-sidebar-4',
-		'description'   => esc_html__( 'Add widgets here to show on footer 4.', 'cenote' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Footer 4', 'cenote' ),
+			'id'            => 'footer-sidebar-4',
+			'description'   => esc_html__( 'Add widgets here to show on footer 4.', 'cenote' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
 }
 
 add_action( 'widgets_init', 'cenote_widgets_init' );
@@ -339,11 +363,11 @@ define( 'CENOTE_THEME_VERSION', $cenote_theme->get( 'Version' ) );
  * Calling in the admin area for the new theme notice.
  */
 if ( is_admin() ) {
-    require get_template_directory() . '/inc/admin/class-cenote-admin.php';
-    require get_template_directory() . '/inc/admin/class-cenote-notice.php';
+	require get_template_directory() . '/inc/admin/class-cenote-admin.php';
+	require get_template_directory() . '/inc/admin/class-cenote-notice.php';
 	require get_template_directory() . '/inc/admin/class-cenote-theme-review-notice.php';
-    require get_template_directory() . '/inc/admin/class-cenote-upgrade-notice.php';
-    require get_template_directory() . '/inc/admin/class-cenote-welcome-notice.php';
+	require get_template_directory() . '/inc/admin/class-cenote-upgrade-notice.php';
+	require get_template_directory() . '/inc/admin/class-cenote-welcome-notice.php';
 	require get_template_directory() . '/inc/admin/class-cenote-tdi-notice.php';
 }
 
