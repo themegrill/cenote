@@ -1,4 +1,11 @@
 <?php
+/**
+ * Cenote Theme Review Notice Class.
+ *
+ * @author  ThemeGrill
+ * @package Cenote
+ * @since   1.3.3
+ */
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
