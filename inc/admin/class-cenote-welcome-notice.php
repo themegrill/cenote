@@ -43,7 +43,7 @@ class Cenote_Welcome_Notice {
 
 			<div class="cenote-message__content">
 				<div class="cenote-message__image">
-					<img class="cenote-screenshot" src="<?php echo esc_url( get_template_directory_uri() . '/screenshot.jpg'); ?>" alt="<?php esc_html_e( 'Cenote', 'cenote' ); ?>" />
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/screenshot.jpg' ); ?>" class="cenote-screenshot" alt="<?php esc_attr_e( 'Cenote', 'cenote' ); ?>"/>
 																   <?php
                     // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped, Squiz.PHP.EmbeddedPhp.SpacingBeforeClose
 																	?>
