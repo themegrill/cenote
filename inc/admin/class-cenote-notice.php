@@ -1,6 +1,6 @@
 <?php
 /**
- * Cenote Theme Review Notice Class.
+ * Cenote Notice Class.
  *
  * @author  ThemeGrill
  * @package Cenote
