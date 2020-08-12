@@ -149,7 +149,7 @@ var server = gulp.series( browserSyncStart, watch );
 var test = gulp.series( lintPHP, lintJS, lintStyle );
 
 // Build
-var build = gulp.series( styles, test, minifyCSS, minifyJs, minifyImg, generateReadme, generatePotFile, compressZip );
+var build = gulp.series( styles, minifyCSS, minifyJs, generateReadme, generatePotFile, compressZip );
 
 // Start browserSync
 function browserSyncStart( cb ) {
@@ -327,14 +327,18 @@ function generatePotFile() {
 function compressZip() {
 	return gulp
 		.src( paths.zip.src )
+		.pipe( rename( function ( path ) {
+			path.dirname = info.slug + '/' + path.dirname;
+		} ) )
 		.pipe( zip( info.slug + '.zip' ) )
 		.pipe( gulp.dest( paths.zip.dest ) )
 		.on( 'error', notify.onError() )
-		.pipe( notify( {
-			message: 'Great! Package is ready',
-			title: 'Build successful'
-		}
-		) );
+		.pipe(
+			notify( {
+				message: 'Great! Package is ready',
+				title  : 'Build successful'
+			} )
+		);
 }
 
 // Watch for file changes
