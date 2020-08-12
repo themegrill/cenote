@@ -88,6 +88,7 @@ Unless otherwise specified, all the theme files, scripts and images including th
 
 == Changelog ==
 =Version TBD =
+* Update - Kirki version to `v3.1.5`
 * Remove - Unrequired deprecated demo config for theme demo lists.
 * Tweak  - Add and improve theme-related notices.
 
