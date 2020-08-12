@@ -367,6 +367,7 @@ if ( is_admin() ) {
 	require get_template_directory() . '/inc/admin/class-cenote-notice.php';
 	require get_template_directory() . '/inc/admin/class-cenote-theme-review-notice.php';
 	require get_template_directory() . '/inc/admin/class-cenote-upgrade-notice.php';
+	require get_template_directory() . '/inc/admin/class-cenote-dashboard.php';
 	require get_template_directory() . '/inc/admin/class-cenote-welcome-notice.php';
 	require get_template_directory() . '/inc/admin/class-cenote-tdi-notice.php';
 }
