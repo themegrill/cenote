@@ -247,5 +247,7 @@ ul.wp-block-gallery img {
 .wp-block-social-links.alignleft,
 .wp-block-social-links.alignright,
 .wp-block-social-links.aligncenter {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }

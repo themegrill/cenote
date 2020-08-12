@@ -3,7 +3,7 @@ Author: ThemeGrill
 Requires at least: WordPress 4.7
 Tested up to: WordPress 5.4.1
 Requires PHP: 5.6
-Version: 1.3.2
+Version: 1.3.3
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 Tags: one-column, Right-sidebar, grid-layout, custom-background, custom-colors, custom-menu, custom-logo, featured-images, footer-widgets, full-width-template, theme-options, threaded-comments, translation-ready, blog, rtl-language-support, e-commerce
@@ -87,10 +87,10 @@ Source: https://pixabay.com/en/girl-red-hair-makeup-wooden-wall-1828536/
 Unless otherwise specified, all the theme files, scripts and images including the screenshot image are licensed under [GNU GPL] (http://www.gnu.org/licenses/gpl-3.0.txt), version 3 or later.
 
 == Changelog ==
-=Version TBD =
-* Update - Kirki version to `v3.1.5`
-* Remove - Unrequired deprecated demo config for theme demo lists.
+= Version 1.3.3 - 2020-08-12 =
 * Tweak  - Add and improve theme-related notices.
+* Remove - Unrequired deprecated demo config for theme demo lists.
+* Update - Kirki version to `v3.1.5`
 
 = Version 1.3.2 - 2020-06-23 =
 * Enhancement - Gutenberg compatibility.
