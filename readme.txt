@@ -89,6 +89,7 @@ Unless otherwise specified, all the theme files, scripts and images including th
 == Changelog ==
 =Version TBD =
 * Remove - Unrequired deprecated demo config for theme demo lists.
+* Tweak  - Add and improve theme-related notices.
 
 = Version 1.3.2 - 2020-06-23 =
 * Enhancement - Gutenberg compatibility.
