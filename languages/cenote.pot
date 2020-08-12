@@ -44,51 +44,51 @@ msgstr[1] ""
 msgid "Comments are closed."
 msgstr ""
 
-#: functions.php:54
+#: functions.php:55
 msgid "Primary"
 msgstr ""
 
-#: functions.php:55
+#: functions.php:56
 msgid "Header Top"
 msgstr ""
 
-#: functions.php:175
+#: functions.php:190
 msgid "Sidebar"
 msgstr ""
 
-#: functions.php:177
+#: functions.php:192
 msgid "Add widgets here."
 msgstr ""
 
-#: functions.php:185
+#: functions.php:202
 msgid "Footer 1"
 msgstr ""
 
-#: functions.php:187
+#: functions.php:204
 msgid "Add widgets here to show on footer 1."
 msgstr ""
 
-#: functions.php:195
+#: functions.php:214
 msgid "Footer 2"
 msgstr ""
 
-#: functions.php:197
+#: functions.php:216
 msgid "Add widgets here to show on footer 2."
 msgstr ""
 
-#: functions.php:205
+#: functions.php:226
 msgid "Footer 3"
 msgstr ""
 
-#: functions.php:207
+#: functions.php:228
 msgid "Add widgets here to show on footer 3."
 msgstr ""
 
-#: functions.php:215
+#: functions.php:238
 msgid "Footer 4"
 msgstr ""
 
-#: functions.php:217
+#: functions.php:240
 msgid "Add widgets here to show on footer 4."
 msgstr ""
 
