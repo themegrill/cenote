@@ -88,7 +88,7 @@ Source: https://pxhere.com/
 Unless otherwise specified, all the theme files, scripts and images including the screenshot image are licensed under [GNU GPL] (http://www.gnu.org/licenses/gpl-3.0.txt), version 3 or later.
 
 == Changelog ==
-= TBD =
+= Version 1.3.4 - 2020-12-17 =
 * Tweak - Update footer credit link with `rel="nofollow"` attributes.
 
 = Version 1.3.3 - 2020-08-12 =
