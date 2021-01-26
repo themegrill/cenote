@@ -200,26 +200,33 @@ class Breadcrumb_Trail {
 				preg_match( '/(<a.*?>)(.*?)(<\/a>)/i', $item, $matches );
 
 				// Wrap the item text with appropriate itemprop.
-				$item = ! empty( $matches ) ? sprintf( '%s<span itemprop="name">%s</span>%s', $matches[1], $matches[2], $matches[3] ) : sprintf( '<span itemprop="name">%s</span>', $item );
+				$item = ! empty( $matches ) ? sprintf( '%s<span itemprop="name">%s</span>%s', $matches[1], $matches[2], $matches[3] ) : sprintf( '<span>%s</span>', $item );
 
-				// Wrap the item with its itemprop.
-				$item = ! empty( $matches )
-					? preg_replace( '/(<a.*?)([\'"])>/i', '$1$2 itemprop=$2item$2>', $item )
-					: sprintf( '<span itemprop="item">%s</span>', $item );
+                // Create list item attributes.
+                $attributes = 'itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="' . $item_class . '"';
 
-				// Add list item classes.
-				$item_class = 'trail-item';
+                $span_item = '<span itemprop="item">%s</span>';
+
+                // Build the meta position HTML.
+                $meta = sprintf( '<meta itemprop="position" content="%s" />', absint( $item_position ) );
+
+                // Add list item classes.
+                $item_class = 'trail-item';
 
 				if ( 1 === $item_position && 1 < $item_count ) {
 					$item_class .= ' trail-begin';
 				} elseif ( $item_count === $item_position ) {
 					$item_class .= ' trail-end';
-				}
-				// Create list item attributes.
-				$attributes = 'itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="' . $item_class . '"';
 
-				// Build the meta position HTML.
-				$meta = sprintf( '<meta itemprop="position" content="%s" />', absint( $item_position ) );
+                    $attributes = 'class="' . $item_class . '"';
+                    $span_item = '%s';
+                    $meta = '';
+				}
+
+                // Wrap the item with its itemprop.
+                $item = ! empty( $matches )
+                    ? preg_replace( '/(<a.*?)([\'"])>/i', '$1$2 itemprop=$2item$2>', $item )
+                    : sprintf( $span_item, $item );
 
 				// Build the list item.
 				$breadcrumb .= sprintf( '<%1$s %2$s>%3$s%4$s</%1$s>', tag_escape( $this->args['item_tag'] ), $attributes, $item, $meta );
