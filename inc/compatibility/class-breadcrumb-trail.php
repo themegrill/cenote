@@ -125,19 +125,20 @@ class Breadcrumb_Trail {
 	public function __construct( $args = array() ) {
 
 		$defaults = array(
-			'container'     => 'nav',
-			'before'        => '',
-			'after'         => '',
-			'browse_tag'    => 'h2',
-			'list_tag'      => 'ul',
-			'item_tag'      => 'li',
-			'show_on_front' => true,
-			'network'       => false,
-			'show_title'    => true,
-			'show_browse'   => true,
-			'labels'        => array(),
-			'post_taxonomy' => array(),
-			'echo'          => true,
+			'container'         => 'nav',
+			'before'            => '',
+			'after'             => '',
+			'browse_tag'        => 'h2',
+			'list_tag'          => 'ul',
+			'item_tag'          => 'li',
+			'show_on_front'     => true,
+			'network'           => false,
+			'show_title'        => true,
+			'show_browse'       => true,
+			'link_current_item' => false,
+			'labels'            => array(),
+			'post_taxonomy'     => array(),
+			'echo'              => true,
 		);
 
 		// Parse the arguments with the deaults.
@@ -218,9 +219,11 @@ class Breadcrumb_Trail {
 				} elseif ( $item_count === $item_position ) {
 					$item_class .= ' trail-end';
 
-					$attributes = 'class="' . $item_class . '"';
-					$span_item  = '%s';
-					$meta       = '';
+					if ( is_404() || false === $this->args['link_current_item'] ) {
+						$attributes = 'class="' . $item_class . '"';
+						$span_item  = '%s';
+						$meta       = '';
+					}
 				}
 
 				// Wrap the item with its itemprop.
