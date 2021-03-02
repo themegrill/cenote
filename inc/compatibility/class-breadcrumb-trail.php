@@ -125,19 +125,20 @@ class Breadcrumb_Trail {
 	public function __construct( $args = array() ) {
 
 		$defaults = array(
-			'container'     => 'nav',
-			'before'        => '',
-			'after'         => '',
-			'browse_tag'    => 'h2',
-			'list_tag'      => 'ul',
-			'item_tag'      => 'li',
-			'show_on_front' => true,
-			'network'       => false,
-			'show_title'    => true,
-			'show_browse'   => true,
-			'labels'        => array(),
-			'post_taxonomy' => array(),
-			'echo'          => true,
+			'container'         => 'nav',
+			'before'            => '',
+			'after'             => '',
+			'browse_tag'        => 'h2',
+			'list_tag'          => 'ul',
+			'item_tag'          => 'li',
+			'show_on_front'     => true,
+			'network'           => false,
+			'show_title'        => true,
+			'show_browse'       => true,
+			'link_current_item' => false,
+			'labels'            => array(),
+			'post_taxonomy'     => array(),
+			'echo'              => true,
 		);
 
 		// Parse the arguments with the deaults.
@@ -200,12 +201,15 @@ class Breadcrumb_Trail {
 				preg_match( '/(<a.*?>)(.*?)(<\/a>)/i', $item, $matches );
 
 				// Wrap the item text with appropriate itemprop.
-				$item = ! empty( $matches ) ? sprintf( '%s<span itemprop="name">%s</span>%s', $matches[1], $matches[2], $matches[3] ) : sprintf( '<span itemprop="name">%s</span>', $item );
+				$item = ! empty( $matches ) ? sprintf( '%s<span itemprop="name">%s</span>%s', $matches[1], $matches[2], $matches[3] ) : sprintf( '<span>%s</span>', $item );
 
-				// Wrap the item with its itemprop.
-				$item = ! empty( $matches )
-					? preg_replace( '/(<a.*?)([\'"])>/i', '$1$2 itemprop=$2item$2>', $item )
-					: sprintf( '<span itemprop="item">%s</span>', $item );
+				// Create list item attributes.
+				$attributes = 'itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="' . $item_class . '"';
+
+				$span_item = '<span itemprop="item">%s</span>';
+
+				// Build the meta position HTML.
+				$meta = sprintf( '<meta itemprop="position" content="%s" />', absint( $item_position ) );
 
 				// Add list item classes.
 				$item_class = 'trail-item';
@@ -214,12 +218,18 @@ class Breadcrumb_Trail {
 					$item_class .= ' trail-begin';
 				} elseif ( $item_count === $item_position ) {
 					$item_class .= ' trail-end';
-				}
-				// Create list item attributes.
-				$attributes = 'itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="' . $item_class . '"';
 
-				// Build the meta position HTML.
-				$meta = sprintf( '<meta itemprop="position" content="%s" />', absint( $item_position ) );
+					if ( is_404() || false === $this->args['link_current_item'] ) {
+						$attributes = 'class="' . $item_class . '"';
+						$span_item  = '%s';
+						$meta       = '';
+					}
+				}
+
+				// Wrap the item with its itemprop.
+				$item = ! empty( $matches )
+					? preg_replace( '/(<a.*?)([\'"])>/i', '$1$2 itemprop=$2item$2>', $item )
+					: sprintf( $span_item, $item );
 
 				// Build the list item.
 				$breadcrumb .= sprintf( '<%1$s %2$s>%3$s%4$s</%1$s>', tag_escape( $this->args['item_tag'] ), $attributes, $item, $meta );
@@ -781,7 +791,7 @@ class Breadcrumb_Trail {
 
 		// Add the day item.
 		if ( is_paged() ) {
-			$this->items[] = sprintf( '<a href="%s">%s</a>', esc_url( get_day_link( get_the_time( 'Y' ) , get_the_time( 'm' ), get_the_time( 'd' ) ) ), $day );
+			$this->items[] = sprintf( '<a href="%s">%s</a>', esc_url( get_day_link( get_the_time( 'Y' ), get_the_time( 'm' ), get_the_time( 'd' ) ) ), $day );
 		} elseif ( true === $this->args['show_title'] ) {
 			$this->items[] = $day;
 		}
