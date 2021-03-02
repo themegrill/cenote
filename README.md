@@ -100,6 +100,9 @@ Unless otherwise specified, all the theme files, scripts and images including th
 ### TBD ###
 * Fix - Structured data issue on breadcrumb.
 
+### Version 1.3.5 - 2021-02-24 ###
+* Tweak - Update screenshot image.
+
 ### Version 1.3.4 - 2020-12-17 ###
 * Tweak - Update footer credit link with `rel="nofollow"` attributes.
 
