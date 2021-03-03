@@ -203,8 +203,8 @@ class Breadcrumb_Trail {
 				// Wrap the item text with appropriate itemprop.
 				$item = ! empty( $matches ) ? sprintf( '%s<span itemprop="name">%s</span>%s', $matches[1], $matches[2], $matches[3] ) : sprintf( '<span>%s</span>', $item );
 
-                // Add list item classes.
-                $item_class = 'trail-item';
+				// Add list item classes.
+				$item_class = 'trail-item';
 
 				// Create list item attributes.
 				$attributes = 'itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="' . $item_class . '"';
