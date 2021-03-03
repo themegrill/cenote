@@ -203,6 +203,9 @@ class Breadcrumb_Trail {
 				// Wrap the item text with appropriate itemprop.
 				$item = ! empty( $matches ) ? sprintf( '%s<span itemprop="name">%s</span>%s', $matches[1], $matches[2], $matches[3] ) : sprintf( '<span>%s</span>', $item );
 
+                // Add list item classes.
+                $item_class = 'trail-item';
+
 				// Create list item attributes.
 				$attributes = 'itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="' . $item_class . '"';
 
@@ -210,9 +213,6 @@ class Breadcrumb_Trail {
 
 				// Build the meta position HTML.
 				$meta = sprintf( '<meta itemprop="position" content="%s" />', absint( $item_position ) );
-
-				// Add list item classes.
-				$item_class = 'trail-item';
 
 				if ( 1 === $item_position && 1 < $item_count ) {
 					$item_class .= ' trail-begin';
