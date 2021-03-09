@@ -7,7 +7,7 @@ Tested up to: WordPress 5.4.1**:**
 
 Requires PHP: 5.6**:** 
 
-Version: 1.3.3**:** 
+Version: 1.3.7**:** 
 
 License: GPLv3 or later**:** 
 
@@ -97,7 +97,7 @@ Source: https://pxhere.com/
 Unless otherwise specified, all the theme files, scripts and images including the screenshot image are licensed under [GNU GPL] (http://www.gnu.org/licenses/gpl-3.0.txt), version 3 or later.
 
 ## Changelog ##
-### TBD ###
+### Version 1.3.7 - 2021-03-09 ###
 * Fix - Structured data issue on breadcrumb.
 
 ### Version 1.3.5 - 2021-02-24 ###
