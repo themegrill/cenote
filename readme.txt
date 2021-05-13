@@ -76,20 +76,20 @@ License: SIL OFL 1.1, http://scripts.sil.org/OFL
 Source: https://github.com/VanillaandCream/Catamaran-Tamil
 
 
-Images used in Screenshot of Cenote theme:
+Images used in the screenshot are licensed under Creative Commons Zero (CC0):
+
+https://stocksnap.io/photo/asian-girl-UZ2J96JOGU
+https://pxhere.com/en/photo/10763
 
 Logo, Copyright © 2018, ThemeGrill
 License: GNU GPL, Version 3, https://www.gnu.org/licenses/gpl-3.0.html
-
-Screenshot images,
-License: Creative Commons Zero (CC0)
-Source: https://pxhere.com/
 
 Unless otherwise specified, all the theme files, scripts and images including the screenshot image are licensed under [GNU GPL] (http://www.gnu.org/licenses/gpl-3.0.txt), version 3 or later.
 
 == Changelog ==
 = TBD =
 * Tweak - Update screenshot image.
+* Tweak - Update screenshot image source link.
 
 = Version 1.3.7 - 2021-03-09 =
 * Fix - Structured data issue on breadcrumb.
