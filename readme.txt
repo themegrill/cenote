@@ -75,7 +75,6 @@ Catamaran, Copyright ©, 2018, Pria Ravichandran
 License: SIL OFL 1.1, http://scripts.sil.org/OFL
 Source: https://github.com/VanillaandCream/Catamaran-Tamil
 
-
 Images used in the screenshot are licensed under Creative Commons Zero (CC0):
 
 https://stocksnap.io/photo/asian-girl-UZ2J96JOGU
@@ -87,7 +86,7 @@ License: GNU GPL, Version 3, https://www.gnu.org/licenses/gpl-3.0.html
 Unless otherwise specified, all the theme files, scripts and images including the screenshot image are licensed under [GNU GPL] (http://www.gnu.org/licenses/gpl-3.0.txt), version 3 or later.
 
 == Changelog ==
-= TBD =
+= Version 1.3.8 - 2021-05-14 =
 * Tweak - Update screenshot image.
 * Tweak - Update screenshot image source link.
 
