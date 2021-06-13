@@ -3,16 +3,19 @@
  */
 .cenote-notice {
   position: relative;
-  padding: 6px 40px 6px 12px;
+  padding: 8px 40px 8px 8px;
 
   .links {
     margin: 0.5em 0;
+    display: flex;
+    flex-wrap: wrap;
 
     a {
-      margin: 2px;
+      margin-right: 10px;
 
       & > span {
         vertical-align: middle;
+        padding-right: 5px;
       }
     }
   }
@@ -33,7 +36,6 @@
  */
 .cenote-message__content {
   display: flex;
-  align-items: center;
 
   .cenote-message__image {
     flex: 0 0 160px;
@@ -93,7 +95,7 @@ a.cenote-message-close {
   }
 }
 
-@media screen and (max-width: 782px) {
+@media screen and (max-width: 768px) {
   .cenote-message__image {
     display: none;
   }
@@ -117,7 +119,7 @@ a.cenote-message-close {
 /**
  * Responsive.
  */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .cenote-message__content {
     .cenote-screenshot {
       display: none;
@@ -127,5 +129,95 @@ a.cenote-message-close {
       padding: 0;
       width: 100%;
     }
+  }
+}
+
+// Cenote Review Notice.
+.cenote-notice.theme-review-notice {
+  border-left-color: #6547DB;
+  padding: 20px 15px;
+
+  .cenote-message__content {
+    @media screen and (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  a.btn {
+    display: flex;
+    max-width: fit-content;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cenote-message__image {
+    flex: 0;
+    min-height: auto;
+    margin-right: 35px;
+    margin-left: 10px;
+    padding-right: 0;
+    border-right: none;
+  }
+
+  .cenote-logo--png {
+    width: 80px;
+    height: 80px;
+  }
+
+  h3 {
+    font-size: 21px;
+    margin: 0;
+    line-height: 1;
+    color: #000;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 21px;
+    color: #3C434A;
+    margin: 0;
+    margin-bottom: 6px;
+    max-width: 720px;
+    padding: 2px 0;
+  }
+
+  span.dashicons.dashicons-smiley.smile-icon {
+    background: #f7e143;
+    border-radius: 50%;
+    font-size: 15px;
+    border: 1px solid;
+    width: 17px;
+    height: 17px;
+  }
+
+  .button-primary {
+    background: #6547DB;
+    border-color: #6547DB;
+    box-shadow: none;
+    color: #fff;
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 10px;
+    }
+  }
+
+  .button-secondary {
+    color: #6547DB;
+    border-color: #6547DB;
+    background: #f6f7f7;
+    vertical-align: top;
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 10px;
+    }
+  }
+
+  strong {
+    color: #000;
+  }
+
+  .links {
+    margin: 1.2em 0 5px 0;
   }
 }
