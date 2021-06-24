@@ -98,7 +98,7 @@ class Cenote_Dashboard {
 						<h3><?php esc_html_e( 'Next Steps', 'cenote' ); ?></h3>
 						<ul>
 							<li><?php printf( '<a target="_blank" href="%s" class="welcome-icon dashicons-media-text">' . esc_html__( 'Documentation', 'cenote' ) . '</a>', esc_url( 'https://docs.themegrill.com/cenote' ) ); ?></li>
-							<li><?php printf( '<a target="_blank" href="%s" class="welcome-icon dashicons-layout">' . esc_html__( 'Starter Demos', 'cenote' ) . '</a>', esc_url( 'https://demo.themegrill.com/cenote-demos' ) ); ?></li>
+							<li><?php printf( '<a target="_blank" href="%s" class="welcome-icon dashicons-layout">' . esc_html__( 'Starter Demos', 'cenote' ) . '</a>', esc_url( 'https://themegrilldemos.com/cenote-demos/' ) ); ?></li>
 							<li><?php printf( '<a target="_blank" href="%s" class="welcome-icon dashicons-migrate">' . esc_html__( 'Premium Version', 'cenote' ) . '</a>', esc_url( 'https://themegrill.com/themes/cenote' ) ); ?></li>
 						</ul>
 					</div>

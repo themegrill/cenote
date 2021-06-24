@@ -23,15 +23,15 @@ function cenote_demo_importer_packages( $packages ) {
 	$new_packages = array(
 		'cenote-free'    => array(
 			'name'    => esc_html__( 'Cenote', 'cenote' ),
-			'preview' => 'https://demo.themegrill.com/cenote/',
+			'preview' => 'https://themegrilldemos.com/cenote/',
 		),
 		'cenote-fashion' => array(
 			'name'    => esc_html__( 'Cenote Fashion', 'cenote' ),
-			'preview' => 'https://demo.themegrill.com/cenote-fashion/',
+			'preview' => 'https://themegrilldemos.com/cenote-fashion/',
 		),
 		'cenote-tech'    => array(
 			'name'    => esc_html__( 'Cenote Tech', 'cenote' ),
-			'preview' => 'https://demo.themegrill.com/cenote-tech/',
+			'preview' => 'https://themegrilldemos.com/cenote-tech/',
 		),
 	);
 
