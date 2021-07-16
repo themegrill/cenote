@@ -7,15 +7,15 @@
  * @package cenote
  */
 
-$gallery                = get_post_gallery( get_the_ID(), false );
+$gallery = get_post_gallery( get_the_ID(), false );
 
 if ( isset( $gallery['ids'] ) ) {
-    $gallery_attachment_ids = explode(',', $gallery['ids']);
+	$gallery_attachment_ids = explode( ',', $gallery['ids'] );
 }
 
-$layout_style           = cenote_is_layout();
-$thumbnail_size         = 'post-thumbnail';
-$archive_style          = get_theme_mod( 'cenote_archive_style', 'tg-archive-style--masonry' );
+$layout_style   = cenote_is_layout();
+$thumbnail_size = 'post-thumbnail';
+$archive_style  = get_theme_mod( 'cenote_archive_style', 'tg-archive-style--masonry' );
 
 if ( 'tg-archive-style--classic' === $archive_style && 'layout--no-sidebar' === $layout_style ) {
 	$thumbnail_size = 'cenote-full-width';
