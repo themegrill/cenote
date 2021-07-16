@@ -8,7 +8,11 @@
  */
 
 $gallery                = get_post_gallery( get_the_ID(), false );
-$gallery_attachment_ids = explode( ',', $gallery['ids'] );
+
+if ( isset( $gallery['ids'] ) ) {
+    $gallery_attachment_ids = explode(',', $gallery['ids']);
+}
+
 $layout_style           = cenote_is_layout();
 $thumbnail_size         = 'post-thumbnail';
 
