@@ -8,7 +8,7 @@
  */
 
 $gallery                = get_post_gallery( get_the_ID(), false );
-$gallery_attachment_ids = explode( ',', $gallery['ids'] );
+$gallery_attachment_ids = isset( $gallery['ids'] ) ? explode( ',', $gallery['ids'] ) : array();
 $layout_style           = cenote_is_layout();
 $thumbnail_size         = 'post-thumbnail';
 $archive_style          = get_theme_mod( 'cenote_archive_style', 'tg-archive-style--masonry' );
