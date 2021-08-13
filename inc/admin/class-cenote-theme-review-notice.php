@@ -70,74 +70,74 @@ class Cenote_Theme_Review_Notice {
 		}
 		?>
 		<div class="notice notice-success cenote-notice theme-review-notice" style="position:relative;">
-            <div class="cenote-message__content">
-                <div class="cenote-message__image">
-                    <img class="cenote-logo--png" src="<?php echo esc_url( get_template_directory_uri() . '/inc/admin/images/cenote-square-logo.png' ); ?>" alt="<?php esc_attr_e( 'Cenote', 'cenote' ); ?>" />
-                </div>
+			<div class="cenote-message__content">
+				<div class="cenote-message__image">
+					<img class="cenote-logo--png" src="<?php echo esc_url( get_template_directory_uri() . '/inc/admin/images/cenote-square-logo.png' ); ?>" alt="<?php esc_attr_e( 'Cenote', 'cenote' ); ?>" />
+				</div>
 
-                <div class="cenote-message__text">
-                    <h3><?php echo esc_html( 'HAKUNA MATATA!' ); ?></h3>
-                    <p>(
+				<div class="cenote-message__text">
+					<h3><?php echo esc_html( 'HAKUNA MATATA!' ); ?></h3>
+					<p>(
 						<?php
 						printf(
-						    /* translators: %s: Smile icon */
+							/* translators: %s: Smile icon */
 							esc_html__( 'The above word is just to draw your attention. %s', 'cenote' ),
 							'<span class="dashicons dashicons-smiley smile-icon"></span>'
 						);
 						?>
-                    )</p>
-                    <p>
+					)</p>
+					<p>
 						<?php
-						    printf(
-						        /* translators: %1$s: Opening of strong tag, %2$s: Theme's Name, %3$s: Closing of strong tag  */
-                                esc_html__( 'Hope you are having a nice experience with %1$s %2$s %3$s theme. Please provide this theme a nice review.', 'cenote' ),
-                                '<strong>',
-                                esc_html( wp_get_theme( get_template() ) ),
-                                '</strong>'
-						    );
+							printf(
+								/* translators: %1$s: Opening of strong tag, %2$s: Theme's Name, %3$s: Closing of strong tag  */
+								esc_html__( 'Hope you are having a nice experience with %1$s %2$s %3$s theme. Please provide this theme a nice review.', 'cenote' ),
+								'<strong>',
+								esc_html( wp_get_theme( get_template() ) ),
+								'</strong>'
+							);
 						?>
-                    </p>
-                    <strong>
+					</p>
+					<strong>
 						<?php esc_html_e( 'What benefit would you have?', 'cenote' ); ?>
-                    </strong>
-                    <p>
+					</strong>
+					<p>
 						<?php
-						    printf(
-						        /* translators: %s: Smiley icon */
-                                esc_html__( 'Basically, it would encourage us to release updates regularly with new features & bug fixes so that you can keep on using the theme without any issues and also to provide free support like we have been doing. %s', 'cenote' ),
-                                '<span class="dashicons dashicons-smiley smile-icon"></span>'
-						    );
+							printf(
+								/* translators: %s: Smiley icon */
+								esc_html__( 'Basically, it would encourage us to release updates regularly with new features & bug fixes so that you can keep on using the theme without any issues and also to provide free support like we have been doing. %s', 'cenote' ),
+								'<span class="dashicons dashicons-smiley smile-icon"></span>'
+							);
 						?>
-                    </p>
+					</p>
 
-                    <div class="links">
-                        <a href="https://wordpress.org/support/theme/cenote/reviews/?filter=5#new-post" class="btn button-primary" target="_blank">
-                            <span class="dashicons dashicons-external"></span>
-                            <span><?php esc_html_e( 'Sure, I\'d love to!', 'cenote' ); ?></span>
-                        </a>
+					<div class="links">
+						<a href="https://wordpress.org/support/theme/cenote/reviews/?filter=5#new-post" class="btn button-primary" target="_blank">
+							<span class="dashicons dashicons-external"></span>
+							<span><?php esc_html_e( 'Sure, I\'d love to!', 'cenote' ); ?></span>
+						</a>
 
-                        <a href="<?php echo esc_url( $dismiss_url ); ?>" class="btn button-secondary">
-                            <span class="dashicons dashicons-smiley"></span>
-                            <span><?php esc_html_e( 'I already did!', 'cenote' ); ?></span>
-                        </a>
+						<a href="<?php echo esc_url( $dismiss_url ); ?>" class="btn button-secondary">
+							<span class="dashicons dashicons-smiley"></span>
+							<span><?php esc_html_e( 'I already did!', 'cenote' ); ?></span>
+						</a>
 
-                        <a href="<?php echo esc_url( $temporary_dismiss_url ); ?>" class="btn button-secondary">
-                            <span class="dashicons dashicons-calendar"></span>
-                            <span><?php esc_html_e( 'Maybe later', 'cenote' ); ?></span>
-                        </a>
+						<a href="<?php echo esc_url( $temporary_dismiss_url ); ?>" class="btn button-secondary">
+							<span class="dashicons dashicons-calendar"></span>
+							<span><?php esc_html_e( 'Maybe later', 'cenote' ); ?></span>
+						</a>
 
-                        <a href="<?php echo esc_url( 'https://wordpress.org/support/theme/cenote/' ); ?>" class="btn button-secondary" target="_blank">
-                            <span class="dashicons dashicons-testimonial"></span>
-                            <span><?php esc_html_e( 'I have a query', 'cenote' ); ?></span>
-                        </a>
-                    </div> <!-- /.links -->
+						<a href="<?php echo esc_url( 'https://wordpress.org/support/theme/cenote/' ); ?>" class="btn button-secondary" target="_blank">
+							<span class="dashicons dashicons-testimonial"></span>
+							<span><?php esc_html_e( 'I have a query', 'cenote' ); ?></span>
+						</a>
+					</div> <!-- /.links -->
 
-                </div> <!-- /.cenote-message__text -->
+				</div> <!-- /.cenote-message__text -->
 
-                <a class="notice-dismiss" href="<?php echo esc_url( $dismiss_url ); ?>"></a>
+				<a class="notice-dismiss" href="<?php echo esc_url( $dismiss_url ); ?>"></a>
 
-            </div> <!-- /.cenote-message__content -->
-        </div> <!-- /.theme-review-notice -->
+			</div> <!-- /.cenote-message__content -->
+		</div> <!-- /.theme-review-notice -->
 		<?php
 	}
 
@@ -147,13 +147,13 @@ class Cenote_Theme_Review_Notice {
 	public function ignore_theme_review_notice() {
 
 		/* If user clicks to ignore the notice, add that to their user meta */
-		if ( isset( $_GET[ 'nag_cenote_ignore_theme_review_notice' ] ) && isset( $_GET[ '_cenote_ignore_theme_review_notice_nonce' ] ) ) {
+		if ( isset( $_GET['nag_cenote_ignore_theme_review_notice'] ) && isset( $_GET['_cenote_ignore_theme_review_notice_nonce'] ) ) {
 
-			if ( ! wp_verify_nonce( wp_unslash( $_GET[ '_cenote_ignore_theme_review_notice_nonce' ] ), 'nag_cenote_ignore_theme_review_notice_nonce' ) ) {
+			if ( ! wp_verify_nonce( wp_unslash( $_GET['_cenote_ignore_theme_review_notice_nonce'] ), 'nag_cenote_ignore_theme_review_notice_nonce' ) ) {
 				wp_die( esc_html__( 'Action failed. Please refresh the page and retry.', 'cenote' ) );
 			}
 
-			if ( '0' === $_GET[ 'nag_cenote_ignore_theme_review_notice' ] ) {
+			if ( '0' === $_GET['nag_cenote_ignore_theme_review_notice'] ) {
 				add_user_meta( get_current_user_id(), 'cenote_ignore_theme_review_notice', 'true', true );
 			}
 		}
@@ -165,13 +165,13 @@ class Cenote_Theme_Review_Notice {
 	public function ignore_theme_review_notice_partially() {
 
 		/* If user clicks to ignore the notice, add that to their user meta */
-		if ( isset( $_GET[ 'nag_cenote_ignore_theme_review_notice_partially' ] ) && isset( $_GET[ '_cenote_ignore_theme_review_notice_nonce' ] ) ) {
+		if ( isset( $_GET['nag_cenote_ignore_theme_review_notice_partially'] ) && isset( $_GET['_cenote_ignore_theme_review_notice_nonce'] ) ) {
 
-			if ( ! wp_verify_nonce( wp_unslash( $_GET[ '_cenote_ignore_theme_review_notice_nonce' ] ), 'nag_cenote_ignore_theme_review_notice_partially_nonce' ) ) {
+			if ( ! wp_verify_nonce( wp_unslash( $_GET['_cenote_ignore_theme_review_notice_nonce'] ), 'nag_cenote_ignore_theme_review_notice_partially_nonce' ) ) {
 				wp_die( esc_html__( 'Action failed. Please refresh the page and retry.', 'cenote' ) );
 			}
 
-			if ( '0' === $_GET[ 'nag_cenote_ignore_theme_review_notice_partially' ] ) {
+			if ( '0' === $_GET['nag_cenote_ignore_theme_review_notice_partially'] ) {
 				update_user_meta( get_current_user_id(), 'nag_cenote_ignore_theme_review_notice_partially', time() );
 			}
 		}
