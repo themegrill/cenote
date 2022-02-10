@@ -26,7 +26,7 @@
     "gulp-uglifycss": "^1.0.9",
     "gulp-wp-pot": "^2.3.1",
     "gulp-zip": "^4.1.0",
-    "node-sass": "^5.0.0",
+    "node-sass": "^7.0.0",
     "stylelint": "^9.2.1",
     "stylelint-config-wordpress": "^13.0.0"
   },
