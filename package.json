@@ -1,6 +1,6 @@
 {
   "name": "cenote",
-  "version": "1.3.9",
+  "version": "1.4.0",
   "description": "Next Generation WordPress blog theme",
   "main": "gulpfile.js",
   "scripts": {
