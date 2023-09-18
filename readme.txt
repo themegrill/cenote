@@ -1,7 +1,7 @@
 === Cenote ===
 Author: ThemeGrill
 Requires at least: WordPress 4.7
-Tested up to: WordPress 5.4.1
+Tested up to: 6.3
 Requires PHP: 5.6
 Version: 1.3.7
 License: GPLv3 or later
