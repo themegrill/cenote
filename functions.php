@@ -320,6 +320,14 @@ require get_template_directory() . '/inc/template-functions.php';
 require get_template_directory() . '/inc/customizer.php';
 
 /**
+ * Load Hooks.
+ */
+require get_template_directory() . '/inc/hooks/hooks.php';
+require get_template_directory() . '/inc/hooks/header.php';
+require get_template_directory() . '/inc/hooks/content.php';
+require get_template_directory() . '/inc/hooks/footer.php';
+
+/**
  * Meta boxes.
  */
 require get_template_directory() . '/inc/meta-boxes.php';
