@@ -112,8 +112,6 @@ if ( ! function_exists( 'cenote_setup' ) ) :
 
 		// Gutenberg editor support.
 		add_theme_support( 'responsive-embeds' );
-
-
 	}
 endif;
 add_action( 'after_setup_theme', 'cenote_setup' );
@@ -131,7 +129,6 @@ function cenote_image_sizes() {
 	add_image_size( 'cenote-post', 600, 400, true );
 	// Auto size.
 	add_image_size( 'cenote-post-auto', 600, 9999, false );
-
 }
 
 add_action( 'after_setup_theme', 'cenote_image_sizes' );
@@ -259,7 +256,45 @@ function cenote_scripts() {
 
 	wp_enqueue_style( 'themegrill-icons', get_template_directory_uri() . '/assets/css/themegrill-icons' . $suffix . '.css', array(), '1.0' );
 
-	wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/assets/css/all' . $suffix . '.css' );
+	// Font Awesome 6.7.2.
+	$font_awesome_styles = array(
+		array(
+			'handle'  => 'font-awesome-4',
+			'file'    => '/v4-shims',
+			'version' => '4.7.0',
+		),
+		array(
+			'handle'  => 'font-awesome-all',
+			'file'    => '/all',
+			'version' => '6.7.2',
+		),
+		array(
+			'handle'  => 'font-awesome-solid',
+			'file'    => '/solid',
+			'version' => '6.7.2',
+		),
+		array(
+			'handle'  => 'font-awesome-regular',
+			'file'    => '/regular',
+			'version' => '6.7.2',
+		),
+		array(
+			'handle'  => 'font-awesome-brands',
+			'file'    => '/brands',
+			'version' => '6.7.2',
+		),
+	);
+
+	foreach ( $font_awesome_styles as $style ) {
+		wp_register_style(
+			$style['handle'],
+			get_template_directory_uri() . '/css' . $style['file'] . $suffix . '.css',
+			false,
+			$style['version']
+		);
+		wp_enqueue_style( $style['handle'] );
+	}
+//	wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/assets/css/all' . $suffix . '.css' );
 
 	wp_enqueue_script( 'cenote-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix' . $suffix . '.js', array(), '20151215', true );
 	wp_enqueue_script( 'hammer', get_template_directory_uri() . '/assets/js/hammer' . $suffix . '.js', array(), '2.0.8', true );
@@ -324,10 +359,6 @@ require get_template_directory() . '/inc/customizer.php';
  */
 require get_template_directory() . '/inc/meta-boxes.php';
 
-/**
- * Widget for showing recent post
- */
-require get_template_directory() . '/inc/widgets/class-cenote-widget-recent-posts.php';
 
 /**
  * Load Jetpack compatibility file.
@@ -351,7 +382,16 @@ require get_template_directory() . '/inc/kirki/kirki.php';
 /**
  * Add Kirki options file
  */
-require get_template_directory() . '/inc/customizer/kirki-customizer.php';
+add_action(
+	'init',
+	function () {
+		/**
+		 * Widget for showing recent post
+		 */
+		require get_template_directory() . '/inc/widgets/class-cenote-widget-recent-posts.php';
+		require get_template_directory() . '/inc/customizer/kirki-customizer.php';
+	}
+);
 
 /**
  * Add theme css class control file
