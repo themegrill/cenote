@@ -288,7 +288,7 @@ function cenote_scripts() {
 	foreach ( $font_awesome_styles as $style ) {
 		wp_register_style(
 			$style['handle'],
-			get_template_directory_uri() . '/css' . $style['file'] . $suffix . '.css',
+			get_template_directory_uri() . '/assets/css' . $style['file'] . $suffix . '.css',
 			false,
 			$style['version']
 		);
