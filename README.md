@@ -3,11 +3,11 @@ Author: ThemeGrill**:**
 
 Requires at least: WordPress 4.7**:** 
 
-Tested up to: 6.3**:** 
+Tested up to: 6.8**:** 
 
 Requires PHP: 5.6**:** 
 
-Version: 1.3.7**:** 
+Version: 1.4.2**:** 
 
 License: GPLv3 or later**:** 
 
@@ -95,6 +95,12 @@ License: GNU GPL, Version 3, https://www.gnu.org/licenses/gpl-3.0.html
 Unless otherwise specified, all the theme files, scripts and images including the screenshot image are licensed under [GNU GPL] (http://www.gnu.org/licenses/gpl-3.0.txt), version 3 or later.
 
 ## Changelog ##
+### Version 1.4.2 - 2025-08-12 ###
+* Update - General security measure.
+
+### Version 1.4.1 - 2025-06-17 ###
+* Update - Font Awesome to version 6.7.2.
+
 ### Version 1.4.0 - 2023-09-18 ###
 * Tweak - Update WordPress tested upto version to 6.3.
 

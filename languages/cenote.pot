@@ -1,4 +1,4 @@
-# Copyright (C) 2023 Cenote
+# Copyright (C) 2025 Cenote
 # This file is distributed under the same license as the Cenote package.
 msgid ""
 msgstr ""
@@ -52,43 +52,43 @@ msgstr ""
 msgid "Header Top"
 msgstr ""
 
-#: functions.php:190
+#: functions.php:187
 msgid "Sidebar"
 msgstr ""
 
-#: functions.php:192
+#: functions.php:189
 msgid "Add widgets here."
 msgstr ""
 
-#: functions.php:202
+#: functions.php:199
 msgid "Footer 1"
 msgstr ""
 
-#: functions.php:204
+#: functions.php:201
 msgid "Add widgets here to show on footer 1."
 msgstr ""
 
-#: functions.php:214
+#: functions.php:211
 msgid "Footer 2"
 msgstr ""
 
-#: functions.php:216
+#: functions.php:213
 msgid "Add widgets here to show on footer 2."
 msgstr ""
 
-#: functions.php:226
+#: functions.php:223
 msgid "Footer 3"
 msgstr ""
 
-#: functions.php:228
+#: functions.php:225
 msgid "Add widgets here to show on footer 3."
 msgstr ""
 
-#: functions.php:238
+#: functions.php:235
 msgid "Footer 4"
 msgstr ""
 
-#: functions.php:240
+#: functions.php:237
 msgid "Add widgets here to show on footer 4."
 msgstr ""
 
