@@ -294,7 +294,7 @@ function cenote_scripts() {
 		);
 		wp_enqueue_style( $style['handle'] );
 	}
-//	wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/assets/css/all' . $suffix . '.css' );
+	//  wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/assets/css/all' . $suffix . '.css' );
 
 	wp_enqueue_script( 'cenote-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix' . $suffix . '.js', array(), '20151215', true );
 	wp_enqueue_script( 'hammer', get_template_directory_uri() . '/assets/js/hammer' . $suffix . '.js', array(), '2.0.8', true );
@@ -314,7 +314,7 @@ function cenote_scripts() {
 		wp_enqueue_script( 'imagesloaded', get_template_directory_uri() . '/assets/js/imagesloaded.pkgd' . $suffix . '.js', array(), '4.1.4', true );
 	}
 
-	wp_enqueue_script( 'cenote-custom', get_template_directory_uri() . '/assets/js/cenote-custom' . $suffix . '.js', array(), '1.0.0', true );
+	wp_enqueue_script( 'cenote-custom', get_template_directory_uri() . '/assets/js/cenote-custom' . $suffix . '.js', array(), '1.4.2', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
