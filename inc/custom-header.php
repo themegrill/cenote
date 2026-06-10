@@ -17,7 +17,10 @@
  * @uses cenote_header_style()
  */
 function cenote_custom_header_setup() {
-	add_theme_support( 'custom-header', apply_filters( 'cenote_custom_header_args',
+	add_theme_support(
+		'custom-header',
+		apply_filters(
+			'cenote_custom_header_args',
 			array(
 				'default-image'      => '',
 				'default-text-color' => '000000',
@@ -37,12 +40,24 @@ add_action( 'after_setup_theme', 'cenote_custom_header_setup' );
  * @return void
  */
 function cenote_header_markup() {
-	$title           = get_theme_mod( 'cenote_header_media_title', 'Hi, I am Header Media Title' );
-	$text            = get_theme_mod( 'cenote_header_media_text', 'I am description of header media. You can write short text to give me more info.' );
-	$button_text     = get_theme_mod( 'cenote_header_media_button_text', 'Take action' );
+	$title           = get_theme_mod( 'cenote_header_media_title', __( 'Hi, I am Header Media Title' ) );
+	$text            = get_theme_mod( 'cenote_header_media_text', __( 'I am description of header media. You can write short text to give me more info.' ) );
+	$button_text     = get_theme_mod( 'cenote_header_media_button_text', __( 'Take action' ) );
 	$button_url      = get_theme_mod( 'cenote_header_media_url', '#' );
 	$is_info_enabled = get_theme_mod( 'cenote_header_media_enable_desc', true );
 	$style           = get_theme_mod( 'cenote_header_media_style', 'cenote-header-media--center' );
+
+	// Make dynamic text translatable with Polylang
+	if ( function_exists( 'pll_register_string' ) ) {
+		pll_register_string( 'cenote_header_media_title', $title, 'cenote' );
+		pll_register_string( 'cenote_header_media_text', $text, 'cenote' );
+		pll_register_string( 'cenote_header_media_button_text', $button_text, 'cenote' );
+	}
+
+	// Get translated strings
+	$title       = function_exists( 'pll__' ) ? pll__( $title ) : $title;
+	$text        = function_exists( 'pll__' ) ? pll__( $text ) : $text;
+	$button_text = function_exists( 'pll__' ) ? pll__( $button_text ) : $button_text;
 
 	if ( has_header_image() && is_front_page() ) {
 		?>
@@ -92,7 +107,7 @@ if ( ! function_exists( 'cenote_header_style' ) ) :
 		<?php
 		// Has the text been hidden?
 		if ( ! display_header_text() ) :
-		?>
+			?>
 			.site-branding {
 				margin-bottom: 0;
 			}
@@ -101,10 +116,10 @@ if ( ! function_exists( 'cenote_header_style' ) ) :
 				position: absolute;
 				clip: rect(1px, 1px, 1px, 1px);
 			}
-		<?php
+			<?php
 			// If the user has set a custom color for the text use that.
 			else :
-		?>
+				?>
 			.site-title a,
 			.site-description {
 				color: #<?php echo esc_attr( $header_text_color ); ?>;
@@ -114,3 +129,46 @@ if ( ! function_exists( 'cenote_header_style' ) ) :
 		<?php
 	}
 endif;
+
+/**
+ * Register Polylang strings for translation
+ */
+function cenote_register_polylang_strings() {
+	if ( function_exists( 'pll_register_string' ) ) {
+		$title       = get_theme_mod( 'cenote_header_media_title', '' );
+		$text        = get_theme_mod( 'cenote_header_media_text', '' );
+		$button_text = get_theme_mod( 'cenote_header_media_button_text', '' );
+
+		if ( ! empty( $title ) ) {
+			pll_register_string( 'cenote_header_media_title', $title, 'Cenote Theme' );
+		}
+		if ( ! empty( $text ) ) {
+			pll_register_string( 'cenote_header_media_text', $text, 'Cenote Theme' );
+		}
+		if ( ! empty( $button_text ) ) {
+			pll_register_string( 'cenote_header_media_button_text', $button_text, 'Cenote Theme' );
+		}
+	}
+}
+add_action( 'init', 'cenote_register_polylang_strings' );
+
+/**
+ * Update Polylang strings when customizer values change
+ */
+function cenote_update_polylang_strings( $value, $old_value, $option ) {
+	if ( function_exists( 'pll_register_string' ) ) {
+		$header_options = array(
+			'cenote_header_media_title',
+			'cenote_header_media_text',
+			'cenote_header_media_button_text',
+		);
+
+		foreach ( $header_options as $option_name ) {
+			if ( isset( $value[ $option_name ] ) && ! empty( $value[ $option_name ] ) ) {
+				pll_register_string( $option_name, $value[ $option_name ], 'Cenote Theme' );
+			}
+		}
+	}
+	return $value;
+}
+add_filter( 'pre_update_option_theme_mods_cenote', 'cenote_update_polylang_strings', 10, 3 );
