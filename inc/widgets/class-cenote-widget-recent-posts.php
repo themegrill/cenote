@@ -100,6 +100,16 @@ class Cenote_Widget_Recent_Posts extends WP_Widget {
 	 * @return array updated settings to save.
 	 */
 	public function update( $new_instance, $old_instance ) {
+		$new_instance = wp_parse_args(
+			(array) $new_instance,
+			array_fill_keys(
+				array(
+					'title', 'number'
+				),
+				''
+			)
+		);
+
 		$instance              = $old_instance;
 		$instance['title']     = sanitize_text_field( $new_instance['title'] );
 		$instance['number']    = (int) $new_instance['number'];
