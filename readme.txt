@@ -86,7 +86,7 @@ License: GNU GPL, Version 3, https://www.gnu.org/licenses/gpl-3.0.html
 Unless otherwise specified, all the theme files, scripts and images including the screenshot image are licensed under [GNU GPL] (http://www.gnu.org/licenses/gpl-3.0.txt), version 3 or later.
 
 == Changelog ==
-= Version 1.4.3 - 2026-10-07 =
+= Version 1.4.3 - 2026-10-08 =
 * Update - Declare PHP 7.4 and WordPress 5.3 minimums, tested up to WordPress 7.1.
 * Update - Starter Templates plugin name in the welcome notice.
 * Fix - Kirki deprecation warnings.
