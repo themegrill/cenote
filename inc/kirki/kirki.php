@@ -18,7 +18,6 @@
  * @since 1.0
  */
 
-use Kirki\L10n;
 use Kirki\Compatibility\Modules;
 use Kirki\Compatibility\Framework;
 use Kirki\Compatibility\Kirki;
@@ -74,7 +73,6 @@ $kirki->modules = new Modules();
 
 // Instantiate classes.
 new Kirki();
-new L10n( 'kirki', __DIR__ . '/languages' );
 new \Kirki\Settings\SetupSettings();
 
 // ? Bagus: Do we really need to-reinclude this file? It was included above.

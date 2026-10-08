@@ -20,10 +20,10 @@ return function () {
 
 					<div>
 						<span class="title">
-							<?php _e( 'Kirki Customizer Framework', 'kirki' ); ?>
+							<?php _e( 'Kirki Customizer Framework', 'cenote' ); ?>
 							<span class="version"><?php echo esc_html( KIRKI_VERSION ); ?></span>
 						</span>
-						<p class="subtitle"><?php _e( 'The #1 Customizer Toolkit for WordPress Theme Developers.', 'kirki' ); ?></p>
+						<p class="subtitle"><?php _e( 'The #1 Customizer Toolkit for WordPress Theme Developers.', 'cenote' ); ?></p>
 					</div>
 
 					<div>
@@ -35,7 +35,7 @@ return function () {
 				<nav>
 					<ul class="heatbox-tab-nav">
 						<li class="heatbox-tab-nav-item kirki-settings-panel">
-							<a href="#settings"><?php _e( 'Settings', 'kirki' ); ?></a>
+							<a href="#settings"><?php _e( 'Settings', 'cenote' ); ?></a>
 						</li>
 					</ul>
 				</nav>

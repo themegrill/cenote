@@ -109,94 +109,94 @@ class Typography extends Field {
 		self::$std_variants = [
 			[
 				'value' => 'regular',
-				'label' => __( 'Regular', 'kirki' ),
+				'label' => __( 'Regular', 'cenote' ),
 			],
 			[
 				'value' => 'italic',
-				'label' => __( 'Italic', 'kirki' ),
+				'label' => __( 'Italic', 'cenote' ),
 			],
 			[
 				'value' => '700',
-				'label' => __( '700', 'kirki' ),
+				'label' => __( '700', 'cenote' ),
 			],
 			[
 				'value' => '700italic',
-				'label' => __( '700 Italic', 'kirki' ),
+				'label' => __( '700 Italic', 'cenote' ),
 			],
 		];
 
 		self::$complete_variants = [
 			[
 				'value' => 'regular',
-				'label' => __( 'Regular', 'kirki' ),
+				'label' => __( 'Regular', 'cenote' ),
 			],
 			[
 				'value' => 'italic',
-				'label' => __( 'Italic', 'kirki' ),
+				'label' => __( 'Italic', 'cenote' ),
 			],
 			[
 				'value' => '100',
-				'label' => __( '100', 'kirki' ),
+				'label' => __( '100', 'cenote' ),
 			],
 			[
 				'value' => '100italic',
-				'label' => __( '100 Italic', 'kirki' ),
+				'label' => __( '100 Italic', 'cenote' ),
 			],
 			[
 				'value' => '200',
-				'label' => __( '200', 'kirki' ),
+				'label' => __( '200', 'cenote' ),
 			],
 			[
 				'value' => '200italic',
-				'label' => __( '200 Italic', 'kirki' ),
+				'label' => __( '200 Italic', 'cenote' ),
 			],
 			[
 				'value' => '300',
-				'label' => __( '300', 'kirki' ),
+				'label' => __( '300', 'cenote' ),
 			],
 			[
 				'value' => '300italic',
-				'label' => __( '300 Italic', 'kirki' ),
+				'label' => __( '300 Italic', 'cenote' ),
 			],
 			[
 				'value' => '500',
-				'label' => __( '500', 'kirki' ),
+				'label' => __( '500', 'cenote' ),
 			],
 			[
 				'value' => '500italic',
-				'label' => __( '500 Italic', 'kirki' ),
+				'label' => __( '500 Italic', 'cenote' ),
 			],
 			[
 				'value' => '600',
-				'label' => __( '600', 'kirki' ),
+				'label' => __( '600', 'cenote' ),
 			],
 			[
 				'value' => '600italic',
-				'label' => __( '600 Italic', 'kirki' ),
+				'label' => __( '600 Italic', 'cenote' ),
 			],
 			[
 				'value' => '700',
-				'label' => __( '700', 'kirki' ),
+				'label' => __( '700', 'cenote' ),
 			],
 			[
 				'value' => '700italic',
-				'label' => __( '700 Italic', 'kirki' ),
+				'label' => __( '700 Italic', 'cenote' ),
 			],
 			[
 				'value' => '800',
-				'label' => __( '800', 'kirki' ),
+				'label' => __( '800', 'cenote' ),
 			],
 			[
 				'value' => '800italic',
-				'label' => __( '800 Italic', 'kirki' ),
+				'label' => __( '800 Italic', 'cenote' ),
 			],
 			[
 				'value' => '900',
-				'label' => __( '900', 'kirki' ),
+				'label' => __( '900', 'cenote' ),
 			],
 			[
 				'value' => '900italic',
-				'label' => __( '900 Italic', 'kirki' ),
+				'label' => __( '900 Italic', 'cenote' ),
 			],
 		];
 
@@ -271,7 +271,7 @@ class Typography extends Field {
 			new \Kirki\Field\ReactSelect(
 				wp_parse_args(
 					[
-						'label'       => esc_html__( 'Font Family', 'kirki' ),
+						'label'       => esc_html__( 'Font Family', 'cenote' ),
 						'description' => '',
 						'settings'    => $args['settings'] . '[font-family]',
 						'default'     => isset( $args['default']['font-family'] ) ? $args['default']['font-family'] : '',
@@ -298,7 +298,7 @@ class Typography extends Field {
 			new \Kirki\Field\ReactSelect(
 				wp_parse_args(
 					[
-						'label'       => esc_html__( 'Font Variant', 'kirki' ),
+						'label'       => esc_html__( 'Font Variant', 'cenote' ),
 						'description' => '',
 						'settings'    => $args['settings'] . '[variant]',
 						'default'     => $font_variant,
@@ -320,12 +320,12 @@ class Typography extends Field {
 			$group = [
 				'font-size' => [
 					'type'         => 'dimension',
-					'label'        => esc_html__( 'Font Size', 'kirki' ),
+					'label'        => esc_html__( 'Font Size', 'cenote' ),
 					'is_specified' => $font_size_field_specified,
 				],
 				'color'     => [
 					'type'         => 'react-colorful',
-					'label'        => esc_html__( 'Font Color', 'kirki' ),
+					'label'        => esc_html__( 'Font Color', 'cenote' ),
 					'is_specified' => $color_field_specified,
 					'choices'      => [
 						'alpha'       => true,
@@ -344,25 +344,25 @@ class Typography extends Field {
 			$group = [
 				'text-align'     => [
 					'type'         => 'react-select',
-					'label'        => esc_html__( 'Text Align', 'kirki' ),
+					'label'        => esc_html__( 'Text Align', 'cenote' ),
 					'is_specified' => $text_align_field_specified,
 					'choices'      => [
-						'initial' => esc_html__( 'Initial', 'kirki' ),
-						'left'    => esc_html__( 'Left', 'kirki' ),
-						'center'  => esc_html__( 'Center', 'kirki' ),
-						'right'   => esc_html__( 'Right', 'kirki' ),
-						'justify' => esc_html__( 'Justify', 'kirki' ),
+						'initial' => esc_html__( 'Initial', 'cenote' ),
+						'left'    => esc_html__( 'Left', 'cenote' ),
+						'center'  => esc_html__( 'Center', 'cenote' ),
+						'right'   => esc_html__( 'Right', 'cenote' ),
+						'justify' => esc_html__( 'Justify', 'cenote' ),
 					],
 				],
 				'text-transform' => [
 					'type'         => 'react-select',
-					'label'        => esc_html__( 'Text Transform', 'kirki' ),
+					'label'        => esc_html__( 'Text Transform', 'cenote' ),
 					'is_specified' => $text_transform_field_specified,
 					'choices'      => [
-						'none'       => esc_html__( 'None', 'kirki' ),
-						'capitalize' => esc_html__( 'Capitalize', 'kirki' ),
-						'uppercase'  => esc_html__( 'Uppercase', 'kirki' ),
-						'lowercase'  => esc_html__( 'Lowercase', 'kirki' ),
+						'none'       => esc_html__( 'None', 'cenote' ),
+						'capitalize' => esc_html__( 'Capitalize', 'cenote' ),
+						'uppercase'  => esc_html__( 'Uppercase', 'cenote' ),
+						'lowercase'  => esc_html__( 'Lowercase', 'cenote' ),
 					],
 				],
 			];
@@ -376,15 +376,15 @@ class Typography extends Field {
 			$group = [
 				'text-decoration' => [
 					'type'         => 'react-select',
-					'label'        => esc_html__( 'Text Decoration', 'kirki' ),
+					'label'        => esc_html__( 'Text Decoration', 'cenote' ),
 					'is_specified' => $text_decoration_field_specified,
 					'choices'      => [
-						'none'         => esc_html__( 'None', 'kirki' ),
-						'underline'    => esc_html__( 'Underline', 'kirki' ),
-						'line-through' => esc_html__( 'Line Through', 'kirki' ),
-						'overline'     => esc_html__( 'Overline', 'kirki' ),
-						'solid'        => esc_html__( 'Solid', 'kirki' ),
-						'wavy'         => esc_html__( 'Wavy', 'kirki' ),
+						'none'         => esc_html__( 'None', 'cenote' ),
+						'underline'    => esc_html__( 'Underline', 'cenote' ),
+						'line-through' => esc_html__( 'Line Through', 'cenote' ),
+						'overline'     => esc_html__( 'Overline', 'cenote' ),
+						'solid'        => esc_html__( 'Solid', 'cenote' ),
+						'wavy'         => esc_html__( 'Wavy', 'cenote' ),
 					],
 				],
 			];
@@ -399,12 +399,12 @@ class Typography extends Field {
 			$group = [
 				'line-height'    => [
 					'type'         => 'dimension',
-					'label'        => esc_html__( 'Line Height', 'kirki' ),
+					'label'        => esc_html__( 'Line Height', 'cenote' ),
 					'is_specified' => $line_height_field_specified,
 				],
 				'letter-spacing' => [
 					'type'         => 'dimension',
-					'label'        => esc_html__( 'Letter Spacing', 'kirki' ),
+					'label'        => esc_html__( 'Letter Spacing', 'cenote' ),
 					'is_specified' => $letter_spacing_field_specified,
 				],
 			];
@@ -419,12 +419,12 @@ class Typography extends Field {
 			$group = [
 				'margin-top'    => [
 					'type'         => 'dimension',
-					'label'        => esc_html__( 'Margin Top', 'kirki' ),
+					'label'        => esc_html__( 'Margin Top', 'cenote' ),
 					'is_specified' => $margin_top_field_specified,
 				],
 				'margin-bottom' => [
 					'type'         => 'dimension',
-					'label'        => esc_html__( 'Margin Bottom', 'kirki' ),
+					'label'        => esc_html__( 'Margin Bottom', 'cenote' ),
 					'is_specified' => $margin_bottom_field_specified,
 				],
 			];
@@ -847,9 +847,9 @@ class Typography extends Field {
 		$choices = [];
 
 		$choices['default'] = [
-			esc_html__( 'Defaults', 'kirki' ),
+			esc_html__( 'Defaults', 'cenote' ),
 			[
-				'' => esc_html__( 'Default', 'kirki' ),
+				'' => esc_html__( 'Default', 'cenote' ),
 			],
 		];
 
@@ -874,12 +874,12 @@ class Typography extends Field {
 		}
 
 		$choices['standard'] = [
-			esc_html__( 'Standard Fonts', 'kirki' ),
+			esc_html__( 'Standard Fonts', 'cenote' ),
 			$std_fonts,
 		];
 
 		$choices['google'] = [
-			esc_html__( 'Google Fonts', 'kirki' ),
+			esc_html__( 'Google Fonts', 'cenote' ),
 			array_combine( array_values( $g_fonts ), array_values( $g_fonts ) ),
 		];
 

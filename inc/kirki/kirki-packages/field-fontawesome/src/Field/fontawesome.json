@@ -5107,15 +5107,6 @@
 			]
 		},
 		{
-			"name": "WordPress Logo",
-			"id": "wordpress",
-			"unicode": "f19a",
-			"created": 4.1,
-			"categories": [
-				"Brand Icons"
-			]
-		},
-		{
 			"name": "OpenID",
 			"id": "openid",
 			"unicode": "f19b",

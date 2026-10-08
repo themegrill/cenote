@@ -99,21 +99,21 @@ class Dashicons extends Base {
 			<# } else { #>
 				<#
 				var dashiconSections = {
-					'admin-menu': '<?php esc_html_e( 'Admin Menu', 'kirki' ); ?>',
-					'welcome-screen': '<?php esc_html_e( 'Welcome Screen', 'kirki' ); ?>',
-					'post-formats': '<?php esc_html_e( 'Post Formats', 'kirki' ); ?>',
-					'media': '<?php esc_html_e( 'Media', 'kirki' ); ?>',
-					'image-editing': '<?php esc_html_e( 'Image Editing', 'kirki' ); ?>',
+					'admin-menu': '<?php esc_html_e( 'Admin Menu', 'cenote' ); ?>',
+					'welcome-screen': '<?php esc_html_e( 'Welcome Screen', 'cenote' ); ?>',
+					'post-formats': '<?php esc_html_e( 'Post Formats', 'cenote' ); ?>',
+					'media': '<?php esc_html_e( 'Media', 'cenote' ); ?>',
+					'image-editing': '<?php esc_html_e( 'Image Editing', 'cenote' ); ?>',
 					'tinymce': 'TinyMCE',
-					'posts': '<?php esc_html_e( 'Posts', 'kirki' ); ?>',
-					'sorting': '<?php esc_html_e( 'Sorting', 'kirki' ); ?>',
-					'social': '<?php esc_html_e( 'Social', 'kirki' ); ?>',
+					'posts': '<?php esc_html_e( 'Posts', 'cenote' ); ?>',
+					'sorting': '<?php esc_html_e( 'Sorting', 'cenote' ); ?>',
+					'social': '<?php esc_html_e( 'Social', 'cenote' ); ?>',
 					'wordpress_org': 'WordPress',
-					'products': '<?php esc_html_e( 'Products', 'kirki' ); ?>',
-					'taxonomies': '<?php esc_html_e( 'Taxonomies', 'kirki' ); ?>',
-					'widgets': '<?php esc_html_e( 'Widgets', 'kirki' ); ?>',
-					'notifications': '<?php esc_html_e( 'Notifications', 'kirki' ); ?>',
-					'misc': '<?php esc_html_e( 'Miscelaneous', 'kirki' ); ?>'
+					'products': '<?php esc_html_e( 'Products', 'cenote' ); ?>',
+					'taxonomies': '<?php esc_html_e( 'Taxonomies', 'cenote' ); ?>',
+					'widgets': '<?php esc_html_e( 'Widgets', 'cenote' ); ?>',
+					'notifications': '<?php esc_html_e( 'Notifications', 'cenote' ); ?>',
+					'misc': '<?php esc_html_e( 'Miscelaneous', 'cenote' ); ?>'
 				};
 				#>
 				<# _.each( dashiconSections, function( sectionLabel, sectionKey ) { #>

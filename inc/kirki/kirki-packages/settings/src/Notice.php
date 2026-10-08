@@ -129,11 +129,11 @@ class Notice {
 		$nonce = isset( $_POST['nonce'] ) ? sanitize_text_field( $_POST['nonce'] ) : '';
 
 		if ( ! wp_verify_nonce( $nonce, 'Kirki_Dismiss_Discount_Notice' ) ) {
-			wp_send_json_error( __( 'Invalid nonce', 'kirki' ) );
+			wp_send_json_error( __( 'Invalid nonce', 'cenote' ) );
 		}
 
 		if ( ! current_user_can( 'manage_options' ) ) {
-			wp_send_json_error( __( "You don't have capability to run this action", 'kirki' ) );
+			wp_send_json_error( __( "You don't have capability to run this action", 'cenote' ) );
 		}
 
 		$notices = get_option( 'kirki_notices', [] );
@@ -141,7 +141,7 @@ class Notice {
 		$notices['discount_notice'] = 1;
 
 		update_option( 'kirki_notices', $notices );
-		wp_send_json_success( __( 'Discount notice has been dismissed', 'kirki' ) );
+		wp_send_json_success( __( 'Discount notice has been dismissed', 'cenote' ) );
 	}
 
 }

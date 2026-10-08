@@ -51,8 +51,8 @@ class SetupSettings {
 
 		add_submenu_page(
 			'options-general.php',
-			__( 'Kirki Customizer Framework', 'kirki' ),
-			__( 'Kirki', 'kirki' ),
+			__( 'Kirki Customizer Framework', 'cenote' ),
+			__( 'Kirki', 'cenote' ),
 			apply_filters( 'kirki_settings_capability', 'manage_options' ),
 			'kirki_settings',
 			array( $this, 'submenu_page_content' )

@@ -49,7 +49,7 @@ class Image extends Base {
 
 		// Enqueue the script.
 		wp_enqueue_script( 'kirki-control-image', URL::get_from_path( dirname( dirname( __DIR__ ) ) . '/dist/control.js' ), [ 'jquery', 'customize-base', 'kirki-control-base', 'wp-mediaelement', 'media-upload', 'wp-i18n' ], self::$control_ver, false );
-		wp_set_script_translations( 'kirki-control-image', 'kirki' );
+		wp_set_script_translations( 'kirki-control-image', 'cenote' );
 	}
 
 	/**
@@ -79,14 +79,14 @@ class Image extends Base {
 					<img src="{{ url }}"/>
 				</div>
 			<# } else { #>
-				<div class="placeholder"><?php esc_html_e( 'No image selected', 'kirki' ); ?></div>
+				<div class="placeholder"><?php esc_html_e( 'No image selected', 'cenote' ); ?></div>
 			<# } #>
 			<div class="actions">
-				<button class="button image-upload-remove-button<# if ( '' === url ) { #> hidden <# } #>"><?php esc_html_e( 'Remove', 'kirki' ); ?></button>
+				<button class="button image-upload-remove-button<# if ( '' === url ) { #> hidden <# } #>"><?php esc_html_e( 'Remove', 'cenote' ); ?></button>
 				<# if ( data.default && '' !== data.default ) { #>
-					<button type="button" class="button image-default-button"<# if ( data.default === data.value || ( ! _.isUndefined( data.value.url ) && data.default === data.value.url ) ) { #> style="display:none;"<# } #>><?php esc_html_e( 'Default', 'kirki' ); ?></button>
+					<button type="button" class="button image-default-button"<# if ( data.default === data.value || ( ! _.isUndefined( data.value.url ) && data.default === data.value.url ) ) { #> style="display:none;"<# } #>><?php esc_html_e( 'Default', 'cenote' ); ?></button>
 				<# } #>
-				<button type="button" class="button image-upload-button"><?php esc_html_e( 'Select image', 'kirki' ); ?></button>
+				<button type="button" class="button image-upload-button"><?php esc_html_e( 'Select image', 'cenote' ); ?></button>
 			</div>
 		</div>
 		<?php

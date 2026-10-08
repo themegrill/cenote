@@ -81,7 +81,7 @@ class Background extends Field {
 				[
 					'settings'    => $args['settings'] . '[background-color]',
 					'label'       => '',
-					'description' => esc_html__( 'Background Color', 'kirki' ),
+					'description' => esc_html__( 'Background Color', 'cenote' ),
 					'default'     => $default_bg_color,
 					'section'     => $args['section'],
 					'choices'     => [
@@ -100,7 +100,7 @@ class Background extends Field {
 				[
 					'settings'    => $args['settings'] . '[background-image]',
 					'label'       => '',
-					'description' => esc_html__( 'Background Image', 'kirki' ),
+					'description' => esc_html__( 'Background Image', 'cenote' ),
 					'default'     => isset( $args['default']['background-image'] ) ? $args['default']['background-image'] : '',
 					'section'     => $args['section'],
 				],
@@ -116,14 +116,14 @@ class Background extends Field {
 				[
 					'settings'    => $args['settings'] . '[background-repeat]',
 					'label'       => '',
-					'description' => esc_html__( 'Background Repeat', 'kirki' ),
+					'description' => esc_html__( 'Background Repeat', 'cenote' ),
 					'section'     => $args['section'],
 					'default'     => isset( $args['default']['background-repeat'] ) ? $args['default']['background-repeat'] : '',
 					'choices'     => [
-						'no-repeat' => esc_html__( 'No Repeat', 'kirki' ),
-						'repeat'    => esc_html__( 'Repeat All', 'kirki' ),
-						'repeat-x'  => esc_html__( 'Repeat Horizontally', 'kirki' ),
-						'repeat-y'  => esc_html__( 'Repeat Vertically', 'kirki' ),
+						'no-repeat' => esc_html__( 'No Repeat', 'cenote' ),
+						'repeat'    => esc_html__( 'Repeat All', 'cenote' ),
+						'repeat-x'  => esc_html__( 'Repeat Horizontally', 'cenote' ),
+						'repeat-y'  => esc_html__( 'Repeat Vertically', 'cenote' ),
 					],
 					'required'    => array_merge(
 						$args['required'],
@@ -149,19 +149,19 @@ class Background extends Field {
 				[
 					'settings'    => $args['settings'] . '[background-position]',
 					'label'       => '',
-					'description' => esc_html__( 'Background Position', 'kirki' ),
+					'description' => esc_html__( 'Background Position', 'cenote' ),
 					'default'     => isset( $args['default']['background-position'] ) ? $args['default']['background-position'] : '',
 					'section'     => $args['section'],
 					'choices'     => [
-						'left top'      => esc_html__( 'Left Top', 'kirki' ),
-						'left center'   => esc_html__( 'Left Center', 'kirki' ),
-						'left bottom'   => esc_html__( 'Left Bottom', 'kirki' ),
-						'center top'    => esc_html__( 'Center Top', 'kirki' ),
-						'center center' => esc_html__( 'Center Center', 'kirki' ),
-						'center bottom' => esc_html__( 'Center Bottom', 'kirki' ),
-						'right top'     => esc_html__( 'Right Top', 'kirki' ),
-						'right center'  => esc_html__( 'Right Center', 'kirki' ),
-						'right bottom'  => esc_html__( 'Right Bottom', 'kirki' ),
+						'left top'      => esc_html__( 'Left Top', 'cenote' ),
+						'left center'   => esc_html__( 'Left Center', 'cenote' ),
+						'left bottom'   => esc_html__( 'Left Bottom', 'cenote' ),
+						'center top'    => esc_html__( 'Center Top', 'cenote' ),
+						'center center' => esc_html__( 'Center Center', 'cenote' ),
+						'center bottom' => esc_html__( 'Center Bottom', 'cenote' ),
+						'right top'     => esc_html__( 'Right Top', 'cenote' ),
+						'right center'  => esc_html__( 'Right Center', 'cenote' ),
+						'right bottom'  => esc_html__( 'Right Bottom', 'cenote' ),
 					],
 					'required'    => array_merge(
 						$args['required'],
@@ -187,13 +187,13 @@ class Background extends Field {
 				[
 					'settings'    => $args['settings'] . '[background-size]',
 					'label'       => '',
-					'description' => esc_html__( 'Background Size', 'kirki' ),
+					'description' => esc_html__( 'Background Size', 'cenote' ),
 					'default'     => isset( $args['default']['background-size'] ) ? $args['default']['background-size'] : '',
 					'section'     => $args['section'],
 					'choices'     => [
-						'cover'   => esc_html__( 'Cover', 'kirki' ),
-						'contain' => esc_html__( 'Contain', 'kirki' ),
-						'auto'    => esc_html__( 'Auto', 'kirki' ),
+						'cover'   => esc_html__( 'Cover', 'cenote' ),
+						'contain' => esc_html__( 'Contain', 'cenote' ),
+						'auto'    => esc_html__( 'Auto', 'cenote' ),
 					],
 					'required'    => array_merge(
 						$args['required'],
@@ -219,13 +219,13 @@ class Background extends Field {
 				[
 					'type'        => 'kirki-radio-buttonset',
 					'settings'    => $args['settings'] . '[background-attachment]',
-					'description' => esc_html__( 'Background Attachment', 'kirki' ),
+					'description' => esc_html__( 'Background Attachment', 'cenote' ),
 					'label'       => '',
 					'default'     => isset( $args['default']['background-attachment'] ) ? $args['default']['background-attachment'] : '',
 					'section'     => $args['section'],
 					'choices'     => [
-						'scroll' => esc_html__( 'Scroll', 'kirki' ),
-						'fixed'  => esc_html__( 'Fixed', 'kirki' ),
+						'scroll' => esc_html__( 'Scroll', 'cenote' ),
+						'fixed'  => esc_html__( 'Fixed', 'cenote' ),
 					],
 					'required'    => array_merge(
 						$args['required'],

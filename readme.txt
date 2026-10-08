@@ -94,6 +94,7 @@ Unless otherwise specified, all the theme files, scripts and images including th
 * Fix - PHP 8 warnings when a widget is saved without every field.
 * Fix - TG: Recent Posts widget is available again and placed widgets show on the site.
 * Update - Stop loading hammer.js, which the mobile menu no longer uses.
+* Fix - Theme check issues in the bundled Kirki: single text domain, no composer platform check, and WordPress spelling.
 
 = Version 1.4.2 - 2025-08-12 =
 * Update - General security measure.
