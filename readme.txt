@@ -92,6 +92,8 @@ Unless otherwise specified, all the theme files, scripts and images including th
 * Fix - Kirki deprecation warnings.
 * Fix - Remove the swipe gesture from the mobile menu.
 * Fix - PHP 8 warnings when a widget is saved without every field.
+* Fix - TG: Recent Posts widget is available again and placed widgets show on the site.
+* Update - Stop loading hammer.js, which the mobile menu no longer uses.
 
 = Version 1.4.2 - 2025-08-12 =
 * Update - General security measure.
